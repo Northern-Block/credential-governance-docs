@@ -7,7 +7,7 @@
 
 This document establishes the Governance Framework (GF) for the Land Title and Survey Authority of British Columbia (LTSA) Property Owner Digital Credential. This framework is part of LTSA’s initiative to streamline and secure property ownership verification processes, enabling trusted digital credentials within British Columbia’s property ecosystem.
 
-**_Acknowledgements:_** The development of this documentation follows the governance framework created by the [Trust over IP Foundation (ToIP)](https://trustoverip.org/), specifically the [Governance Metamodel Specification](https://trustoverip.org/wp-content/uploads/ToIP-
+**_Acknowledgements:_** The development of this documentation follows the governance framework created by the [Trust over IP Foundation (ToIP)](https://trustoverip.org/), specifically the [Governance Metamodel Specification](https://trustoverip.org/wp-content/uploads/ToIP-Governance-Metamodel-Specification-V1.0-2022-12-21.pdf) created by the [Governance Stack Working Group (GSWG)](https://wiki.trustoverip.org/display/HOME/Governance+Stack+Working+Group).
 
 ### 1.2. Terminology and Notation
 
