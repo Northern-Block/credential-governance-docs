@@ -1,13 +1,13 @@
 
-# Short-term Business Rental Credential Governance Framework (Primary Document)
+# Long-term Business Rental Credential Governance Framework (Primary Document)
 
 ## 1. Primary Document
 
 ### 1.1. Introduction
 
-This document articulates the Governance Framework (GF) for the City of Vancouver’s Short-Term Rental Business License Digital Credential, part of Vancouver's broader commitment to transparent and efficient regulation of short-term rental properties.
+This document articulates the Governance Framework (GF) for the City of Vancouver’s Long-Term Rental Business License Digital Credential, part of Vancouver's broader commitment to transparent and efficient regulation of long-term rental properties.
 
-**_Acknowledgements:_** The development of this documentation follows the governance framework created by the [Trust over IP Foundation (ToIP)](https://trustoverip.org/), specifically the [Governance Metamodel Specification](https://trustoverip.org/wp-content/uploads/ToIP-
+**_Acknowledgements:_** The development of this documentation follows the governance framework created by the [Trust over IP Foundation (ToIP)](https://trustoverip.org/), specifically the [Governance Metamodel Specification]([https://trustoverip.org/wp-content/uploads/ToIP-](https://trustoverip.org/wp-content/uploads/ToIP-Governance-Metamodel-Specification-V1.0-2022-12-21.pdf) created by the [Governance Stack Working Group (GSWG)](https://wiki.trustoverip.org/display/HOME/Governance+Stack+Working+Group).
 
 ### 1.2. Terminology and Notation
 
@@ -47,18 +47,18 @@ The standard language for this governing framework (GF) is English.
 
 ### 1.6. Purpose
 
-*Placeholder for specific purpose related to the short-term rental credential.*
+*Placeholder for specific purpose related to the long-term rental credential.*
 
 **Questions**:
-- What primary goal does the City of Vancouver aim to achieve with the short-term rental business license credential?
+- What primary goal does the City of Vancouver aim to achieve with the long-term rental business license credential?
 - What are the anticipated benefits for rental operators, the city, and residents?
 
 ### 1.7. Scope
 
-*Placeholder for the scope specific to the short-term rental business license credential.*
+*Placeholder for the scope specific to the long-term rental business license credential.*
 
 **Questions**:
-- Will the credential apply to all short-term rental operators within Vancouver?
+- Will the credential apply to all long-term rental operators within Vancouver?
 - Are there specific exemptions or limitations that need to be included?
 
 ### 1.8. Objectives
@@ -66,12 +66,12 @@ The standard language for this governing framework (GF) is English.
 *Placeholder for Vancouver-specific objectives related to credential use.*
 
 **Questions**:
-- What are the short-term and long-term objectives of issuing this credential?
+- What are the long-term and long-term objectives of issuing this credential?
 - Are there specific compliance or regulatory goals associated with the credential?
 
 ### 1.9. Principles
 
-*Placeholder for principles guiding Vancouver's approach to short-term rental credentialing.*
+*Placeholder for principles guiding Vancouver's approach to long-term rental credentialing.*
 
 **Questions**:
 - What guiding principles does the city want to reflect (e.g., transparency, data security, compliance)?
@@ -107,7 +107,7 @@ There are no extensions to this Governance Framework at this time.
 *Placeholder for terms relevant to Vancouver’s credential use case.*
 
 **Questions**:
-- Are there specific terms unique to the short-term rental industry in Vancouver that should be defined here?
+- Are there specific terms unique to the long-term rental industry in Vancouver that should be defined here?
 
 ### 2.2. Risk Assessment
 
@@ -127,7 +127,7 @@ There are no extensions to this Governance Framework at this time.
 
 ### 2.4. Governance Requirements
 
-The Short-Term Rental Business License Digital Credential is governed by this framework.
+The Long-Term Rental Business License Digital Credential is governed by this framework.
 
 **Questions**:
 - Are there additional governance requirements or standards Vancouver wants to enforce?
@@ -146,14 +146,14 @@ The verifiable credential format for this project will be based on Vancouver’s
 
 #### 2.6.1 Schema Definition
 
-__Schema Name:__ short_term_rental_license
+__Schema Name:__ long_term_rental_license
 
 __Schema Version:__ 1.0
 
 **Attributes** | **Format** | **Rules** | **Notes**
 --- | --- | --- | ---
 license_id | String | Not NULL | Unique license ID
-property_address | String | Not NULL | Address of the short-term rental property
+property_address | String | Not NULL | Address of the long-term rental property
 license_validity_start | Date | Not NULL | Start date of license
 license_validity_end | Date | Not NULL | Expiry date of license
 operator_name | String | Not NULL | Name of the rental operator
