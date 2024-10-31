@@ -5,19 +5,29 @@
 
 ### 1.1. Introduction
 
-This document articulates the Governance Framework (GF) for the City of Vancouver’s Short-Term Rental Business License Digital Credential, part of Vancouver's broader commitment to transparent and efficient regulation of short-term rental properties.
+This document articulates the Governance Framework (GF) for British Columbia (B.C.) Court Services Branch (CSB) as a participant in the open global community that exchanges verifiable credentials:
 
-This Governance Framework is developed based on principles from the Trust over IP Foundation (ToIP) Governance Metamodel Specification by the Governance Stack Working Group (GSWG).
+(Layer Four Application of the Trust Over IP Foundation (ToIP) Model) Acknowledgements The development of this documentation follows the governance framework created by the Trust over IP Foundation (ToIP) Governance Metamodel Specification created by the Governance Stack Working Group (GSWG).
 
 ### 1.2. Terminology and Notation
 
-Please reference the Glossary - General Trust Over IP Terms.
+Please reference Glossary - General Trust Over IP Terms.
 
-Requirements include any combination of Machine-Testable Requirements and Human-Auditable Requirements. All Requirements MUST be expressed as defined in RFC 2119.
+Requirements include any combination of Machine-Testable Requirements and Human-Auditable Requirements. Unless otherwise stated, all Requirements MUST be expressed as defined in RFC 2119.
 
-- Mandates use MUST, MUST NOT, SHALL, SHALL NOT, or REQUIRED keywords.
-- Recommendations use SHOULD, SHOULD NOT, or RECOMMENDED keywords.
-- Options use MAY or OPTIONAL keywords.
+- Mandates are Requirements that use a MUST, MUST NOT, SHALL, SHALL NOT, or REQUIRED keyword.
+- Recommendations are Requirements that use a SHOULD, SHOULD NOT, or RECOMMENDED keyword.
+- Options are Requirements that use a MAY or OPTIONAL keyword.
+
+**Machine-Testable Requirements** are those with which compliance can be verified using an automated test suite and appropriate scripting or testing software.
+
+**Rules** are Machine-Testable Requirements that are written in a Machine-Readable language and can be processed by a Rules Engine. They are expressed in a structured rules language as specified by the Governance Framework.
+
+**Human-Auditable Requirements** are those with which compliance can only be verified by an audit of people, processes, and procedures.
+
+**Policies** are Human-Auditable Requirements written using standard conformance terminology. The Policies used in the Governance Framework will use the standard terminology detailed in RFC 2119 keywords. Note that all RFC 2119 keywords have weight from an auditing perspective. An implementer MUST explain why a SHOULD or RECOMMENDED requirement was not implemented and SHOULD explain why a MAY requirement was implemented.
+
+**Specifications** are documents containing any combination of Machine-Testable Requirements and Human-Auditable Requirements needed to produce technical interoperability.
 
 ### 1.3. Localization
 
