@@ -7,13 +7,13 @@
 
 This document articulates the Governance Framework (GF) for the City of Vancouver’s Short-Term Rental Business License Digital Credential, part of Vancouver's broader commitment to transparent and efficient regulation of short-term rental properties.
 
-(Layer Four Application of the Trust Over IP Foundation (ToIP) Model) Acknowledgements The development of this documentation follows the governance framework created by the Trust over IP Foundation (ToIP) Governance Metamodel Specification created by the Governance Stack Working Group (GSWG).
+**_Acknowledgements:_** The development of this documentation follows the governance framework created by the [Trust over IP Foundation (ToIP)](https://trustoverip.org/), specifically the [Governance Metamodel Specification](https://trustoverip.org/wp-content/uploads/ToIP-
 
 ### 1.2. Terminology and Notation
 
-Please reference Glossary - General Trust Over IP Terms.
+Please reference [Glossary - General Trust Over IP Terms](https://trustoverip.github.io/toip/glossary).
 
-Requirements include any combination of Machine-Testable Requirements and Human-Auditable Requirements. Unless otherwise stated, all Requirements MUST be expressed as defined in RFC 2119.
+Requirements include any combination of Machine-Testable Requirements and Human-Auditable Requirements. Unless otherwise stated, all Requirements MUST be expressed as defined in [RFC 2119](https://www.rfc-editor.org/rfc/rfc2119).
 
 - Mandates are Requirements that use a MUST, MUST NOT, SHALL, SHALL NOT, or REQUIRED keyword.
 - Recommendations are Requirements that use a SHOULD, SHOULD NOT, or RECOMMENDED keyword.
