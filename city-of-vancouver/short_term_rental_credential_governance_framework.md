@@ -5,7 +5,7 @@
 
 ### 1.1. Introduction
 
-This document articulates the Governance Framework (GF) for British Columbia (B.C.) Court Services Branch (CSB) as a participant in the open global community that exchanges verifiable credentials:
+This document articulates the Governance Framework (GF) for the City of Vancouver’s Short-Term Rental Business License Digital Credential, part of Vancouver's broader commitment to transparent and efficient regulation of short-term rental properties.
 
 (Layer Four Application of the Trust Over IP Foundation (ToIP) Model) Acknowledgements The development of this documentation follows the governance framework created by the Trust over IP Foundation (ToIP) Governance Metamodel Specification created by the Governance Stack Working Group (GSWG).
 
