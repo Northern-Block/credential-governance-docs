@@ -1,10 +1,4 @@
----
-layout: default
-title: Verified .CA Domain Credential
-parent: Credential Schemas
----
-
-# Verified .CA Domain Credential Governance Framework (Primary Document)
+# Short-term Business Rental Credential Governance Framework (Primary Document)
 
 # 1. Primary Document
 
