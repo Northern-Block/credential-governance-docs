@@ -5,7 +5,7 @@
 
 ### 1.1. Introduction
 
-This document articulates the Governance Framework (GF) for the City of Vancouver’s Long-Term Rental Business License Digital Credential, part of Vancouver's broader commitment to transparent and efficient regulation of long-term rental properties.
+This document articulates the Governance Framework (GF) for the [City of Vancouver](https://vancouver.ca/)’s **Long-Term Rental Business License Digital Credential**, part of Vancouver's broader commitment to transparent and efficient regulation of long-term rental properties.
 
 **_Acknowledgements:_** The development of this documentation follows the governance framework created by the [Trust over IP Foundation (ToIP)](https://trustoverip.org/), specifically the [Governance Metamodel Specification](https://trustoverip.org/wp-content/uploads/ToIP-Governance-Metamodel-Specification-V1.0-2022-12-21.pdf) created by the [Governance Stack Working Group (GSWG)](https://wiki.trustoverip.org/display/HOME/Governance+Stack+Working+Group).
 
