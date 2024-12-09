@@ -5,7 +5,17 @@
 
 ### 1.1. Introduction
 
-This document establishes the Governance Framework (GF) for the [Land Title and Survey Authority of British Columbia (LTSA)](https://ltsa.ca/) **Property Owner Digital Credential**. This framework is part of LTSA’s initiative to streamline and secure property ownership verification processes, enabling trusted digital credentials within British Columbia’s property ecosystem.
+This document establishes the Governance Framework for the LTSA credential, a digital credential designed to represent an individual’s ownership interest in land as registered in BC’s land title register. 
+
+All land titles in British Columbia are managed by the [Land Title and Survey Authority of BC (LTSA)]((https://ltsa.ca/)), a publicly accountable statutory corporation responsible for operating the land title and survey systems of BC. This credential is designed to be issued by LTSA. The structure of the credential is designed to encapsulate essential information contained on a land title, such as owner names, title number and Parcel Identifier (PID).
+
+The following legislation and regulations govern the management and registration of land title interests:
+-	[Land Title Act](https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/96250_00)
+-	[Land Title Act (Board of Directors) Regulation](https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/332_2010)
+-	[Land Title Act Regulation](https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/334_79)
+
+
+**This document has been drafted for use by LTSA and others to support a proof of concept of the LTSA credential and should not be referred to for guidance on the production use of this credential.**
 
 **_Acknowledgements:_** The development of this documentation follows the governance framework created by the [Trust over IP Foundation (ToIP)](https://trustoverip.org/), specifically the [Governance Metamodel Specification](https://trustoverip.org/wp-content/uploads/ToIP-Governance-Metamodel-Specification-V1.0-2022-12-21.pdf) created by the [Governance Stack Working Group (GSWG)](https://wiki.trustoverip.org/display/HOME/Governance+Stack+Working+Group).
 
@@ -35,59 +45,50 @@ The standard language for this governance framework is English.
 
 ### 1.4. Governing Authority
 
-*Placeholder for LTSA as the Governing Authority.*
+LTSA is the governing authority for this Governance Framework. 
 
-**Questions**:
-- Who is the designated governing authority within LTSA for managing the credentialing framework?
-- Are there specific contacts or teams responsible for oversight and compliance?
+The contact information is TBD:
+-	Name: 
+-	Title: 
+-	Organization: 
+-	Email: 
 
 ### 1.5. Administering Authority
 
-Northern Block Inc. (NB) will serve as the Administering Authority on behalf of LTSA during the proof-of-concept phase.
+The Administering Authority on behalf of LTSA during the proof-of-concept phase of development is [LandSure Systems Ltd.](https://www.landsure.ca/).
+
+The contact information is TBD:
+-	Name: 
+-	Title: 
+-	Organization: 
+-	Email:
 
 ### 1.6. Purpose
 
-*Placeholder for the purpose of the Property Owner Credential.*
-
-**Questions**:
-- What primary objectives does LTSA have for the Property Owner Credential?
-- How will this credential improve efficiency, trust, and security within property-related transactions?
+The purpose of this Governance Framework is to define what the LTSA credential is and who is responsible for the authority and administration of its use.
 
 ### 1.7. Scope
 
-*Placeholder for scope relevant to the Property Owner Credential.*
+An LTSA credential issued according to this Governance Framework provides proof of an individual’s ownership interest in land as registered in BC’s land title register. Interest is held through fee simple ownership. 
 
-**Questions**:
-- Which property owners or transactions are within the scope of this credential framework?
-- Are there any exclusions or specific use cases that should be documented?
+**Exclusions:** Interests held by corporations are not eligible to hold an LTSA credential.
 
 ### 1.8. Objectives
 
-*Placeholder for LTSA-specific objectives related to credential issuance and management.*
-
-**Questions**:
-- What short-term and long-term objectives does LTSA aim to accomplish with this credential?
-- Are there compliance or regulatory goals tied to the Property Owner Credential?
+1.	To allow the credential holder evidence that they are an owner on title in a verifiable credential format that is both secure and tamperproof
+2.	To enable the credential holder to authenticate and access public sector services in BC in place of manual ways to prove ownership
 
 ### 1.9. Principles
 
-*Placeholder for guiding principles for LTSA’s Property Owner Credential.*
-
-**Questions**:
-- Which principles (e.g., transparency, security, accessibility) does LTSA prioritize in this framework?
-- Are there principles specifically relevant to property transactions in BC?
+LTSA’s purpose has one overarching mandate under the [Land Title and Survey Authority Act](https://www.bclaws.ca/civix/document/id/complete/statreg/00_04066_01) which is ‘to manage, operate and maintain the land title and survey systems of British Columbia’. These services are an essential underpinning to BC’s real property market and the civil justice system, and to BC’s civic governance, taxation and Crown land management frameworks. The use of a secure and verifiable credential modernizes the security features of how LTSA identifies individuals and their ownership and thereby strengthens the land title system to the benefit of all British Columbians.
 
 ### 1.10. General Requirements
 
-*Placeholder for general requirements for obtaining and holding the Property Owner Credential.*
-
-**Questions**:
-- What criteria must property owners meet to be eligible for the credential?
-- Are there revocation or renewal requirements for maintaining this credential?
+For the purposes of the proof of concept, credential holders must proceed through the LTSA credential demo for issuance. Other general requirements TBD.
 
 ### 1.11. Revisions
 
-Version 1.0
+Version 0.1 (DRAFT)
 
 ### 1.12. Extensions
 
@@ -95,99 +96,70 @@ No extensions are applicable to this Governance Framework at this time.
 
 ### 1.13. Schedule of Controlled Documents
 
-*Placeholder for any additional controlled documents.*
-
-**Questions**:
-- Are there supporting documents (e.g., compliance guidelines or user agreements) relevant to this framework?
+N/A
 
 ## 2. Controlled Documents
 
 ### 2.1. Glossary
 
-*Placeholder for definitions specific to the LTSA Property Owner Credential.*
+[ToIP Core Glossary](https://trustoverip.github.io/toip/glossary)
 
-**Questions**:
-- Are there terms specific to BC property law or digital credentials that should be defined?
+[Land Title and Survey Act definitions](https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/04066_01#section1)
+
+-	**Credential Holder:** Individual who owns a fee simple interest in land registered on a land title in BC.
 
 ### 2.2. Risk Assessment
 
-*Placeholder for risk assessment related to the Property Owner Credential.*
+(TBD) In accordance with B.C. government procedures and policies, the standard [Privacy Impact Assessment (PIA)](https://www2.gov.bc.ca/gov/content/governments/services-for-government/information-management-technology/privacy/privacy-impact-assessments) and [Security Threat and Risk Assessment (STRA)](https://www2.gov.bc.ca/gov/content/governments/services-for-government/information-management-technology/information-security/security-threat-and-risk-assessment) processes will be completed for the use of this credential technology.
 
-**Questions**:
-- What risks does LTSA anticipate in issuing and managing this credential (e.g., data privacy, legal liability)?
-- Are there risk mitigation strategies LTSA would like to implement?
 
 ### 2.3. Trust Assurance and Certification
 
-*Placeholder for trust assurance standards and certification criteria.*
-
-**Questions**:
-- Are there certification or trust standards that property owners or stakeholders must comply with?
-- How will LTSA ensure ongoing trust and compliance with this credential?
+TBD
 
 ### 2.4. Governance Requirements
 
-This Governance Framework governs the issuance and management of LTSA’s Property Owner Credential.
-
-**Questions**:
-- Are there additional governance requirements LTSA wishes to enforce for credentialing?
+Legislation and regulation governs the registration of land title interests in BC: [Land Title Act](https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/96250_00).
 
 ### 2.5. Business Requirements
 
-*Placeholder for business-related requirements and value propositions.*
-
-**Questions**:
-- What business or operational requirements does LTSA have for this credential?
-- Are there additional use cases beyond property ownership verification for this credential?
+The primary requirement of the LTSA credential is to provide proof of ownership of a property owner to their interests in land in British Columbia.
 
 ### 2.6. Technical Requirements (Credential)
 
-The verifiable credential format will adhere to BC Digital Trust specifications, customized for LTSA.
+The Verifiable Credential format for this credential uses the [AnonCreds specification](https://hyperledger.github.io/anoncreds-spec/).
 
 #### 2.6.1 Schema Definition
 
-__Schema Name:__ property_owner_credential
+__Schema Name:__ ltsa_newcred_credential
 
-__Schema Version:__ 1.0
+__Schema Version:__ 0.1
 
-**Attributes** | **Format** | **Rules** | **Notes**
---- | --- | --- | ---
-owner_id | String | Not NULL | Unique ID for the property owner
-property_address | String | Not NULL | Address of the owned property
-ownership_start_date | Date | Not NULL | Start date of ownership
-ownership_end_date | Date | Not NULL | End date of ownership (if applicable)
-owner_name | String | Not NULL | Name of the property owner
-
-**Questions**:
-- Are there additional attributes that LTSA wants to include in the credential schema?
+**Name** | **Attributes** | **Format** | **Rules** | **Notes**
+--- | --- | --- | --- | ---
+Given Names on Title | givenName | String | Mandatory | N/A
+Last Name on Title | LastNameOrCorpName1 | String | Mandatory | N/A
+Parcel Identifier (PID) | parcelIdentifier | String | Mandatory | N/A
+Street Address | streetAddress | String | Mandatory | N/A
+City | city | String | Mandatory | N/A
+Postal Code | postalCode | String | Mandatory | N/A
+Title Number | titleNumber | String | Mandatory | N/A
+Taxation Authority | authorityName | String | Mandatory | N/A
 
 #### 2.6.2 Credential Implementation
 
 Ledger | SCHEMA DEF | CRED DEF | Notes
 --- | --- | --- | ---
-BCovrin Test | TBD | --- | ---
+CANdy Dev | TBD | --- | ---
 
 ### 2.7. Information Trust Requirements
 
-*Placeholder for LTSA’s information trust policies.*
+The [Freedom of Information and Protection of Privacy Act](https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/96165_00) sets out the access and privacy rights of individuals as they relate to the public sector in British Columbia.
 
-**Questions**:
-- Does LTSA have specific data privacy or storage policies for the credential data?
-- Are there additional transparency or audit requirements?
+### 2.8. Inclusion, Equitability, and Accessibility Requirements
 
-### 2.8. Legal Agreements
+TBD
 
-*Placeholder for legal terms applicable to LTSA and credential holders.*
+### 2.9. Legal Agreements
 
-**Questions**:
-- Are there specific legal agreements LTSA requires credential holders to acknowledge?
-- What limitations of liability or terms of use should be included?
-
----
-
-# Backlog/Comments (Additional Information to Add)
-
-- Detailed revocation process for the Property Owner Credential
-- Multi-property ownership scenarios
-- Requirements for credential updates and schema modifications
-
+TBD
