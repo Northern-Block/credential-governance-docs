@@ -150,7 +150,7 @@ Taxation Authority | authorityName | String | Mandatory | N/A
 
 Ledger | SCHEMA DEF | CRED DEF | Notes
 --- | --- | --- | ---
-CANdy Dev | TBA | --- | ---
+CANdy Dev | ltsa_newcred_credential | Newcred_Credential | [Candyscan](https://candyscan.idlab.org/tx/CANDY_DEV/domain/35671)
 
 #### 2.6.3 OCA Bundle
 The OCA bundle for this credential is located in the [BC Gov Aries OCA Bundles repository](https://bcgov.github.io/aries-oca-bundles/OCABundles/schema/bcgov-digital-trust/LTSA/NewCredCredential/demo/).
