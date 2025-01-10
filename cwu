@@ -1,0 +1,299 @@
+**
+
+# 1. Development Design Plan and Overview of Proposed Product (40 points)
+
+## Showcase Builder Tool
+
+Our proposed solution for the Interactive Showcase Builder is designed to deliver a scalable, extensible, and user-friendly tool that meets BC Gov’s digital credentialing needs. Below is an overview of key components and planned enhancements:
+
+#### Core Development Components
+
+- Persona-driven scenario builder with a clean, intuitive UI.
+    
+- Multi-tenancy support to allow configurable user roles (e.g., admin, editor) and flexible deployment options where only authorized users can edit shared scenarios.
+    
+- Multi-language support through internationalization, enabling the demo to work in French and a variety of Indigenous languages, fostering greater accessibility for diverse communities across British Columbia.
+    
+
+#### Key Enhancements and Design Approach
+
+1. Initial Design and Architecture
+    
+
+A Solutions Architect will create a comprehensive design document outlining the architecture, APIs/interfaces, components, tasks, and deliverables. This document will serve as the foundation for development and will incorporate feedback from the CDT team to ensure alignment with their needs.
+
+2. Internationalization and Refactoring
+    
+
+Early development will focus on adding type/schema support for scenarios and configurations, implementing internationalization, and refactoring the codebase to improve maintainability and extensibility. Additionally, logging support will be added to ensure administrators can effectively monitor usage and activity.
+
+3. Data Persistence and Model Enhancements
+    
+
+- We will add an interface/schema layer to the scenarios and configurations, ensuring data consistency and preventing errors in both the UI and API usage. This schema layer will also enable more dynamic form generation for future enhancements.
+    
+- Enhancements to the existing data model will be made to support seamless scenario creation, storage, and real-time sharing between the builder and demo wallet.
+    
+- The builder will support both JSON export/import for offline use and a shared database option for live synchronization of scenarios. This approach ensures flexibility for deployments that require either temporary or persistent storage.
+    
+
+  
+
+4. Authentication, Authorization, and Showcase Editing
+    
+
+A generic OIDC integration will be developed, starting with Keycloak, to handle authentication and authorization. The solution will support multi-tenant environments with configurable roles (e.g., admin, editor) to manage access control for editing scenarios. This will enable authenticated users to select, edit, and modify existing showcases, supporting continuous updates and customization. Additionally, deployments can be configured so that only specific roles, such as administrators, are authorized to edit shared showcases, making it flexible for both private and public hosting scenarios.
+
+5. Integration with Traction and BC-Wallet Demo
+    
+
+The Traction API will be integrated, and modifications will be made to the BC-Wallet demo to allow seamless interaction with the builder. We will extend APIs to support importing/exporting configurations, ensuring interoperability and ease of use for stakeholders.
+
+6. DevOps and Deployment
+    
+
+Our DevOps team will set up CI/CD pipelines using GitHub Actions, prepare configurations for OpenShift/Kubernetes, and collaborate closely with CDT to ensure the deployment strategy meets BC Gov’s requirements. This includes creating deployment images and container configurations, with a focus on DTAP (Development, Testing, Acceptance, Production) environments.
+
+7. UI/UX Enhancements
+    
+
+A UI/UX designer will work closely with CDT to improve the design of the builder, ensure usability, and address any missing screens or components. Our approach to UX involves understanding user journeys and aligning the design with ecosystem-wide processes to ensure consistency across issuers, verifiers, and relying parties.
+
+## Deployment Strategy
+
+- Deployment on BC Gov’s Private Cloud OpenShift platform using GitHub Actions-based CI/CD pipelines for automated deployment.
+    
+- High availability, resiliency, and monitoring achieved through GitOps practices and tools like ArgoCD, Prometheus, and Grafana.
+    
+
+## Optional Enhancements (for future discussion with CDT):
+
+We believe that some of these enhancements may be achievable within the initial scope of the project, but they should be further discussed and prioritized in collaboration with CDT to ensure alignment with project goals.
+
+- Demo Analytics and Showcase Tracking:
+    
+
+- Log demo interactions for review and troubleshooting.
+    
+- Track showcase transactions: Provide feedback to showcase creators by tracking how their demos are being used by users. This feedback loop could help creators refine and improve their scenarios over time.
+    
+- User tracking and dashboards: Allow administrators to track which user is creating which showcase and offer a personalized dashboard where users can view and manage their built showcases.
+    
+- Notifications for demo issues: Notify showcase creators if there are any issues with their published demos, helping ensure a smooth demo experience for end users.
+    
+
+- Interoperability: Future-proof the builder by supporting compatibility with other credential ecosystems beyond Traction, expanding its potential use cases across different jurisdictions and technical stacks.
+    
+- Admin Personas and Flows: Introduce admin personas to represent the perspective of organizations or administrators issuing and managing credentials. This enhancement could include key administrative features such as credential revocation, which would add significant value by demonstrating how credential management works from an operational standpoint. Unlike the current citizen-centric focus, this would provide a more holistic view of the credentialing ecosystem.
+    
+
+## Assumptions
+
+- CDT will provide access to existing repositories and APIs.
+    
+- CDT will have resources available for discussing plans, architecture and also managing the infrastructure. 4Sure creates the (dev)ops code, but does not perform the actual deployments
+    
+- Optional enhancements, such as demo analytics and interoperability, will be prioritized in collaboration with CDT.
+
+**
+
+# 2. Previous Contributions to Open Standards and Open-Source Community (10 points)
+
+4sure Technology Solutions has consistently contributed to the advancement of open standards and open-source initiatives in decentralized identity. Our key contributions include:
+
+- BC Wallet Test Scripts:
+    
+
+- We recently contributed test scenarios to the BC Wallet test suite, ensuring that critical credential flows are fully supported. This work was done in collaboration with the BC Gov wallet team to help validate and improve the wallet’s capabilities. We also plan to extend these test scenarios to Traction, ensuring that demo scenarios created by the showcase builder are rigorously tested and reliable.
+    
+
+- Major contributions to Hyperledger Aries projects:
+    
+
+- Aries Cloud Agent Python (ACA-Py): We integrated Akrida, a performance testing framework, into ACA-Py, helping to evaluate and improve the scalability of decentralized identity solutions.
+    
+- Credo, formerly Aries Framework JavaScript (AFJ): This framework incorporates key features such as Presentation Exchange and SIOPv2, both developed and maintained by our team to enable interoperable and scalable credential exchange. Contributions from our collaboration with Ontario Digital Services (ODS) were integrated into Credo, further enhancing its real-world applicability in government digital services.
+    
+
+- Active participation in global initiatives:
+    
+
+- Trust over IP Foundation (ToIP):
+    
+
+- Actively involved in the Trust Registry Task Force, contributing to the development of the Trust Registry Query Protocol v2.
+    
+- Currently part of the High-Assurance Verifiable Identifiers (VID) Task Force, focused on advancing high-assurance digital identity solutions.
+    
+- We have also utilized ToIP’s Governance Metamodel Toolkit to help customers develop governance documentation for their ecosystems.
+    
+
+- Decentralized Identity Foundation (DIF): Multiple contributions, including work on key specifications and the Veramo project.
+    
+- OpenID Foundation: Contributions to key specifications such as OpenID4VC, SIOPv2, OpenID Federation, ensuring compatibility with decentralized identity ecosystems.
+    
+- IETF: We contributed to the development of high-assurance DID specifications adopted by the U.S. Department of Homeland Security (DHS) for use in critical applications, including travel and immigration documents.
+    
+
+- Continued involvement in Canadian standards:  
+    We are active members of DIACC and the CIO Strategy Council, helping shape national standards for digital identity.
+    
+- Extensive open-source portfolio:  
+    Across our 100+ GitHub repositories, we maintain best practices for open-source development, including CI/CD automation, interoperability, and reusable modules that serve the broader decentralized identity community. We remain committed to contributing to open standards and open-source technologies to ensure global interoperability and trust in digital identity solutions.
+    
+
+# 3. Prior Experience with Key Technologies (20 points)
+
+Web Technologies
+
+Our team has extensive experience building full-stack web applications using TypeScript, JavaScript, CSS, and HTML, with a strong focus on accessibility and user-centric design. We have developed numerous web applications that leverage credential exchange and trust establishment infrastructures. Notable examples include:
+
+- The Orbit Enterprise platform, which includes a cloud wallet and a fully customizable white-label UI built on top of our enterprise credentialing API layer for digital credential issuance, verification, and management.
+    
+- Custom-built applications with user interfaces that interact with Traction, support OCA bundles, and render multiple credential formats into a UI. 
+    
+- Our web development capabilities were demonstrated with customers such as the Government of Nova Scotia, the Mining Association of Canada and the Energy and Mines Digital Trust project.
+    
+- For the International Air Transport Association (IATA), we developed a full end-to-end web application, adhering to their style guides and incorporating their web wallet requirements. This application seamlessly integrated with their ecosystem, delivering a complete solution that met their high standards.
+    
+
+OIDC and Keycloak
+
+We bring over a decade of experience in implementing OAuth2/OpenID Connect (OIDC)-based authentication and authorization integrations. Our work includes:
+
+- Keycloak: Extensive integration experience, custom plugin development, and configuration for decentralized identity ecosystems.
+    
+- Other IAM solutions: Proven integration capabilities with platforms such as Azure Entra, WSO2, and AWS Cognito, demonstrating our versatility in handling diverse IAM environments.
+    
+- Our deep understanding of OID4VC and OAuth specifications, combined with maintaining OIDC libraries, ensures seamless interoperability and robust security in our solutions.
+    
+
+Hyperledger Aries
+
+We have been working with Hyperledger Aries since 2019, accumulating deep expertise in decentralized identity protocols. Our team has contributed extensively to the open-source Aries ecosystem, delivered successful implementations for government and private sector clients, and incorporated Aries-based agent implementations into our enterprise offerings and mobile wallet solutions. We have a comprehensive understanding of key RFCs and have integrated many of them into our solutions. Additionally, we successfully migrated from AIP 1.0 to AIP 2.0, ensuring compatibility with evolving implementations. We also have client experience implementing wallets and agents with CANdy dev and CANdy test.
+
+UI/UX Design
+
+Our UI/UX design process goes beyond technical implementation, focusing on delivering solutions that meet real user needs while being grounded in a deep understanding of the underlying technologies. This unique blend of technical and design expertise enables us to create solutions that are not only user-friendly but also aligned with real-world processes and workflows.
+
+We engage in comprehensive user experience (UX) activities, including:
+
+- Understanding desired business processes to ensure that the solution aligns with organizational goals.
+    
+- Journey mapping and process mapping to visualize user flows and interactions, ensuring seamless and intuitive user experiences.
+    
+- User research to gather insights directly from end users, driving designs that are both functional and user-centric.
+    
+
+Our deep engagement with both sides of digital trust ecosystems—issuers and verifiers—enables us to incorporate their perspectives into the UX design, ensuring that common user experiences across the ecosystem are intuitive, consistent, and aligned with shared processes. These UX efforts are executed in an agile, iterative manner, enabling us to refine and improve the user experience continuously based on stakeholder feedback. Our process includes wireframing, prototyping, and usability testing, ensuring that the final product meets high accessibility standards and provides a frictionless experience.
+
+Given the size and scope of this project, we will conduct many of these activities early on to establish a strong foundation, but they will remain ongoing, continuously evolving processes as we maintain and grow the tool beyond the initial delivery.
+
+We have successfully delivered web applications that adhere to public sector standards and provide exceptional user experiences for organizations such as the Land Title & Survey Authority of BC, the Mining Association of Canada, the Energy and Mines Digital Trust project, and the International Air Transport Association (IATA).
+
+# 4. Experience in GitHub Actions or Similar Automation Tools (10 points)
+
+Our team has extensive experience implementing automated workflows using GitHub Actions, managing over 150 repositories with CI/CD pipelines.
+
+Key workflows include:
+
+- Automated tests, including unit, integration and quantitative code analysis
+    
+- Automated builds and repository publishing for Javascript/Typescript and npmjs/nexus, Java/Kotling and maven/gradle
+    
+- Building of docker containers and kubernetes pods including helm charts
+    
+- Testing with docker containers
+    
+- Deployment of decentralized identity agents and other software in AWS/Azure
+    
+- Security scanning, integration testing, and infrastructure deployment using tools like Terraform.
+    
+
+# 5. Experience with OpenShift (10 points)
+
+Our DevOps team has extensive experience architecting, deploying, and managing production-grade OpenShift environments for government and enterprise clients. Specifically, we have:
+
+- Architected OpenShift solutions on AWS using GitOps practices with tools like Helm and ArgoCD, ensuring automated and consistent deployments.
+    
+- Implemented robust monitoring, scaling, and security solutions using Prometheus, Grafana, and best practices for high availability and resource optimization.
+    
+- Demonstrated expertise in Kubernetes-based multi-cluster management, ensuring seamless OpenShift deployments across various environments.
+    
+- Successfully delivered OpenShift deployments for the Government of Quebec, including custom controller development, Aries Cloud Agent deployments, and secure CI/CD pipelines.
+    
+- Established a strong foundation in infrastructure as code (IaC) using Terraform, creating reusable, modular infrastructure components for OpenShift environments across multiple cloud providers.
+    
+- Developed and maintained efficient CI/CD pipelines using GitHub Actions, incorporating automated testing, security scans, and compliance checks to support rapid, reliable deployments.
+    
+
+# 6. Proposed Timeline (10 points)
+
+Our proposed timeline consists of five 2-week sprints, each focusing on key milestones to ensure timely delivery and continuous iteration. Below is a brief overview of the planned phases:
+
+- Sprint 1: Initial design and architecture planning, core development of the builder tool, internationalization, schema/interface extraction, and codebase refactoring.
+    
+- Sprint 2: Database integration, import/export functionality, Keycloak and generic OIDC integration, and UI/UX design changes and improvements.
+    
+- Sprint 3: Integration with Traction, updates to the BC-Wallet demo, continued UI/UX changes, and initial DevOps work (GitHub Actions, OpenShift/Kubernetes preparation).
+    
+- Sprint 4: Final integration with Traction and BC-Wallet demo, UI/UX changes, OpenShift deployment, and initial testing.
+    
+- Sprint 5: Final functional testing, user acceptance, documentation, and production deployment.
+    
+
+March 31, 2025: Final delivery, with potential early completion by March 15, 2025.
+
+## Detailed Breakdown
+
+Sprint 1 (Weeks 1-2): Initial Design and Core Development
+
+- Initial design and architecture: A comprehensive design document will be created by the Solutions Architect, incorporating CDT’s feedback to ensure alignment.
+    
+- Core development: Developers will begin working on foundational enhancements, including schema extraction, internationalization, and codebase refactoring for maintainability and extensibility.
+    
+- Logging and early testing: Logging support will be added for better monitoring, and initial GitHub Actions workflows will be created for automated testing and builds.
+    
+
+Sprint 2 (Weeks 3-4): Database Integration, OIDC Authentication, and UI/UX Design
+
+- Database integration and import/export functionality: Flexible options for both local export/import and persistent storage will be developed.
+    
+- OIDC authentication and authorization: Integration with Keycloak will be implemented, supporting multi-tenant environments and configurable roles for access control.
+    
+- UI/UX design changes and improvements: The UI/UX designer will collaborate closely with CDT to improve the design and address missing screens or components.
+    
+
+Sprint 3 (Weeks 5-6): Traction and BC-Wallet Integration, Continued UI/UX Development
+
+- Traction API integration: The Traction API will be integrated, and any necessary extensions will be made to support importing/exporting scenarios.
+    
+- BC-Wallet demo updates: Modifications to the BC-Wallet demo will be made to align it with the builder’s capabilities.
+    
+- UI/UX adjustments: Feedback from previous sprints will be incorporated, with final adjustments made to the UI/UX design.
+    
+- DevOps work: Initial work on deployment scripts, images, and container configurations will begin, with close collaboration with CDT to ensure alignment with BC Gov’s deployment requirements.
+    
+
+Sprint 4 (Weeks 7-8): Deployment Preparation and Functional Testing
+
+- Finalizing database integration and API extensions: Any remaining work on the database integration and REST API will be completed and tested.
+    
+- DevOps deployment integration: CI/CD pipelines and OpenShift deployment configurations will be finalized.
+    
+- Functional testing: Initial functional testing will be conducted, and any issues will be logged and addressed.
+    
+
+Sprint 5 (Weeks 9-10): Final Testing, User Acceptance, and Production
+
+- Final functional and acceptance testing: Comprehensive testing will be performed, and user acceptance testing will be conducted with CDT. Findings will be documented and addressed promptly.
+    
+- Documentation: Final documentation for administrators, developers, and end users will be completed.
+    
+- Production deployment: After successful acceptance, the solution will be deployed to production, ready for use by CDT and stakeholders.
+    
+
+**
+    
+
+**
