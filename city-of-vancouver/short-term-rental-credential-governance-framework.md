@@ -1,11 +1,11 @@
 
-# Short-term Business Rental Credential Governance Framework (Primary Document)
+# City of Vancouver Business License Credential (Short-Term Rental Focus)
 
 ## 1. Primary Document
 
 ### 1.1. Introduction
 
-This document articulates the Governance Framework (GF) for the [City of Vancouver](https://vancouver.ca/)’s **Short-Term Rental Business License Digital Credential**, part of Vancouver's broader commitment to transparent and efficient regulation of long-term rental properties.
+This framework supports the issuance of a digital credential representing a valid business license issued by the City of Vancouver, starting with short-term rental licenses. While this implementation targets short-term rentals, it is the first phase in a broader journey to digitize all business license types (e.g., long-term rentals, out-of-town businesses). The initiative is designed to enhance municipal service delivery and promote standards for municipal interoperability across BC.
 
 **_Acknowledgements:_** The development of this documentation follows the governance framework created by the [Trust over IP Foundation (ToIP)](https://trustoverip.org/), specifically the [Governance Metamodel Specification](https://trustoverip.org/wp-content/uploads/ToIP-Governance-Metamodel-Specification-V1.0-2022-12-21.pdf) created by the [Governance Stack Working Group (GSWG)](https://wiki.trustoverip.org/display/HOME/Governance+Stack+Working+Group).
 
@@ -35,55 +35,61 @@ The standard language for this governing framework (GF) is English.
 
 ### 1.4. Governing Authority
 
-*Placeholder for City of Vancouver’s designated governing authority.*
+City of Vancouver Contact: 
+- Name: Sarah Hicks
+- Role: Chief License Officer, Business Licenses Division
+- Contact: sarah.hicks@vancouver.ca
 
-**Questions**:
-- Who will be the governing authority responsible for overseeing the digital credential?
-- What is the contact information for the governing body within the City of Vancouver?
+In future iterations, governance may evolve into a province-wide municipal steering committee, but for the proof-of-concept phase, the City of Vancouver holds governing responsibility.
 
 ### 1.5. Administering Authority
 
-[Northern Block (NB)](https://northernblock.io/) is the Administering Authority on behalf of the City of Vancouver during the pilot phase.
+City of Vancouver Contact:
+- Name: René Cravioto
+- Role: Digital Services
+- Contact: rene.cravioto@vancouver.ca
+
+Responsible for day-to-day technical administration and support of the credentialing process, including implementation and technical oversight.
 
 ### 1.6. Purpose
 
-*Placeholder for specific purpose related to the long-term rental credential.*
-
-**Questions**:
-- What primary goal does the City of Vancouver aim to achieve with the long-term rental business license credential?
-- What are the anticipated benefits for rental operators, the city, and residents?
+To enable real-time digital service delivery while improving governance and reducing manual friction for verifying business license status. This allows for faster turnarounds, lower compliance costs, and the reuse of due diligence already performed by the City during the licensing process.
 
 ### 1.7. Scope
 
-*Placeholder for the scope specific to the long-term rental business license credential.*
-
-**Questions**:
-- Will the credential apply to all long-term rental operators within Vancouver?
-- Are there specific exemptions or limitations that need to be included?
+This governance framework applies to short-term rental business licenses issued within the City of Vancouver. Credential issuance will occur at application or renewal stages. While currently scoped to Vancouver, the design is meant to support eventual province-wide adoption through schema standardization.
 
 ### 1.8. Objectives
 
-*Placeholder for Vancouver-specific objectives related to credential use.*
+- Enable residents and businesses to access services in real time by providing verifiable credentials in the BC Wallet.
 
-**Questions**:
-- What are the long-term and long-term objectives of issuing this credential?
-- Are there specific compliance or regulatory goals associated with the credential?
+- Improve governance for municipal and private sector stakeholders (e.g., Airbnb) without adding manual processes.
+
+- Facilitate schema and credential standardization across BC municipalities.
+
+- Enable reuse of due diligence efforts across jurisdictions and levels of government.
 
 ### 1.9. Principles
 
-*Placeholder for principles guiding Vancouver's approach to long-term rental credentialing.*
+- Data control remains with the credential holder, who chooses where and when to share their credential.
 
-**Questions**:
-- What guiding principles does the city want to reflect (e.g., transparency, data security, compliance)?
-- Are there principles unique to Vancouver’s local context to incorporate?
+- Municipalities only issue credentials related to their governance mandate (e.g., business licenses, not personal identity).
+
+- Flexibility to add optional fields while maintaining standard core schema.
+
+- Alignment with open standards to ensure interoperability regardless of technology stack.
+
+- Support for designated representatives (e.g., admins) to receive credentials for a business.
 
 ### 1.10. General Requirements
 
-*Placeholder for baseline requirements for obtaining and maintaining the credential.*
+- Applicants must possess a BC Person Credential to be eligible.
 
-**Questions**:
-- What criteria must be met by operators to receive and retain the credential?
-- Are there specific requirements for credential renewal or revocation?
+- Optional: use of digital business card (DBC) as additional foundational credential in the future.
+
+- Only valid license holders or designated business representatives may receive credentials.
+
+- Credentials include expiry (Dec 31 of the license year) and are only revoked if the license is withdrawn or invalidated.
 
 ### 1.11. Revisions
 
@@ -95,58 +101,43 @@ There are no extensions to this Governance Framework at this time.
 
 ### 1.13. Schedule of Controlled Documents
 
-*Placeholder for a list of controlled documents related to this framework.*
-
-**Questions**:
-- Are there any supplementary documents required to support this framework (e.g., code of conduct, user guide)?
+N/A
 
 ## 2. Controlled Documents
 
 ### 2.1. Glossary
 
-*Placeholder for terms relevant to Vancouver’s credential use case.*
-
-**Questions**:
-- Are there specific terms unique to the long-term rental industry in Vancouver that should be defined here?
+N/A
 
 ### 2.2. Risk Assessment
 
-*Placeholder for risk considerations.*
-
-**Questions**:
-- What risks does Vancouver foresee in issuing these digital credentials (e.g., data privacy, potential misuse)?
-- Are there specific risk mitigation strategies Vancouver would like to prioritize?
+In accordance with B.C. government procedures and policies, the standard [Privacy Impact Assessment (PIA)](https://www2.gov.bc.ca/gov/content/governments/services-for-government/information-management-technology/privacy/privacy-impact-assessments) and [Security Threat and Risk Assessment (STRA)](https://www2.gov.bc.ca/gov/content/governments/services-for-government/information-management-technology/information-security/security-threat-and-risk-assessment) processes will be completed for the use of this credential technology.
 
 ### 2.3. Trust Assurance and Certification
 
-*Placeholder for trust assurance and certification details.*
-
-**Questions**:
-- Will there be certification or accreditation standards that operators must comply with?
-- How does Vancouver plan to ensure trust in the credentialing process?
+N/A
 
 ### 2.4. Governance Requirements
 
-The Long-Term Rental Business License Digital Credential is governed by this framework.
-
-**Questions**:
-- Are there additional governance requirements or standards Vancouver wants to enforce?
+The [City of Vancouver Business License Bylaw](https://vancouver.ca/your-government/licence-bylaw.aspx) governs all licensing rules, criteria, and conditions for compliance.
 
 ### 2.5. Business Requirements
 
-*Placeholder for business-related requirements and use cases.*
+- Represent valid business licenses issued by the City.
 
-**Questions**:
-- What specific business or operational needs will this credential address?
-- Are there any ancillary use cases for this credential beyond licensing?
+- Support both applicant and renewal processes.
+
+- Enable multiple authorized representatives to receive credentials for the same business.
+
+- Allow other jurisdictions or systems to verify the license status digitally.
 
 ### 2.6. Technical Requirements (Credential)
 
-The verifiable credential format for this project will be based on Vancouver’s specifications.
+The Verifiable Credential format for this credential uses the [AnonCreds specification](https://hyperledger.github.io/anoncreds-spec/).
 
 #### 2.6.1 Schema Definition
 
-__Schema Name:__ long_term_rental_license
+__Schema Name:__ bc_municipality_business_license
 
 __Schema Version:__ 1.0
 
@@ -159,8 +150,8 @@ license_validity_end | Date | Not NULL | Expiry date of license
 operator_name | String | Not NULL | Name of the rental operator
 operator_id | String | Not NULL | Operator's unique ID
 
-**Questions**:
-- Are there additional attributes or details Vancouver wants to include in the schema?
+**Note**:
+- Credential schema to be updated
 
 #### 2.6.2 Credential Implementation
 
@@ -168,26 +159,14 @@ Ledger | SCHEMA DEF | CRED DEF | Notes
 --- | --- | --- | ---
 BCovrin Test | TBD | --- | ---
 
+#### 2.6.3 OCA Bundle
+
+TBA
+
 ### 2.7. Information Trust Requirements
 
-*Placeholder for any information trust requirements.*
-
-**Questions**:
-- Does Vancouver have specific privacy policies or data storage requirements?
-- Are there additional transparency or audit requirements for credential data?
+The [Freedom of Information and Protection of Privacy Act](https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/96165_00) sets out the access and privacy rights of individuals as they relate to the public sector in British Columbia.
 
 ### 2.8. Legal Agreements
 
-*Placeholder for legal terms.*
-
-**Questions**:
-- Will Vancouver require users to agree to any specific terms of service or legal agreements?
-- Are there specific liability terms that should be covered?
-
----
-
-# Backlog/Comments (Additional Information to Add)
-
-- How the revocation process will work
-- Managing multiple rentals per operator, if applicable
-- Updated schema if multiple properties are registered by a single operator
+N/A
