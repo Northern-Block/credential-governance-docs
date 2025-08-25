@@ -2,9 +2,9 @@
 
 ## About this Document
 
-This document describes the Municipal Property Rental Business Licence verifiable credential to help potential verifiers determine whether it is suitable for their needs. The intended audience includes policy analysts, privacy specialists, solution architects, developers, and data architects.
+This document describes the **Municipal Property Rental Business Licence** verifiable credential to help potential verifiers determine whether it is suitable for their needs. The intended audience includes policy analysts, privacy specialists, solution architects, developers, and data architects.
 
-The credential is issued by the City of Vancouver, Business Licenses Division, and represents a valid municipal business licence for operating rental properties, initially covering short-term rental (STR) and long-term rental (LTR) business licence types.
+The credential is issued by the **City of Vancouver, Business Licenses Division**, and represents a valid municipal business licence for operating rental properties, initially covering short-term rental (STR) and long-term rental (LTR) business licence types.
 
 ### Version History
 
@@ -210,540 +210,696 @@ The credential enables the holder to prove, in real time, that they are licensed
 
 ### Attributes
 
-The attributes of the DBC credential are organized by topic and described below.
+The attributes of the Municipal Property Rental Business Licence credential are organized by topic and described below.
 
-#### Attributes about the Credential
+---
 
-*Credential ID*
+#### Attributes about the Licence
+
+*Business Licence Type*
 
 <table>
   <tr>
     <th>Attribute</th>
-    <td><code>credential_id</code></td>
+    <td><code>business_licence_type</code></td>
   </tr>
   <tr>
     <th>Description</th>
-    <td>A unique identifier assigned by BC Registries that is specific to the relationship between the individual and the business.<br></br>
-    This is intended to aid verifiers when the name of the individual and/or the business changes.</td>
+    <td>The category of licence issued by the City of Vancouver (e.g., Short-Term Rental, Long-Term Rental).</td>
   </tr>
   <tr>
     <th>Source</th>
-    <td>BC Registries system, created when a credential is first issued to the individual for the business.</td>
+    <td>City of Vancouver Business Licence System (AMANDA).</td>
   </tr>
   <tr>
     <th>Data Type</th>
     <td>String</td>
-  </tr>
-  <tr>
-    <th>Format</th>
-    <td><ul><li>8 digits, padded left with zeros</li></ul></td>
-  </tr>
-  <tr>
-    <th>Rules</th>
-    <td>
-        <ul>
-            <li>Never blank</li>
-            <li>When a different credential is issued to the same individual for the same organization, the value of the Credential ID will be the same in both credentials unless BC Registries cannot confirm it is the same individual.</li>
-        </ul>
-    </td>
   </tr>
   <tr>
     <th>Examples</th>
-    <td><code>00000001</code><br></br><code>00012345</code></td>
-  </tr>
-  <tr>
-    <th>Notes</th>
-    <td>
-        <ul>
-            <li>This attribute is intended to aid verifiers when they transact with:</li>
-                <ul>
-                    <li>Multiple individuals affiliated with a single business</li>
-                    <li>Single individuals who represent multiple businesses</li>
-                    <li>Individuals who have changed their name</li>
-                </ul>
-        </ul>
-    </td>
+    <td><code>Short-Term Rental</code><br></br><code>Long-Term Rental</code></td>
   </tr>
 </table>
 
-### Attributes about the Individual
-
-The DBC credential includes the business contact name for the individual, as well as their role with the business, if any has been filed with BC Registries.
-
-The DBC credential gets the values for its name attribute from the BC Services Card Program, which obtains them from the individual’s Canadian foundational identity documents. Due to limitations in the source systems of the BC Services Card program partners, some individual’s names – in the BC Services Card and by extension the DBC credential – will not match what is on their foundational identity documents in the following cases:
-
-- If an individual's name has a special character (e.g., Á, Ê, Ç) or a number in their name on their foundational identity document, it will not be reflected in the name attributes of the Person credential
-- The name in the Person credential will normally reflect the name on foundational identity documents, but those documents may not reflect the individual’s name. For example:
-  - Some names have special characters that BC Vital Statistics will not accept and print on a birth certificate
-  - Immigration, Refugees and Citizenship Canada (IRCC) will truncate an individual’s name (the combined given names and family name) at 45 characters on IIRC foundational identity documents (e.g., permanent resident card and the student, work, visitor, and temporary-resident permits)
-- An individual may use the last name of their spouse without getting a legal name change. In these cases, their Person credential should reflect their foundational identity documents, as individuals are required by law to update their BC Services Card when they change their name by marriage or otherwise. Individuals who do this may continue to use their original name in other contexts, and so their Person credential may not be consistent with their other identity documents or credentials bearing their name
-
-Note that the Person credential gets the values for its name attribute values from the BC Services Card and so has the same data limitations as the BC Services Card.
-
-#### Given Names
+*Business Sub-Type*
 
 <table>
   <tr>
     <th>Attribute</th>
-    <td><code>given_names</code></td>
+    <td><code>business_sub_type</code></td>
   </tr>
   <tr>
     <th>Description</th>
-    <td>The individual's documented given names (first and middle) recorded from valid identification.</td>
+    <td>A sub-classification of the licence type, reflecting specific business activity.</td>
   </tr>
   <tr>
     <th>Source</th>
-    <td>The individual’s Registries Account name attributes, which come from the individual’s BC Services Card digital identity.</td>
+    <td>AMANDA.</td>
   </tr>
   <tr>
     <th>Data Type</th>
     <td>String</td>
-  </tr>
-  <tr>
-    <th>Format</th>
-    <td>
-        <ul>
-            <li>Maximum 47 characters</li>
-            <li>Always upper case</li>
-            <li>Consists of three names, a first name and up to two middle names, delimited by spaces</li>
-            <ul><li>Each name may be up to 15 characters long</li></ul>
-            <li>The only characters allowed are the letters A through Z and the following "special characters": hyphen, apostrophe, period, and space</li>
-        </ul>
-    </td>
-  </tr>
-  <tr>
-    <th>Rules</th>
-    <td>
-        <ul>
-            <li>May be blank</li>
-            <li>First and middle names over 15 characters are truncated</li>
-            <li>If the individual has a mononym this attribute will <i>normally</i> have no value and the mononym will appear in the family_name attribute</li>
-        </ul>
-    </td>
-  </tr>
-  <tr>
-    <th>Notes</th>
-    <td>
-        <ul>
-            <li>Names can start with special characters</li>
-            <li>First Names and Middle Names with spaces or punctuation (e.g., “JO ANNE”, “JIAN U”, “D’ARCY”) will have the spaces and punctuation removed (e.g., “JOANNE”, “JIANU”, “DARCY”)</li>
-            <li>To work around the removal of spaces, described above, a first name with a space (e.g. “JO ANNE”) may be entered as a first name and a middle name (e.g., “JO ANNE” is entered as “JO” and “ANNE”). This will appear as “JO ANNE” in the given_names attribute, which is indistinguishable from an individual whose first name is “JO” and whose middle name is “ANNE”. Similarly, a middle name with a space (e.g., “MARY LOU”) may be entered as two middle names (e.g., “MARY” and “LOU”). As such, spaces in the given_names attribute are not a reliable delimiter between names</li>
-            <li>Some legacy records have only an initial for a middle name (e.g., "J" for "James")</li>
-            <li>A mononym may be duplicated in this attribute and the family_name unless it has a space in it, in which case the first part may be recorded in this attribute and the second part in the family_name attribute</li>
-        </ul>
-    </td>
-  </tr>
-</table>
-
-
-#### Family Name
-
-<table>
-  <tr>
-    <th>Attribute</th>
-    <td><code>family_name</code></td>
-  </tr>
-  <tr>
-    <th>Description</th>
-    <td>The individual's documented family name (i.e. surname) recorded from valid identification.</td>
-  </tr>
-  <tr>
-    <th>Source</th>
-    <td>The individual’s Registries Account name attributes, which come from the individual’s BC Services Card digital identity.</td>
-  </tr>
-  <tr>
-    <th>Data Type</th>
-    <td>String</td>
-  </tr>
-  <tr>
-    <th>Format</th>
-    <td>
-        <ul>
-            <li>Maximum 35 characters</li>
-        </ul>
-    </td>
-  </tr>
-  <tr>
-    <th>Rules</th>
-    <td>
-        <ul>
-            <li>Never blank</li>
-            <li>Always upper case</li>
-            <li>Family names over 35 characters are truncated</li>
-            <li>The only characters allowed are the letters A through Z and the following "special characters": hyphen, apostrophe, period, and space</li>
-        </ul>
-    </td>
-  </tr>
-  <tr>
-    <th>Notes</th>
-    <td>
-        <ul>
-            <li>Last Names with spaces or punctuation (e.g., “St. John”, “O’Brian”, “van Cleef”, “Scott-Bigsby”) will have the spaces and punctuation included if the individual has a photo BC Services Card but removed if the individual has a non-photo BC Services Card</li>
-            <li>A mononym may be duplicated in this attribute and the family_name unless it has a space in it, in which case the first part may be recorded in this attribute and the second part in the family_name attribute</li>
-        </ul>
-    </td>
-  </tr>
-</table>
-
-#### Role
-
-<table>
-  <tr>
-    <th>Attribute</th>
-    <td>role</td>
-  </tr>
-  <tr>
-    <th>Description</th>
-    <td>
-        The person's role(s) with the business, if any. <br></br>
-        Roles are limited to those tracked by BC Registries, and do not normally correspond to job titles.
-    </td>
-  </tr>
-  <tr>
-    <th>Source</th>
-    <td>
-        Currently a business filing, either from when an individual sets up the entity or a subsequent filing, creates the record of the invidual's role.
-        The relationship between the individual being issued the credential and their role is determined at issuance by matching the name of the individual to that in the filing and either:
-        <ul>
-            <li>Confirming in the system that the individual was the person who registered the entity</li>
-            <li>Having the individual self-attest that they are the individual with the matching role</li>
-        </ul>
-    </td>
-  </tr>
-  <tr>
-    <th>Data Type</th>
-    <td>String</td>
-  </tr>
-  <tr>
-    <th>Format</th>
-    <td>
-        <ul>
-            <li>Maximum 30 characters</li>
-        </ul>
-    </td>
-  </tr>
-  <tr>
-    <th>Rules</th>
-    <td>
-        <ul>
-            <li>Roles are limited to those defined by BC Registries (and/or its governing legislation) and by the Business Type. (For clarity, this will not include the person's role within or in relation to the organization, e.g., CEO, Accountant.)</li>
-            <li>Allowable values (currently) are:</li>
-            <ul>
-                <li>Proprietor</li>
-                <li>Partner</li>
-                <li>Director</li>
-                <li><em>blank</em>, indicating that the individual does not have any of the other roles, or if their role(s) cannot be confidently determined by BC Registries</li>
-            </ul>
-            <li>In future, allowable values may include:</li>
-            <ul>
-                <li>Incorporator</li>
-            </ul>
-            <li>An individual who is an Incorporator may have another role. In future, multiple roles will be separated by commas</li>
-        </ul>
-    </td>
   </tr>
   <tr>
     <th>Examples</th>
-    <td><code>Partner</code><br></br><code>Proprietor</code><br></br><code>Incorporator, Proprietor</code></td>
+    <td><code>Bed & Breakfast</code><br></br><code>Apartment Rental</code></td>
   </tr>
 </table>
 
-### Attributes about the Business
-
-#### Identifier
+*Licence Number*
 
 <table>
   <tr>
     <th>Attribute</th>
-    <td><code>identifier</code></td>
+    <td><code>licence_number</code></td>
   </tr>
   <tr>
     <th>Description</th>
-    <td>A unique and permanent identifier that BC Registries creates and assigns to the business at the time the business is incorporated or registered with BC Registries.</td>
+    <td>A unique number assigned to each business licence by the City of Vancouver.</td>
   </tr>
   <tr>
     <th>Source</th>
-    <td>BC Registries system, created when the business is registered or incorporated</td>
+    <td>AMANDA.</td>
   </tr>
   <tr>
     <th>Data Type</th>
     <td>String</td>
   </tr>
   <tr>
-    <th>Format</th>
-    <td>
-        <ul>
-            <li>10 characters</li>
-            <li>Typically two letters followed by eight digits</li>
-        </ul>
-    </td>
-  </tr>
-  <tr>
-    <th>Rules</th>
-    <td>
-        <ul>
-            <li>Never blank</li>
-            <li>Depending on the Business Type, the source of the BC Number is:</li>
-            <ul>
-                <li>Registration Number – Sole Proprietorship, General Partnership, and extra-provincial entities</li>
-                <li>Incorporation Number – Corporations, Societies, Cooperative Associations</li>
-            </ul>
-        </ul>
-    </td>
-  </tr>
-  <tr>
     <th>Examples</th>
-    <td><code>FM0055205</code></td>
-  </tr>
-  <tr>
-    <th>Notes</th>
-    <td>
-        <ul><li>This identifier can be used to get additional information about the business from BC Registries through <a href="https://orgbook.gov.bc.ca/">OrgBook</a> or <a href="https://developer.api.bcregistry.gov.bc.ca/">BC Registries API Gateway</a>.</li></ul>
-        This attribute is in close alignment with:
-        <ul><li>Open Ownership schema: <code>Identifier ID</code></li></ul>
-    </td>
+    <td><code>24-123456</code></td>
   </tr>
 </table>
 
-#### CRA Business Number
+*Licence Revision Number*
 
 <table>
   <tr>
     <th>Attribute</th>
-    <td><code>cra_business_number</code></td>
+    <td><code>licence_revision_number</code></td>
   </tr>
   <tr>
     <th>Description</th>
-    <td>A unique identifier assigned to the business’ BC Registries business program area by the Canada Revenue Agency (CRA), a “BN15”.</td>
+    <td>Identifier representing the revision of the licence record (incremented when changes occur).</td>
   </tr>
   <tr>
     <th>Source</th>
-    <td>Canada Revenue Agency,<ul><li>A business number is automatically provided to new B.C. corporations, businesses or societies as part of the registration or incorporation process.</li></ul></td>
+    <td>AMANDA.</td>
   </tr>
   <tr>
     <th>Data Type</th>
     <td>String</td>
   </tr>
   <tr>
-    <th>Format</th>
-    <td>
-        <ul><li>15 characters</li></ul>
-    </td>
-  </tr>
-  <tr>
-    <th>Rules</th>
-    <td>
-        <ul>
-            <li>May be blank</li>
-            <ul><li>This will be blank if CRA has not created the business number or BC Registries does not know the Business Number assigned by CRA</li></ul>
-            <li>This will be a 15-digit (BN15) number</li>
-        </ul>
-    </td>
-  </tr>
-  <tr>
     <th>Examples</th>
-    <td><code>123456789BC0001</code></td>
-  </tr>
-  <tr>
-    <th>Notes</th>
-    <td>
-        <ul>
-            <li>A business may change its Business Number with CRA, and CRA will normally update BC Registries of the change</li>
-            <li>For more information on Business Numbers, refer to the CRA</li>
-        </ul>
-        This attribute is in close alignment with:
-        <ul><li>XBRL schema: <code>identifierTaxCode</code></li></ul>
-    </td>
+    <td><code>1</code><br></br><code>2</code></td>
   </tr>
 </table>
 
-
-#### Business Name
+*Licence Year*
 
 <table>
   <tr>
     <th>Attribute</th>
-    <td><code>business_name</code></td>
+    <td><code>validity_year</code></td>
   </tr>
   <tr>
     <th>Description</th>
-    <td>The operating name the business has registered for itself with BC Registries.<br></br>In future this may also be the operating name of a general partnership or the legal name of an incorporated company, a society, or a cooperative association.</td>
+    <td>The year in which the licence is valid.</td>
   </tr>
   <tr>
     <th>Source</th>
-    <td>Business filing</td>
+    <td>AMANDA.</td>
   </tr>
   <tr>
     <th>Data Type</th>
     <td>String</td>
   </tr>
   <tr>
-    <th>Format</th>
-    <td>
-        <ul><li>Maximum 150 characters</li></ul>
-    </td>
-  </tr>
-  <tr>
-    <th>Rules</th>
-    <td>
-        <ul><li>Never blank</li></ul>
-    </td>
-  </tr>
-  <tr>
     <th>Examples</th>
-    <td><code>Rogers Communications Canada Inc.</code><br></br><code>12345676, Inc</code><br></br><code>Twelve Oaks Construction</code></td>
-  </tr>
-  <tr>
-    <th>Notes</th>
-    <td>
-        This attribute is in close alignment with:
-        <ul><li>Open Ownership schema: <code>name</code></li></ul>
-    </td>
+    <td><code>2025</code></td>
   </tr>
 </table>
 
-#### Business Type
+*Issue Date*
 
 <table>
   <tr>
     <th>Attribute</th>
-    <td><code>business_type</code></td>
+    <td><code>licence_issued_dateint</code></td>
   </tr>
   <tr>
     <th>Description</th>
-    <td>The type of business as defined by the legislation governing BC Registries.</td>
+    <td>The date the business licence was issued.</td>
   </tr>
   <tr>
     <th>Source</th>
-    <td>Business filing</td>
+    <td>AMANDA.</td>
+  </tr>
+  <tr>
+    <th>Data Type</th>
+    <td>Integer (YYYYMMDD)</td>
+  </tr>
+  <tr>
+    <th>Examples</th>
+    <td><code>20250115</code></td>
+  </tr>
+</table>
+
+*Expiry Date*
+
+<table>
+  <tr>
+    <th>Attribute</th>
+    <td><code>licence_expiry_dateint</code></td>
+  </tr>
+  <tr>
+    <th>Description</th>
+    <td>The date the business licence expires.</td>
+  </tr>
+  <tr>
+    <th>Source</th>
+    <td>AMANDA.</td>
+  </tr>
+  <tr>
+    <th>Data Type</th>
+    <td>Integer (YYYYMMDD)</td>
+  </tr>
+  <tr>
+    <th>Examples</th>
+    <td><code>20251231</code></td>
+  </tr>
+</table>
+
+---
+
+#### Attributes about the Business / Licence Holder
+
+*Business / Trade Name*
+
+<table>
+  <tr>
+    <th>Attribute</th>
+    <td><code>business_trade_name</code></td>
+  </tr>
+  <tr>
+    <th>Description</th>
+    <td>The trade name or operating name under which the business is licensed.</td>
+  </tr>
+  <tr>
+    <th>Source</th>
+    <td>AMANDA (as reported by the applicant).</td>
   </tr>
   <tr>
     <th>Data Type</th>
     <td>String</td>
   </tr>
   <tr>
-    <th>Format</th>
-    <td>
-        <ul><li>Maximum 100 characters</li></ul>
-    </td>
-  </tr>
-  <tr>
-    <th>Rules</th>
-    <td>
-        <ul>
-            <li>Never blank</li>
-            <li>The possible values are:</li>
-            <ul>
-              <li>Sole Proprietorship</li>
-              <li>General Partnership</li>
-              <li>Benefit Company</li>
-            </ul>
-        </ul>
-    </td>
-  </tr>
-  <tr>
     <th>Examples</th>
-    <td><code>Sole Proprietorship</code><br></br><code>Benefit Company</code></td>
-  </tr>
-  <tr>
-    <th>Notes</th>
-    <td>
-        <ul><li>Credential issuance will be limited to businesses that are created in the new BC Registries system. Additional business types may be added in the future</li></ul>
-        This attribute is in close alignment with:
-        <ul><li>Open Ownership schema: <code>entityType</code></li></ul>
-    </td>
+    <td><code>West End Suites</code><br></br><code>Maple Rentals</code></td>
   </tr>
 </table>
 
-#### Registered On
+*Licence Holder First Name*
 
 <table>
   <tr>
     <th>Attribute</th>
-    <td><code>registered_on_dateint</code></td>
+    <td><code>licence_holder_given_name</code></td>
   </tr>
   <tr>
     <th>Description</th>
-    <td>The date the business was incorporated or registered in BC with BC Registries.</td>
+    <td>The given name(s) of the licence holder, verified against foundational identity.</td>
   </tr>
   <tr>
     <th>Source</th>
-    <td>BC Registries system</td>
+    <td>Verified via BC Person Credential and government-issued photo ID.</td>
   </tr>
   <tr>
     <th>Data Type</th>
     <td>String</td>
   </tr>
   <tr>
-    <th>Format</th>
-    <td>
-        <ul><li>Eight digits in the format YYYYMMDD</li></ul>
-    </td>
-  </tr>
-  <tr>
-    <th>Rules</th>
-    <td>
-        <ul><li>Never blank</li></ul>
-    </td>
-  </tr>
-  <tr>
     <th>Examples</th>
-    <td><code>20180816</code></td>
-  </tr>
-  <tr>
-    <th>Notes</th>
-    <td>
-        For companies incorporated in BC, this attribute is in close alignment with:
-        <ul><li>Open Ownership schema: <code>foundingDate</code></li></ul>
-    </td>
+    <td><code>Jane</code></td>
   </tr>
 </table>
 
-
-#### Company Status
+*Licence Holder Last Name*
 
 <table>
   <tr>
     <th>Attribute</th>
-    <td><code>company_status</code></td>
+    <td><code>licence_holder_family_name</code></td>
   </tr>
   <tr>
     <th>Description</th>
-    <td>The status of the business at the time the credential is issued.</td>
+    <td>The family name (surname) of the licence holder, verified against foundational identity.</td>
   </tr>
   <tr>
     <th>Source</th>
-    <td>BC Registries system, set when the business is first registered or incorporated and updated either by business filings or the Registrar (e.g., due to failure to file)</td>
+    <td>Verified via BC Person Credential and government-issued photo ID.</td>
   </tr>
   <tr>
     <th>Data Type</th>
     <td>String</td>
   </tr>
   <tr>
-    <th>Format</th>
-    <td></td>
+    <th>Examples</th>
+    <td><code>Doe</code></td>
+  </tr>
+</table>
+
+---
+
+#### Attributes about the Location
+
+*Unit*
+
+<table>
+  <tr>
+    <th>Attribute</th>
+    <td><code>unit</code></td>
   </tr>
   <tr>
-    <th>Rules</th>
-    <td>
-        <ul>
-            <li>Never blank</li>
-            <li>This may be either:</li>
-            <ul>
-                <li>Active</li>
-                <li>Historical</li>
-            </ul>
-        </ul>
-    </td>
+    <th>Description</th>
+    <td>The unit number of the licensed property, if applicable.</td>
+  </tr>
+  <tr>
+    <th>Source</th>
+    <td>AMANDA; provided by the applicant and verified against property records.</td>
+  </tr>
+  <tr>
+    <th>Data Type</th>
+    <td>String</td>
   </tr>
   <tr>
     <th>Examples</th>
-    <td><code>Active</code><br></br><code>Historical</code></td>
-  </tr>
-  <tr>
-    <th>Notes</th>
-    <td>
-        There are cases where a person may represent a “Historic” business (e.g., tax audits can occur several years after a business is dissolved), and so it is possible for an individual have a DBC credential for such a business
-    </td>
+    <td><code>101</code><br></br><code>3B</code></td>
   </tr>
 </table>
+
+*Unit Type*
+
+<table>
+  <tr>
+    <th>Attribute</th>
+    <td><code>unit_type</code></td>
+  </tr>
+  <tr>
+    <th>Description</th>
+    <td>Type of unit designation (e.g., Apartment, Suite, Basement).</td>
+  </tr>
+  <tr>
+    <th>Source</th>
+    <td>AMANDA.</td>
+  </tr>
+  <tr>
+    <th>Data Type</th>
+    <td>String</td>
+  </tr>
+  <tr>
+    <th>Examples</th>
+    <td><code>Suite</code><br></br><code>Basement</code></td>
+  </tr>
+</table>
+
+*Street Number*
+
+<table>
+  <tr>
+    <th>Attribute</th>
+    <td><code>street_number</code></td>
+  </tr>
+  <tr>
+    <th>Description</th>
+    <td>The street number of the licensed property.</td>
+  </tr>
+  <tr>
+    <th>Source</th>
+    <td>AMANDA; verified against civic address records.</td>
+  </tr>
+  <tr>
+    <th>Data Type</th>
+    <td>String</td>
+  </tr>
+  <tr>
+    <th>Examples</th>
+    <td><code>1234</code></td>
+  </tr>
+</table>
+
+*Street Name*
+
+<table>
+  <tr>
+    <th>Attribute</th>
+    <td><code>street_name</code></td>
+  </tr>
+  <tr>
+    <th>Description</th>
+    <td>The street name of the licensed property.</td>
+  </tr>
+  <tr>
+    <th>Source</th>
+    <td>AMANDA; verified against civic address records.</td>
+  </tr>
+  <tr>
+    <th>Data Type</th>
+    <td>String</td>
+  </tr>
+  <tr>
+    <th>Examples</th>
+    <td><code>Main Street</code><br></br><code>West 4th Avenue</code></td>
+  </tr>
+</table>
+
+*Municipality*
+
+<table>
+  <tr>
+    <th>Attribute</th>
+    <td><code>municipality</code></td>
+  </tr>
+  <tr>
+    <th>Description</th>
+    <td>The municipality where the property is located (always Vancouver for this credential).</td>
+  </tr>
+  <tr>
+    <th>Source</th>
+    <td>AMANDA.</td>
+  </tr>
+  <tr>
+    <th>Data Type</th>
+    <td>String</td>
+  </tr>
+  <tr>
+    <th>Examples</th>
+    <td><code>Vancouver</code></td>
+  </tr>
+</table>
+
+*Municipality Status*
+
+<table>
+  <tr>
+    <th>Attribute</th>
+    <td><code>municipality_status</code></td>
+  </tr>
+  <tr>
+    <th>Description</th>
+    <td>Status of the municipality (e.g., City, Township).</td>
+  </tr>
+  <tr>
+    <th>Source</th>
+    <td>AMANDA.</td>
+  </tr>
+  <tr>
+    <th>Data Type</th>
+    <td>String</td>
+  </tr>
+  <tr>
+    <th>Examples</th>
+    <td><code>City</code></td>
+  </tr>
+</table>
+
+*Regional District*
+
+<table>
+  <tr>
+    <th>Attribute</th>
+    <td><code>regional_district</code></td>
+  </tr>
+  <tr>
+    <th>Description</th>
+    <td>The regional district for the property’s location.</td>
+  </tr>
+  <tr>
+    <th>Source</th>
+    <td>AMANDA; derived from property records.</td>
+  </tr>
+  <tr>
+    <th>Data Type</th>
+    <td>String</td>
+  </tr>
+  <tr>
+    <th>Examples</th>
+    <td><code>Metro Vancouver</code></td>
+  </tr>
+</table>
+
+*Province or Territory*
+
+<table>
+  <tr>
+    <th>Attribute</th>
+    <td><code>province_territory</code></td>
+  </tr>
+  <tr>
+    <th>Description</th>
+    <td>The province or territory of the licensed property.</td>
+  </tr>
+  <tr>
+    <th>Source</th>
+    <td>AMANDA.</td>
+  </tr>
+  <tr>
+    <th>Data Type</th>
+    <td>String</td>
+  </tr>
+  <tr>
+    <th>Examples</th>
+    <td><code>British Columbia</code></td>
+  </tr>
+</table>
+
+*Postal Code*
+
+<table>
+  <tr>
+    <th>Attribute</th>
+    <td><code>postal_code</code></td>
+  </tr>
+  <tr>
+    <th>Description</th>
+    <td>The postal code of the licensed property.</td>
+  </tr>
+  <tr>
+    <th>Source</th>
+    <td>AMANDA; verified against Canada Post format.</td>
+  </tr>
+  <tr>
+    <th>Data Type</th>
+    <td>String</td>
+  </tr>
+  <tr>
+    <th>Examples</th>
+    <td><code>V6B 2Y5</code></td>
+  </tr>
+</table>
+
+*Country*
+
+<table>
+  <tr>
+    <th>Attribute</th>
+    <td><code>country</code></td>
+  </tr>
+  <tr>
+    <th>Description</th>
+    <td>The country of the licensed property.</td>
+  </tr>
+  <tr>
+    <th>Source</th>
+    <td>AMANDA.</td>
+  </tr>
+  <tr>
+    <th>Data Type</th>
+    <td>String</td>
+  </tr>
+  <tr>
+    <th>Examples</th>
+    <td><code>Canada</code></td>
+  </tr>
+</table>
+
+*Local Area*
+
+<table>
+  <tr>
+    <th>Attribute</th>
+    <td><code>local_area</code></td>
+  </tr>
+  <tr>
+    <th>Description</th>
+    <td>The neighbourhood or local planning area where the property is located.</td>
+  </tr>
+  <tr>
+    <th>Source</th>
+    <td>AMANDA; derived from City of Vancouver planning datasets.</td>
+  </tr>
+  <tr>
+    <th>Data Type</th>
+    <td>String</td>
+  </tr>
+  <tr>
+    <th>Examples</th>
+    <td><code>Kitsilano</code><br></br><code>Downtown</code></td>
+  </tr>
+</table>
+
+*GIS Coordinates*
+
+<table>
+  <tr>
+    <th>Attribute</th>
+    <td><code>GIS_coordinates</code></td>
+  </tr>
+  <tr>
+    <th>Description</th>
+    <td>Geographic coordinates of the licensed property (latitude and longitude).</td>
+  </tr>
+  <tr>
+    <th>Source</th>
+    <td>City of Vancouver GIS dataset.</td>
+  </tr>
+  <tr>
+    <th>Data Type</th>
+    <td>String (lat,long)</td>
+  </tr>
+  <tr>
+    <th>Examples</th>
+    <td><code>49.2827,-123.1207</code></td>
+  </tr>
+</table>
+
+---
+
+#### Attributes about the Property
+
+*Property Residence Type*
+
+<table>
+  <tr>
+    <th>Attribute</th>
+    <td><code>property_residence_type</code></td>
+  </tr>
+  <tr>
+    <th>Description</th>
+    <td>Indicates the type of residence (e.g., single-family home, condo, apartment).</td>
+  </tr>
+  <tr>
+    <th>Source</th>
+    <td>AMANDA; may be cross-verified with LTSA records.</td>
+  </tr>
+  <tr>
+    <th>Data Type</th>
+    <td>String</td>
+  </tr>
+  <tr>
+    <th>Examples</th>
+    <td><code>Condominium</code><br></br><code>Single Family</code></td>
+  </tr>
+</table>
+
+*Location Type*
+
+<table>
+  <tr>
+    <th>Attribute</th>
+    <td><code>location_type</code></td>
+  </tr>
+  <tr>
+    <th>Description</th>
+    <td>Specifies whether the rental is the principal residence or another type of dwelling.</td>
+  </tr>
+  <tr>
+    <th>Source</th>
+    <td>Applicant declaration in AMANDA; validated against BC Person Credential address history.</td>
+  </tr>
+  <tr>
+    <th>Data Type</th>
+    <td>String</td>
+  </tr>
+  <tr>
+    <th>Examples</th>
+    <td><code>Principal Residence</code><br></br><code>Secondary Suite</code></td>
+  </tr>
+</table>
+
+*Number of Dwelling Units*
+
+<table>
+  <tr>
+    <th>Attribute</th>
+    <td><code>number_of_dwelling_units</code></td>
+  </tr>
+  <tr>
+    <th>Description</th>
+    <td>The number of dwelling units at the licensed property address.</td>
+  </tr>
+  <tr>
+    <th>Source</th>
+    <td>AMANDA; verified against property assessment and LTSA records.</td>
+  </tr>
+  <tr>
+    <th>Data Type</th>
+    <td>Integer</td>
+  </tr>
+  <tr>
+    <th>Examples</th>
+    <td><code>1</code><br></br><code>12</code></td>
+  </tr>
+</table>
+
+*Parcel Identifier (PID)*
+
+<table>
+  <tr>
+    <th>Attribute</th>
+    <td><code>PID</code></td>
+  </tr>
+  <tr>
+    <th>Description</th>
+    <td>The Land Title and Survey Authority’s Parcel Identifier for the property.</td>
+  </tr>
+  <tr>
+    <th>Source</th>
+    <td>LTSA property records; integrated with AMANDA.</td>
+  </tr>
+  <tr>
+    <th>Data Type</th>
+    <td>String (9-digit numeric)</td>
+  </tr>
+  <tr>
+    <th>Examples</th>
+    <td><code>012-345-678</code></td>
+  </tr>
+</table>
+
+*Strata Flag*
+
+<table>
+  <tr>
+    <th>Attribute</th>
+    <td><code>strata_flag</code></td>
+  </tr>
+  <tr>
+    <th>Description</th>
+    <td>Indicates whether the property is part of a strata (condominium) development.</td>
+  </tr>
+  <tr>
+    <th>Source</th>
+    <td>LTSA property records; confirmed by AMANDA during application review.</td>
+  </tr>
+  <tr>
+    <th>Data Type</th>
+    <td>Boolean</td>
+  </tr>
+  <tr>
+    <th>Examples</th>
+    <td><code>true</code><br></br><code>false</code></td>
+  </tr>
+</table>
+
