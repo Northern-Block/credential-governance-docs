@@ -1,93 +1,106 @@
-# Digital Business Card Credential Documentation
+# Municipal Property Rental Business License Credential Documentation
 
 ## About this Document
 
-This document describes the Digital Business Card verifiable credential to help potential verifiers determine whether it is suitable for their needs. The intended audience includes policy analysts, privacy specialists, solution architects, developers, and data architects.
+This document describes the Municipal Property Rental Business Licence verifiable credential to help potential verifiers determine whether it is suitable for their needs. The intended audience includes policy analysts, privacy specialists, solution architects, developers, and data architects.
 
-The Digital Business Card credential is issued by the Government of British Columbia through Registries and Online Services (“BC Registries”), part of Service BC in the British Columbia Ministry of Citizens’ Services.
+The credential is issued by the City of Vancouver, Business Licenses Division, and represents a valid municipal business licence for operating rental properties, initially covering short-term rental (STR) and long-term rental (LTR) business licence types.
 
 ### Version History
 
 | Ver.      | Date | Notes |
 | ----------- | ----------- | ----------- |
-| <b>1.0</b>      | 17-Nov-2023       | Initial release, limited to proprietors who registered their Sole Proprietorships |
-| <b>1.1</b>      | 16-May-2025       | Added new entities (General Partnerships, Benefit Companies) and roles that can self-issue |
+| <b>1.0</b>      | 25-Aug-2025       | Initial release |
 
 ## Credential Overview
-The Digital Business Card (DBC) credential is a verifiable credential (VC) issued to individuals to enable them to prove to other parties (“verifiers”) that the individual is affiliated with a business registered or incorporated at BC Registries. Additionally, the credential includes verifiable information about both the individual and the business.
+The Municipal Property Rental Business Licence credential is a verifiable credential (VC) issued to individuals or authorized representatives of businesses to prove that they hold a valid City of Vancouver rental business licence.
 
-The DBC credential is intended to be used in a wide range of contexts, both alone or in conjunction with other credentials, as a source of trusted information. 
+The credential is intended to be used in a wide range of contexts, both alone or alongside other credentials (e.g., BC Person Credential, Digital Business Card), as a trusted source of business licence information for verifiers such as platforms (Airbnb, VRBO), municipal inspectors, or other government agencies.
 
 <table>
   <tr>
     <th>Credential</th>
-    <td>Digital Business Card</td>
+    <td>Municipal Property Rental Business Licence</td>
   </tr>
   <tr>
     <th>Issuer</th>
-    <td>Government of British Columbia through Registries and Online Services (“BC Registries”), part of Service BC in the British Columbia Ministry of Citizens’ Services</td>
+    <td>City of Vancouver, Business Licenses Division</td>
   </tr>
   <tr>
     <th>Issuer DID</th>
-    <td>
-        <a href="https://candyscan.idlab.org/tx/CANDY_PROD/domain/348">AcZpBDz3oxmKrpcuPcdKai</a>
-    </td>
+    <td><code>HFZfqC6Jzbt57FxcXqn78a</code></td>
   </tr>
   <tr>
     <th>Schema</th>
-        <td>
-            Digital Business Card, version 1.0.0 
-            <ul><li>Schema ID: <a href="https://candyscan.idlab.org/tx/CANDY_PROD/domain/350">AcZpBDz3oxmKrpcuPcdKai:2:Digital Business Card:1.0.0</a></li></ul>
-        </td>
+    <td>
+      municipal-property-rental-business-licence, version 1.0
+      <ul>
+        <li>
+          Schema ID: 
+          <a href="https://candyscan.digitaltrust.gov.bc.ca/tx/CANDY_DEV/domain/37509">
+            HFZfqC6Jzbt57FxcXqn78a:2:municipal-property-rental-business-licence:1.0
+          </a>
+        </li>
+      </ul>
+    </td>
   </tr>
   <tr>
-    <th>Credential</th>
-        <td>NAME, version 1.0<ul><li>Cred Def ID: <a href="https://candyscan.idlab.org/tx/CANDY_PROD/domain/351">AcZpBDz3oxmKrpcuPcdKai:3:CL:350:default</a></li></ul></td>
+    <th>Credential Definition</th>
+    <td>
+      municipal-property-rental-business-licence, version 1.0
+      <ul>
+        <li>
+          Cred Def ID: 
+          <a href="https://candyscan.digitaltrust.gov.bc.ca/tx/CANDY_DEV/domain/37511">
+            HFZfqC6Jzbt57FxcXqn78a:3:CL:37509:municipal-property-rental-business-licence
+          </a>
+        </li>
+      </ul>
+    </td>
   </tr>
   <tr>
     <th>Data Registry</th>
-    <td> 
-        CANdy Ledger
-        <ul>
-            <li>Ledger <a href="https://candyscan.idlab.org/home/CANDY_PROD">browser</a></li>
-            <li>Ledger <a href="https://github.com/ICCS-ISAC/dtrust-reconu/blob/main/CANdy/prod/pool_transactions_genesis">Pool Genesis File</a></li>
-        </ul>    
+    <td>
+      BCovrin (CANdy Dev Ledger)
+      <ul>
+        <li>
+          <a href="https://candyscan.digitaltrust.gov.bc.ca/home/CANDY_DEV">Ledger Browser</a>
+        </li>
+      </ul>
     </td>
   </tr>
   <tr>
     <th>Holders</th>
     <td>
-        The DBC credential is currently only available to individuals whose identity and relationship to the business are well established. Currently, they must meet the following criteria:
-        <ul>
-            <li>The business is a Sole Proprietorship, General Partnership, or Benefit Company that was originally registered in the modern BC Registries system</li>
-            <li>The individual authenticated to BC Registries using their BC Services Card digital identity, and is either (a.) an Account Administrator or an Account Coordinator for the business, or (b.) is the Account User who registered the business</li>
-        </ul>
+      The credential is available to:
+      <ul>
+        <li>Licence applicants who successfully completed City of Vancouver’s standard review and approval process</li>
+        <li>Designated business representatives authorized by the licence holder</li>
+      </ul>
     </td>
-</tr>
-<tr>
+  </tr>
+  <tr>
     <th>Data Source</th>
     <td>
-        The DBC credential data comes from the BC Registries system. More specifically:
-        <ul>
-            <li>The individual’s name is from the BC Services Card digital identity; they are ultimately from subject’s Canadian foundational identity unless taken from marriage documents</li>
-            <li>Business information is from the BC Registries system; some of this is reported by the business via filings</li>
-            <li>The Credential ID is system-generated</li>
-            <li>CRA Business Number is provided directly to the BC Registries system from the Canada Revenue Agency system</li>
-        </ul>
+      City of Vancouver Business Licence System of Record (AMANDA).  
+      Data is verified against foundational identity documents (e.g., BC Person Credential, government-issued photo ID),  
+      property ownership records (LTSA), and authorization letters where applicable.
     </td>
-</tr>
-<tr>
+  </tr>
+  <tr>
     <th>Revocation</th>
     <td>
-        A DBC credential will be revoked – and sometimes re-issued – due to both automated events (e.g., data updates) and manual events. These are described in greater detail in the Revocation section, below.
+      Revoked if the business licence is withdrawn, invalidated, expired, or amended in the City’s licensing system.  
+      Re-issued upon approved changes (e.g., address updates, new trade name).
     </td>
-</tr>
-<tr>
+  </tr>
+  <tr>
     <th>Assurance</th>
     <td>
-        The DBC credential will only be issued to individuals who create and access the BC Registries system using the BC Services Card digital identity, which has been assessed and is accepted by the Government of Canada as a Trusted Digital Identity Level 3 for persons, and for whom BC Registries have established a relationship to the business in question.
+      Issuance requires successful validation of the applicant’s identity via the BC Person Credential,  
+      along with business and property checks (ICBC address history, LTSA property lookup, owner’s Letter of Authorization).
     </td>
-</tr>
+  </tr>
 </table>
 
 
@@ -95,94 +108,105 @@ The DBC credential is intended to be used in a wide range of contexts, both alon
 
 Attributes are fully described below in the [Attributes](#bookmark=id.d4k15yq1kvi3) section.
 
-| **Name** | **Attribute** | **Data Type** |
-| --- | --- | --- |
-| Credential ID | <code>credential_id</code> | String |
-| Given Names | <code>given_names</code> | String |
-| Family Name | <code>family_name</code> | String |
-| Role | <code>role</code> | String |
-| Identifier | <code>identifier</code> | String |
-| CRA Business Number | <code>cra_business_number</code> | String |
-| Business Name | <code>business_name</code> | String |
-| Business Type | <code>business_type</code> | String |
-| Registered On | <code>registered_on_dateint</code> | Integer |
-| Company Status | <code>company_status</code> | String |
-
+| **Name**                     | **Attribute**                      | **Data Type** |
+|-------------------------------|------------------------------------|---------------|
+| Business Licence Type         | `business_licence_type`            | String        |
+| Business Sub-Type             | `business_sub_type`                | String        |
+| Business / Trade Name         | `business_trade_name`              | String        |
+| Licence Number                | `licence_number`                   | String        |
+| Licence Revision Number       | `licence_revision_number`          | String        |
+| Licence Holder First Name     | `licence_holder_given_name`        | String        |
+| Licence Holder Last Name      | `licence_holder_family_name`       | String        |
+| Licence Year                  | `validity_year`                    | String        |
+| Issue Date                    | `licence_issued_dateint`           | Integer       |
+| Expiry Date                   | `licence_expiry_dateint`           | Integer       |
+| Unit Number                   | `unit`                             | String        |
+| Unit Type                     | `unit_type`                        | String        |
+| Street Number                 | `street_number`                    | String        |
+| Street Name                   | `street_name`                      | String        |
+| Municipality                  | `municipality`                     | String        |
+| Municipality Type             | `municipality_status`              | String        |
+| Regional District             | `regional_district`                | String        |
+| Province / Territory          | `province_territory`               | String        |
+| Postal Code                   | `postal_code`                      | String        |
+| Country                       | `country`                          | String        |
+| Property Residence Type       | `property_residence_type`          | String        |
+| Neighbourhood / Local Area    | `local_area`                       | String        |
+| Location Type                 | `location_type`                    | String        |
+| Number of Dwelling Units      | `number_of_dwelling_units`         | String        |
+| Parcel Identifier (PID)       | `PID`                              | String        |
+| Strata Property (Yes/No)      | `strata_flag`                      | String        |
+| Map Coordinates (Lat/Long)    | `GIS_coordinates`                  | String        |
 
 ## Credential Details
 
 ### Issuer
 
-The Digital Business Card credential is issued by the Government of British Columbia through Registries and Online Services (“BC Registries”), part of Service BC in the British Columbia Ministry of Citizens’ Services. BC Registries is responsible for the creation (through incorporation or registration) of businesses, not-for-profit societies, cooperative associations, and sole proprietors (collectively, “businesses”).
+The Municipal Property Rental Business Licence credential is issued by the **City of Vancouver, Business Licenses Division**. The City is responsible for the creation, approval, renewal, and revocation of all municipal business licences within its jurisdiction.
 
-BC Registries is responsible for:
+The City of Vancouver is responsible for:
 
-- Administering the Partnership Act and Business Corporations Act, including processing filings by businesses (e.g., to register a sole proprietorship or to change the Directors of a corporation) and issuing records
-- Operating BC Registries and Online Services, which allows representatives of companies to create accounts, make filings and record requests online, and delegate access to others
+- Administering the <a href="https://vancouver.ca/your-government/licence-bylaw.aspx">Business Licence Bylaw</a>, including processing applications, renewals, and amendments to licences.
+- Operating the **Business Licence System of Record (AMANDA)**, which records licence issuance, renewals, revocations, and changes to attributes such as business trade name or location.
+- Reviewing foundational identity, property ownership, and authorization documentation as part of the licensing process.
 
 ### Schema and Credential Definition Governance
 
-The Digital Business Card credential definition implements the Digital Business Card schema (see [Credential Overview](#bookmark=id.35ojgs4iy68y) for references). Both the credential definition and the schema are published by BC Registries, part of Service BC in the British Columbia Ministry of Citizens’ Services. BC Registries may, after any consultation and notification it deems appropriate, update either the credential definition and/or the schema.
+The Municipal Property Rental Business Licence credential definition implements the schema published by the City of Vancouver. Both the schema and credential definition are registered on the CANdy Dev Ledger.
+
+The City of Vancouver may, after appropriate consultation and notification, update the credential definition and/or schema to reflect policy or operational changes. Updates will follow the broader municipal credential governance framework and are designed for eventual province-wide interoperability
 
 ### Issuer Data Source
 
-The data in the DBC credential comes from the BC Registries system, which generates the data for some attributes and receives from external sources the data for other attributes. Possible data sources are:
+The data in the Municipal Property Rental Business Licence credential comes from the City of Vancouver’s Business Licence system (AMANDA). The City generates some information directly and verifies others against trusted sources.
 
-- **Business Filing** – the information is provided from a filing made by or on behalf of the business to BC Registries, as part of the business’ requirement to keep its information current as part of its obligation under the relevant legislation (e.g., [Partnership Act](https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/96348_01), [Business Corporations Act](https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/02057_00))
-- **BC Registries system** – these include system generated information, such as identifiers and timestamps, as well as information derived from user actions (e.g., which individual was the person who created the business in the BC Registries system)
-- **BC Services Card digital identity** – the identity information about the individual is created when the individual first accesses the BC Registries system using their BC Services Card digital identity and authenticator. The BC Services Card digital identity is a high assurance credential, with the individual’s name matching the name on their foundational identity document
-- **Canada Revenue Agency** – the information is provided to the BC Registries system directly from a CRA system
+- **Business Licence Filing** – the information provided by or on behalf of the applicant during the licence application or renewal process.
+- **City of Vancouver Business Licence System (AMANDA)** – system-generated data such as licence number, revision number, and timestamps.
+- **Foundational Identity Verification** – records checked through the <a href="https://ltsa.ca/">Land Title and Survey Authority (LTSA)</a> to confirm ownership or authorized use of the property.
+- **Property Ownership Verification** – the information is provided to the BC Registries system directly from a CRA system.
+- **Authorization Verification** – an Owner’s Letter of Authorization, where applicable, is collected and retained.
 
 The source of each attribute is described in the [Attributes](#bookmark=id.d4k15yq1kvi3) section.
 
 #### Data Updates
 
-When a DBC credential is issued, its data reflects the current records in BC Registries’ system. Changes to those records will trigger a revocation (and often re-issuance) of the credential to ensure the credential continues to reflect the identity record; these cases are described in further detail in the section on Revocation, below.
+When a credential is issued, its data reflects the business licence record at the time of issuance. Changes to licence records (e.g., business trade name, ownership, address) trigger a revocation and re-issuance of the credential so that the holder’s credential always reflects current information.
 
 ### Assurance
 
-In order to minimize risk to BC Registries, verifiers, companies, and the individuals who represent companies, in the initial production release MVP phase (minimum valuable product), the DBC credential will only be issued to individuals when BC Registries is confident in both:
+To minimize risk to verifiers, the City, and licence holders, the Municipal Property Rental Business Licence credential is only issued following successful authentication and validation of:
 
-- Their identity
-- Their relationship to the business
+- **Applicant identity** – via the BC Person Credential (high-assurance, Level 3 trusted digital identity).
+- **Primary address history** – verified using ICBC address records or the Person Credential.
+- **Property ownership** – verified against LTSA property records.
+- **Authorization** – verified by requiring an Owner’s Letter of Authorization if the applicant is not the property owner.
 
-For this reason, in the MVP, the only individuals who may obtain a DBC credential from BC Registries are:
-
-- Sole Proprietorship Business Owners who accessed the new Business Registries system using the BC Services Card mobile application and self-registered their own proprietorship
-
-#### BC Services Card
-
-The BC Services Card digital identity is used by BC Registries for both its identity information and the security of its two-factor authentication. By design, the BC Services Card digital identity meets the BC Office of the CIO [_Identity Assurance Standard_](https://www2.gov.bc.ca/assets/gov/government/services-for-government-and-broader-public-sector/information-technology-services/standards-files/identity_assurance_standard.pdf) requirements for a High (3) Identity Assurance Level. The BC Services Card digital identity has been assessed twice, in 2019 and 2021, by the Treasury Board of Canada Secretariat (TBS) against the Public Sector Profile of the Pan-Canadian Trust Framework (PSP-PCTF). In both cases, it was assessed as being a Trusted Digital Identity Level 3 (high), as defined in Appendix A of the TBS [_Directive on Identity Management_](https://www.tbs-sct.canada.ca/pol/doc-eng.aspx?id=16577).
+These checks ensure the authenticity of the relationship between the applicant, the business, and the property location.
 
 ### Revocation
 
-A DBC credential will be revoked in the following cases:
+A Municipal Property Rental Business Licence credential will be revoked in the following cases:
 
-1. The individual is issued a new DBC credential for a business for which they already have been issued one or more credentials. An individual may only have one active DBC credential for a given business at a time, and when they are issued a new one, all previously issued active DBC credentials will be revoked
-1. The individual was able to self-issue the credential but, due to a change in their role within the BC Registries system, now cannot
-1. A rare event has occurred, such as a change to the company identifier or the business is administratively dissolved by the Registrar
+1. The underlying business licence is withdrawn, invalidated, or expires.
+2. The business licence record is updated (e.g., new address, ownership, or trade name).
+3. The licence holder or designated representative is no longer authorized.
 
-A DBC credential will be revoked and re-issued in the following cases:
-
-1. The individual’s identity information is updated in the BC Registries system
-1. The individual’s role at the business is updated in the BC Registries system
-1. The Business Name or CRA Business Number is updated in the BC Registries system
-1. The business dissolves itself in the BC Registries system – the new DBC credential will have an updated Company Status attribute
+In most cases, a revocation triggers a **re-issuance** of the credential with updated details to reflect the new licence record
 
 ## Credential Definition
 
 ### Credential Schema
 
-The Digital Business Card credential is based on the Digital Business Card schema. Both are published and maintained by the province of British Columbia.
+The Municipal Property Rental Business Licence credential is based on the municipal-property-rental-business-licence schema, version 1.0, published by the City of Vancouver and maintained in BCovrin.
 
 ### Subject of the Credential
 
-The subject of the Digital Business Card credential is a relationship, the affiliation of an individual to a business.
+The subject of the credential is the licence record, which ties:
 
-- The individual is the person to whom the credential is issued, i.e., its holder
-- The affiliation is derived from the individual’s access to the business’ account in the BC Registries system and information BC Registries has about that individual’s relationship to the business, such as their role (e.g., proprietor, director)
+- The individual or authorized representative (credential holder), and
+- The business/property information associated with the licence.
 
-In future, authorization may also come from another individual who has been granted to issue the credentials by the business.
+The credential enables the holder to prove, in real time, that they are licensed by the City of Vancouver to operate a rental business (short-term or long-term).
 
 ### Attributes
 
