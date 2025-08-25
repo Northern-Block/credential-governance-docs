@@ -1,4 +1,4 @@
-# Municipal Property Rental Business License Credential Documentation
+# Municipal Property Rental Business Licence Credential Documentation
 
 ## About this Document
 
