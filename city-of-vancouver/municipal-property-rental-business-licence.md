@@ -909,7 +909,7 @@ The attributes of the Municipal Property Rental Business Licence credential are 
 
 ## 5.1 Technical Format
 
-This credential uses the [Hyperledger AnonCreds](https://github.com/hyperledger/anoncreds/) specification and the "Legal Professional" schema which has the following defined attributes.
+This credential uses the [Hyperledger AnonCreds](https://github.com/hyperledger/anoncreds/) specification and the "Municipal Property Rental Business Licence" schema which has the following defined attributes.
 
 ### 5.2 Issuer List
 The Governing Authority of this Credential document attests that the following issuer information is accurate and can be relied upon by verifiers.
@@ -922,10 +922,10 @@ The Governing Authority of this Credential document attests that the following i
 |Environment|Ledger|Schema ID|
 |---|---|---|
 |CANdy Production|TBA|TBA|TBA|
-|CANdy Dev|[municipal-property-rental-business-licence](https://candyscan.digitaltrust.gov.bc.ca/tx/CANDY_DEV/domain/37509)|HFZfqC6Jzbt57FxcXqn78a:2:municipal-property-rental-business-licence:1.0|
+|CANdy Dev|[municipal-property-rental-business-licence](https://candyscan.digitaltrust.gov.bc.ca/tx/CANDY_DEV/domain/37509)|<code>HFZfqC6Jzbt57FxcXqn78a:2:municipal-property-rental-business-licence:1.0</code>|
 
 ### 5.4 Credential Implementation
 |Environment|Ledger|Credential Definition ID|OCA Bundle|
 |---|---|---|---|
 |CANdy Production|TBA|TBA|TBA|
-|CANdy Dev|[municipal-property-rental-business-licence](https://candyscan.digitaltrust.gov.bc.ca/tx/CANDY_DEV/domain/37511)|HFZfqC6Jzbt57FxcXqn78a:3:CL:37509:municipal-property-rental-business-licence|[City of Vancouver TEST Property Rental Business License](https://github.com/bcgov/aries-oca-bundles/tree/main/OCABundles/schema/CityOfVancouver/test-property-rental-business-licence)|
+|CANdy Dev|[municipal-property-rental-business-licence](https://candyscan.digitaltrust.gov.bc.ca/tx/CANDY_DEV/domain/37511)|<code>HFZfqC6Jzbt57FxcXqn78a:3:CL:37509:municipal-property-rental-business-licence</code>|[City of Vancouver TEST Property Rental Business License](https://github.com/bcgov/aries-oca-bundles/tree/main/OCABundles/schema/CityOfVancouver/test-property-rental-business-licence)|
