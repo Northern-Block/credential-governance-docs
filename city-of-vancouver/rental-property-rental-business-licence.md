@@ -1,10 +1,10 @@
-# Municipal Property Rental Business Licence Credential Documentation
+# Rental Property Rental Business Licence Credential Documentation
 
 ## 1. About this Document
 
-This document describes the **Municipal Property Rental Business Licence** verifiable credential to help potential verifiers determine whether it is suitable for their needs. The intended audience includes policy analysts, privacy specialists, solution architects, developers, and data architects.
+This document describes the **Rental Property Rental Business Licence** verifiable credential to help potential verifiers determine whether it is suitable for their needs. The intended audience includes policy analysts, privacy specialists, solution architects, developers, and data architects.
 
-The credential is issued by the **City of Vancouver, Business Licenses Division**, and represents a valid municipal business licence for operating rental properties, initially covering short-term rental (STR) and long-term rental (LTR) business licence types.
+The Municipal Property Rental Business Licence credential can be issued by any British Columbia municipality. The first municipality to do so is the **City of Vancouver**, and represents a valid municipal business licence for operating rental properties, initially covering short-term rental (STR) and long-term rental (LTR) business licence types.
 
 ### 1.1 Version History
 
@@ -13,17 +13,15 @@ The credential is issued by the **City of Vancouver, Business Licenses Division*
 | <b>1.0</b>      | 26-Aug-2025       | Initial release |
 
 ## 2 Credential Overview
-The Municipal Property Rental Business Licence credential is a verifiable credential (VC) issued to individuals or authorized representatives of businesses to prove that they hold a valid City of Vancouver rental business licence.
+The Rental Property Rental Business Licence credential is a verifiable credential (VC) issued to individuals or authorized representatives of businesses to prove that they hold a valid City of Vancouver rental business licence.
 
 The credential is intended to be used in a wide range of contexts, both alone or alongside other credentials (e.g., BC Person Credential, Digital Business Card), as a trusted source of business licence information for verifiers such as platforms (Airbnb, VRBO), municipal inspectors, or other government agencies.
 
 |              |                                                                |
 |-------------------------|---------------------------------------------------------------------------------|
-| **Credential:**         | Municipal Property Rental Business Licence                                          |
-| **Schema:**             | Municipal Property Rental Business Licence                                          |
+| **Credential:**         | Rental Property Rental Business Licence                                          |
+| **Schema:**             | Rental Property Rental Business Licence                                          |
 | **Issuer:**             | City of Vancouver (Business Licenses Division) <br/> [https://vancouver.ca/](https://vancouver.ca/) |     
-
-
 
 ### 2.1 Attribute Summary
 
@@ -38,7 +36,7 @@ Attributes are fully described below in the [Attributes](#bookmark=id.d4k15yq1kv
 | Licence Revision Number       | `licence_revision_number`          | String        |
 | Licence Holder First Name     | `licence_holder_given_name`        | String        |
 | Licence Holder Last Name      | `licence_holder_family_name`       | String        |
-| Licence Year                  | `validity_year`                    | String        |
+| Licence Year                  | `validity_yearint`                 | Integer       |
 | Issue Date                    | `licence_issued_dateint`           | Integer       |
 | Expiry Date                   | `licence_expiry_dateint`           | Integer       |
 | Unit Number                   | `unit`                             | String        |
@@ -66,26 +64,26 @@ Attributes are fully described below in the [Attributes](#bookmark=id.d4k15yq1kv
 
 ### 3.1 Issuer
 
-The Municipal Property Rental Business Licence credential is issued by the **City of Vancouver, Business Licenses Division**. The City is responsible for the creation, approval, renewal, and revocation of all municipal business licences within its jurisdiction.
+The Rental Property Rental Business Licence credential is issued by **City of Vancouver's Business Licence Office**. The issuer municipality is responsible for reviewing business licence applications, approving, issuing, renewing and revoking all municipal business licences within their jurisdiction and in some cases they could delegate such activities to other organizations.
 
 The City of Vancouver is responsible for:
 
 - Administering the <a href="https://vancouver.ca/your-government/licence-bylaw.aspx">Business Licence Bylaw</a>, including processing applications, renewals, and amendments to licences.
-- Operating the **Business Licence System of Record (AMANDA)**, which records licence issuance, renewals, revocations, and changes to attributes such as business trade name or location.
+- Operating the **Business Licence System of Record**, which records licence issuance, renewals, revocations, and changes to attributes such as business trade name or location.
 - Reviewing foundational identity, property ownership, and authorization documentation as part of the licensing process.
 
 ### 3.2 Schema and Credential Definition Governance
 
-The Municipal Property Rental Business Licence credential definition implements the schema published by the City of Vancouver. Both the schema and credential definition are registered on the CANdy Dev Ledger.
+The Rental Property Rental Business Licence credential definition implements the schema published by the City of Vancouver. Both the schema and credential definition are registered on the CANdy Dev Ledger.
 
-The City of Vancouver may, after appropriate consultation and notification, update the credential definition and/or schema to reflect policy or operational changes. Updates will follow the broader municipal credential governance framework and are designed for eventual province-wide interoperability
+The City of Vancouver may, after appropriate consultation and notification, update the credential definition and/or schema to reflect policy or operational changes. Updates will follow the broader municipal credential governance framework and are designed for eventual province-wide interoperability.
 
 ### 3.3 Issuer Data Source
 
-The data in the Municipal Property Rental Business Licence credential comes from the City of Vancouver’s Business Licence system (AMANDA). The City generates some information directly and verifies others against trusted sources.
+The data in the Municipal Property Rental Business Licence credential comes from the City of Vancouver’s Business Licence system. The City generates some information directly and verifies others against trusted sources.
 
 - **Business Licence Filing** – the information provided by or on behalf of the applicant during the licence application or renewal process.
-- **City of Vancouver Business Licence System (AMANDA)** – system-generated data such as licence number, revision number, and timestamps.
+- **City of Vancouver Business Licence System** – system-generated data such as licence number, revision number, and timestamps.
 - **Foundational Identity Verification** – the applicant’s identity is confirmed using the BC Person Credential or other government-issued photo identification.  
 - **Property Ownership Verification** – records are checked through the <a href="https://ltsa.ca/">Land Title and Survey Authority (LTSA)</a> to confirm ownership or authorized use of the property.  
 - **Authorization Verification** – an Owner’s Letter of Authorization, where applicable, is collected and retained.
@@ -98,7 +96,7 @@ When a credential is issued, its data reflects the business licence record at th
 
 ### 3.4 Assurance
 
-To minimize risk to verifiers, the City, and licence holders, the Municipal Property Rental Business Licence credential is only issued following successful authentication and validation of:
+To minimize risk to verifiers, the City, and licence holders, the Rental Property Rental Business Licence credential is only issued following successful authentication and validation of:
 
 - **Applicant identity** – via the BC Person Credential (high-assurance, Level 3 trusted digital identity).
 - **Primary address history** – verified using ICBC address records or the Person Credential.
@@ -109,19 +107,19 @@ These checks ensure the authenticity of the relationship between the applicant, 
 
 ### 3.5 Revocation
 
-A Municipal Property Rental Business Licence credential will be revoked in the following cases:
+A Rental Property Rental Business Licence credential will be revoked in the following cases:
 
 1. The underlying business licence is withdrawn, invalidated, or expires.
 2. The business licence record is updated (e.g., new address, ownership, or trade name).
-3. The licence holder or designated representative is no longer authorized.
+3. The licence holder or designated representative is no longer authorized, leading to a permanent revocation.
 
-In most cases, a revocation triggers a **re-issuance** of the credential with updated details to reflect the new licence record
+In most cases, a revocation triggers a **re-issuance** of the credential with updated details to reflect the new licence record.
 
 ## 4. Credential Definition
 
 ### 4.1 Credential Schema
 
-The Municipal Property Rental Business Licence credential is based on the municipal-property-rental-business-licence schema, version 1.0, published by the City of Vancouver and maintained in BCovrin.
+The Rental Property Rental Business Licence credential is based on the municipal-property-rental-business-licence schema, version 1.0, published by the City of Vancouver and maintained in BCovrin.
 
 ### 4.2 Subject of the Credential
 
@@ -130,13 +128,11 @@ The subject of the credential is the licence record, which ties:
 - The individual or authorized representative (credential holder), and
 - The business/property information associated with the licence.
 
-The credential enables the holder to prove, in real time, that they are licensed by the City of Vancouver to operate a rental business (short-term or long-term).
+The credential enables the holder to prove, in real time, that they are licensed by the City of Vancouver to operate a rental property business (short-term or long-term) at the specified location/address.
 
 ### 4.3 Attributes
 
-The attributes of the Municipal Property Rental Business Licence credential are organized by topic and described below.
-
----
+The attributes of the Rental Property Rental Business Licence credential are organized by topic and described below.
 
 #### 4.3.1 Attributes about the Licence
 
@@ -153,7 +149,7 @@ The attributes of the Municipal Property Rental Business Licence credential are 
   </tr>
   <tr>
     <th>Source</th>
-    <td>City of Vancouver Business Licence System (AMANDA).</td>
+    <td>City of Vancouver Business Licence System (Municipal Business Licence System of Record).</td>
   </tr>
   <tr>
     <th>Data Type</th>
@@ -178,7 +174,7 @@ The attributes of the Municipal Property Rental Business Licence credential are 
   </tr>
   <tr>
     <th>Source</th>
-    <td>AMANDA.</td>
+    <td>Municipal Business Licence System of Record</td>
   </tr>
   <tr>
     <th>Data Type</th>
@@ -186,7 +182,7 @@ The attributes of the Municipal Property Rental Business Licence credential are 
   </tr>
   <tr>
     <th>Examples</th>
-    <td><code>Bed & Breakfast</code><br></br><code>Apartment Rental</code></td>
+    <td><code>Multiple Dwelling - 99 Year Lease</code><br></br><code>Non-profit Housing</code></td>
   </tr>
 </table>
 
@@ -203,7 +199,7 @@ The attributes of the Municipal Property Rental Business Licence credential are 
   </tr>
   <tr>
     <th>Source</th>
-    <td>AMANDA.</td>
+    <td>Municipal Business Licence System of Record</td>
   </tr>
   <tr>
     <th>Data Type</th>
@@ -224,11 +220,11 @@ The attributes of the Municipal Property Rental Business Licence credential are 
   </tr>
   <tr>
     <th>Description</th>
-    <td>Identifier representing the revision of the licence record (incremented when changes occur).</td>
+    <td>A revision to a licence will trigger a revocation of the Municipal Rental Property Business Licence</td>
   </tr>
   <tr>
     <th>Source</th>
-    <td>AMANDA.</td>
+    <td>Municipal Business Licence System of Record</td>
   </tr>
   <tr>
     <th>Data Type</th>
@@ -245,7 +241,7 @@ The attributes of the Municipal Property Rental Business Licence credential are 
 <table>
   <tr>
     <th>Attribute</th>
-    <td><code>validity_year</code></td>
+    <td><code>validity_yearint</code></td>
   </tr>
   <tr>
     <th>Description</th>
@@ -253,11 +249,11 @@ The attributes of the Municipal Property Rental Business Licence credential are 
   </tr>
   <tr>
     <th>Source</th>
-    <td>AMANDA.</td>
+    <td>Municipal Business Licence System of Record</td>
   </tr>
   <tr>
     <th>Data Type</th>
-    <td>String</td>
+    <td>Integer (YYYY)</td>
   </tr>
   <tr>
     <th>Examples</th>
@@ -278,7 +274,7 @@ The attributes of the Municipal Property Rental Business Licence credential are 
   </tr>
   <tr>
     <th>Source</th>
-    <td>AMANDA.</td>
+    <td>Municipal Business Licence System of Record</td>
   </tr>
   <tr>
     <th>Data Type</th>
@@ -303,7 +299,7 @@ The attributes of the Municipal Property Rental Business Licence credential are 
   </tr>
   <tr>
     <th>Source</th>
-    <td>AMANDA.</td>
+    <td>Municipal Business Licence System of Record</td>
   </tr>
   <tr>
     <th>Data Type</th>
@@ -314,8 +310,6 @@ The attributes of the Municipal Property Rental Business Licence credential are 
     <td><code>20251231</code></td>
   </tr>
 </table>
-
----
 
 #### 4.3.2 Attributes about the Business / Licence Holder
 
@@ -332,7 +326,7 @@ The attributes of the Municipal Property Rental Business Licence credential are 
   </tr>
   <tr>
     <th>Source</th>
-    <td>AMANDA (as reported by the applicant).</td>
+    <td>Municipal Business Licence System of Record (as reported by the applicant)</td>
   </tr>
   <tr>
     <th>Data Type</th>
@@ -394,8 +388,6 @@ The attributes of the Municipal Property Rental Business Licence credential are 
   </tr>
 </table>
 
----
-
 #### 4.3.3 Attributes about the Location
 
 *Unit*
@@ -411,7 +403,7 @@ The attributes of the Municipal Property Rental Business Licence credential are 
   </tr>
   <tr>
     <th>Source</th>
-    <td>AMANDA; provided by the applicant and verified against property records.</td>
+    <td>Municipal Business Licence System of Record (provided by the applicant and verified against property records)</td>
   </tr>
   <tr>
     <th>Data Type</th>
@@ -436,7 +428,7 @@ The attributes of the Municipal Property Rental Business Licence credential are 
   </tr>
   <tr>
     <th>Source</th>
-    <td>AMANDA.</td>
+    <td>Municipal Business Licence System of Record</td>
   </tr>
   <tr>
     <th>Data Type</th>
@@ -461,7 +453,7 @@ The attributes of the Municipal Property Rental Business Licence credential are 
   </tr>
   <tr>
     <th>Source</th>
-    <td>AMANDA; verified against civic address records.</td>
+    <td>Municipal Business Licence System of Record (verified against civic address records)</td>
   </tr>
   <tr>
     <th>Data Type</th>
@@ -486,7 +478,7 @@ The attributes of the Municipal Property Rental Business Licence credential are 
   </tr>
   <tr>
     <th>Source</th>
-    <td>AMANDA; verified against civic address records.</td>
+    <td>Municipal Business Licence System of Record (verified against civic address records)</td>
   </tr>
   <tr>
     <th>Data Type</th>
@@ -511,7 +503,7 @@ The attributes of the Municipal Property Rental Business Licence credential are 
   </tr>
   <tr>
     <th>Source</th>
-    <td>AMANDA.</td>
+    <td>Municipal Business Licence System of Record</td>
   </tr>
   <tr>
     <th>Data Type</th>
@@ -536,7 +528,7 @@ The attributes of the Municipal Property Rental Business Licence credential are 
   </tr>
   <tr>
     <th>Source</th>
-    <td>AMANDA.</td>
+    <td>Municipal Business Licence System of Record</td>
   </tr>
   <tr>
     <th>Data Type</th>
@@ -561,7 +553,7 @@ The attributes of the Municipal Property Rental Business Licence credential are 
   </tr>
   <tr>
     <th>Source</th>
-    <td>AMANDA; derived from property records.</td>
+    <td>Municipal Business Licence System of Record (derived from property records)</td>
   </tr>
   <tr>
     <th>Data Type</th>
@@ -586,7 +578,7 @@ The attributes of the Municipal Property Rental Business Licence credential are 
   </tr>
   <tr>
     <th>Source</th>
-    <td>AMANDA.</td>
+    <td>Municipal Business Licence System of Record</td>
   </tr>
   <tr>
     <th>Data Type</th>
@@ -611,7 +603,7 @@ The attributes of the Municipal Property Rental Business Licence credential are 
   </tr>
   <tr>
     <th>Source</th>
-    <td>AMANDA; verified against Canada Post format.</td>
+    <td>Municipal Business Licence System of Record (verified against Canada Post format)</td>
   </tr>
   <tr>
     <th>Data Type</th>
@@ -636,7 +628,7 @@ The attributes of the Municipal Property Rental Business Licence credential are 
   </tr>
   <tr>
     <th>Source</th>
-    <td>AMANDA.</td>
+    <td>Municipal Business Licence System of Record</td>
   </tr>
   <tr>
     <th>Data Type</th>
@@ -661,7 +653,7 @@ The attributes of the Municipal Property Rental Business Licence credential are 
   </tr>
   <tr>
     <th>Source</th>
-    <td>City of Vancouver Business Licence System (AMANDA); derived from applicant submissions and verified against property and identity records.</td>
+    <td>Municipal Business Licence System of Record (derived from applicant submissions and verified against property and identity records)</td>
   </tr>
   <tr>
     <th>Data Type</th>
@@ -669,7 +661,7 @@ The attributes of the Municipal Property Rental Business Licence credential are 
   </tr>
   <tr>
     <th>Examples</th>
-    <td><code>Unit 201, 123 Main Street, Vancouver, BC, V6B 2Y1, Canada</code></td>
+    <td><code>Suite, Unit 201, 123 Main Street, Vancouver, BC, V6B 2Y1, Canada</code></td>
   </tr>
 </table>
 
@@ -686,7 +678,7 @@ The attributes of the Municipal Property Rental Business Licence credential are 
   </tr>
   <tr>
     <th>Source</th>
-    <td>AMANDA; derived from City of Vancouver planning datasets.</td>
+    <td>Municipal Business Licence System of Record (derived from municipal planning datasets)</td>
   </tr>
   <tr>
     <th>Data Type</th>
@@ -723,8 +715,6 @@ The attributes of the Municipal Property Rental Business Licence credential are 
   </tr>
 </table>
 
----
-
 #### 4.3.4 Attributes about the Property
 
 *Property Residence Type*
@@ -740,7 +730,7 @@ The attributes of the Municipal Property Rental Business Licence credential are 
   </tr>
   <tr>
     <th>Source</th>
-    <td>AMANDA; may be cross-verified with LTSA records.</td>
+    <td>Municipal Business Licence System of Record (may be cross-verified with LTSA records)</td>
   </tr>
   <tr>
     <th>Data Type</th>
@@ -765,7 +755,7 @@ The attributes of the Municipal Property Rental Business Licence credential are 
   </tr>
   <tr>
     <th>Source</th>
-    <td>Applicant declaration in AMANDA; validated against BC Person Credential address history.</td>
+    <td>Applicant declaration in Municipal Business Licence System of Record; validated against BC Person Credential attributes.</td>
   </tr>
   <tr>
     <th>Data Type</th>
@@ -790,7 +780,7 @@ The attributes of the Municipal Property Rental Business Licence credential are 
   </tr>
   <tr>
     <th>Source</th>
-    <td>AMANDA; verified against property assessment and LTSA records.</td>
+    <td>Municipal Business Licence System of Record (verified against property assessment and LTSA records)</td>
   </tr>
   <tr>
     <th>Data Type</th>
@@ -815,7 +805,7 @@ The attributes of the Municipal Property Rental Business Licence credential are 
   </tr>
   <tr>
     <th>Source</th>
-    <td>LTSA property records; integrated with AMANDA.</td>
+    <td>LTSA property records; integrated with Municipal Business Licence System of Record</td>
   </tr>
   <tr>
     <th>Data Type</th>
@@ -840,7 +830,7 @@ The attributes of the Municipal Property Rental Business Licence credential are 
   </tr>
   <tr>
     <th>Source</th>
-    <td>LTSA property records; confirmed by AMANDA during application review.</td>
+    <td>LTSA property records; confirmed by Municipal Business Licence System of Record during application review.</td>
   </tr>
   <tr>
     <th>Data Type</th>
@@ -863,11 +853,11 @@ The attributes of the Municipal Property Rental Business Licence credential are 
   </tr>
   <tr>
     <th>Description</th>
-    <td>Specifies the method used to confirm the applicant’s identity (e.g., BC Person Credential, government-issued photo ID).</td>
+    <td>Specifies the method and proofs used to confirm the applicant’s identity (e.g., BC Person Credential).</td>
   </tr>
   <tr>
     <th>Source</th>
-    <td>City of Vancouver Business Licence System (AMANDA); validated against BC Person Credential or supporting identity documents.</td>
+    <td>Municipal Business Licence System of Record (validated against BC Person Credential or supporting identity documents)</td>
   </tr>
   <tr>
     <th>Data Type</th>
@@ -875,7 +865,7 @@ The attributes of the Municipal Property Rental Business Licence credential are 
   </tr>
   <tr>
     <th>Examples</th>
-    <td><code>BC Person Credential</code><br></br><code>Driver’s Licence</code></td>
+    <td><code>BC Person Credential</code>
   </tr>
 </table>
 
@@ -892,7 +882,7 @@ The attributes of the Municipal Property Rental Business Licence credential are 
   </tr>
   <tr>
     <th>Source</th>
-    <td>AMANDA; verified against ICBC address history, LTSA property records, or supporting documentation.</td>
+    <td>Municipal Business Licence System of Record (verified against ICBC address history)</td>
   </tr>
   <tr>
     <th>Data Type</th>
@@ -900,7 +890,7 @@ The attributes of the Municipal Property Rental Business Licence credential are 
   </tr>
   <tr>
     <th>Examples</th>
-    <td><code>ICBC Address Record</code><br></br><code>LTSA Property Ownership</code></td>
+    <td><code>ICBC Address Record</code>
   </tr>
 </table>
 
@@ -909,7 +899,7 @@ The attributes of the Municipal Property Rental Business Licence credential are 
 
 ## 5.1 Technical Format
 
-This credential uses the [Hyperledger AnonCreds](https://github.com/hyperledger/anoncreds/) specification and the "Municipal Property Rental Business Licence" schema which has the following defined attributes.
+This credential uses the [Hyperledger AnonCreds](https://github.com/hyperledger/anoncreds/) specification and the "Rental Property Rental Business Licence" schema which has the following defined attributes.
 
 ### 5.2 Issuer List
 The Governing Authority of this Credential document attests that the following issuer information is accurate and can be relied upon by verifiers.
