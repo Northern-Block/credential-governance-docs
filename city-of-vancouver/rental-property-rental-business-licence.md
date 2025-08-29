@@ -57,8 +57,10 @@ Attributes are fully described below in the [Attributes](#bookmark=id.d4k15yq1kv
 | Parcel Identifier (PID)       | `PID`                              | String        |
 | Strata Property (Yes/No)      | `strata_flag`                      | String        |
 | Map Coordinates (Lat/Long)    | `GIS_coordinates`                  | String        |
-| Identity Verification Method  | `identity_verification_method`     | String        |
-| Primary Address Verification Method    | `primary_address_verification_method`     | String        |
+| Identity Verification Proof  | `identity_verification_proof`     | String        |
+| Primary Address Proof    | `primary_address_verification_proof`     | String        |
+| Property Owner Proof    | `property_owner_proof`     | String        |
+| Authorized Verification Proof    | `authorized_verification_proof`     | String        |
 
 ## 3. Credential Details
 
@@ -145,11 +147,11 @@ The attributes of the Rental Property Rental Business Licence credential are org
   </tr>
   <tr>
     <th>Description</th>
-    <td>The category of licence issued by the City of Vancouver (e.g., Short-Term Rental, Long-Term Rental).</td>
+    <td>The category of licence issued.</td>
   </tr>
   <tr>
     <th>Source</th>
-    <td>City of Vancouver Business Licence System (Municipal Business Licence System of Record).</td>
+    <td>Municipal Business Licence System of Record</td>
   </tr>
   <tr>
     <th>Data Type</th>
@@ -170,7 +172,7 @@ The attributes of the Rental Property Rental Business Licence credential are org
   </tr>
   <tr>
     <th>Description</th>
-    <td>A sub-classification of the licence type, reflecting specific business activity.</td>
+    <td>The sub type of business licence being issued.</td>
   </tr>
   <tr>
     <th>Source</th>
@@ -195,7 +197,7 @@ The attributes of the Rental Property Rental Business Licence credential are org
   </tr>
   <tr>
     <th>Description</th>
-    <td>A unique number assigned to each business licence by the City of Vancouver.</td>
+    <td>The issued licence number of the business licence</td>
   </tr>
   <tr>
     <th>Source</th>
@@ -220,7 +222,7 @@ The attributes of the Rental Property Rental Business Licence credential are org
   </tr>
   <tr>
     <th>Description</th>
-    <td>A revision to a licence will trigger a revocation of the Municipal Rental Property Business Licence</td>
+    <td>The revision number of the issued business licence.</td>
   </tr>
   <tr>
     <th>Source</th>
@@ -245,7 +247,7 @@ The attributes of the Rental Property Rental Business Licence credential are org
   </tr>
   <tr>
     <th>Description</th>
-    <td>The year in which the licence is valid.</td>
+    <td>The year the licence is active for the business licence.</td>
   </tr>
   <tr>
     <th>Source</th>
@@ -270,7 +272,7 @@ The attributes of the Rental Property Rental Business Licence credential are org
   </tr>
   <tr>
     <th>Description</th>
-    <td>The date the business licence was issued.</td>
+    <td>The issued date of the business licence.</td>
   </tr>
   <tr>
     <th>Source</th>
@@ -295,7 +297,7 @@ The attributes of the Rental Property Rental Business Licence credential are org
   </tr>
   <tr>
     <th>Description</th>
-    <td>The date the business licence expires.</td>
+    <td>The expiry date of the business licence.</td>
   </tr>
   <tr>
     <th>Source</th>
@@ -322,7 +324,7 @@ The attributes of the Rental Property Rental Business Licence credential are org
   </tr>
   <tr>
     <th>Description</th>
-    <td>The trade name or operating name under which the business is licensed.</td>
+    <td>The business name of the operator of the business licence.</td>
   </tr>
   <tr>
     <th>Source</th>
@@ -347,7 +349,7 @@ The attributes of the Rental Property Rental Business Licence credential are org
   </tr>
   <tr>
     <th>Description</th>
-    <td>The given name(s) of the licence holder, verified against foundational identity.</td>
+    <td>Licence holder given name of the business licence.</td>
   </tr>
   <tr>
     <th>Source</th>
@@ -372,7 +374,7 @@ The attributes of the Rental Property Rental Business Licence credential are org
   </tr>
   <tr>
     <th>Description</th>
-    <td>The family name (surname) of the licence holder, verified against foundational identity.</td>
+    <td>Licence holder family name of the business licence.</td>
   </tr>
   <tr>
     <th>Source</th>
@@ -399,7 +401,7 @@ The attributes of the Rental Property Rental Business Licence credential are org
   </tr>
   <tr>
     <th>Description</th>
-    <td>The unit number of the licensed property, if applicable.</td>
+    <td>The unit number of the business licence.</td>
   </tr>
   <tr>
     <th>Source</th>
@@ -424,7 +426,7 @@ The attributes of the Rental Property Rental Business Licence credential are org
   </tr>
   <tr>
     <th>Description</th>
-    <td>Type of unit designation (e.g., Apartment, Suite, Basement).</td>
+    <td>The unit type of the business licence.</td>
   </tr>
   <tr>
     <th>Source</th>
@@ -449,7 +451,7 @@ The attributes of the Rental Property Rental Business Licence credential are org
   </tr>
   <tr>
     <th>Description</th>
-    <td>The street number of the licensed property.</td>
+    <td>The street number that precedes the street name of the business licence location.</td>
   </tr>
   <tr>
     <th>Source</th>
@@ -474,7 +476,7 @@ The attributes of the Rental Property Rental Business Licence credential are org
   </tr>
   <tr>
     <th>Description</th>
-    <td>The street name of the licensed property.</td>
+    <td>The street name of the business licence.</td>
   </tr>
   <tr>
     <th>Source</th>
@@ -499,7 +501,7 @@ The attributes of the Rental Property Rental Business Licence credential are org
   </tr>
   <tr>
     <th>Description</th>
-    <td>The municipality where the property is located (always Vancouver for this credential).</td>
+    <td>The municipality of the business licence.</td>
   </tr>
   <tr>
     <th>Source</th>
@@ -524,7 +526,7 @@ The attributes of the Rental Property Rental Business Licence credential are org
   </tr>
   <tr>
     <th>Description</th>
-    <td>Status of the municipality (e.g., City, Township).</td>
+    <td>Municipality type of the licensed location.</td>
   </tr>
   <tr>
     <th>Source</th>
@@ -549,7 +551,7 @@ The attributes of the Rental Property Rental Business Licence credential are org
   </tr>
   <tr>
     <th>Description</th>
-    <td>The regional district for the property’s location.</td>
+    <td>One of the twenty-seven regional districts in British Columbia.</td>
   </tr>
   <tr>
     <th>Source</th>
@@ -574,7 +576,7 @@ The attributes of the Rental Property Rental Business Licence credential are org
   </tr>
   <tr>
     <th>Description</th>
-    <td>The province or territory of the licensed property.</td>
+    <td>The province or territory of the business licence.</td>
   </tr>
   <tr>
     <th>Source</th>
@@ -599,7 +601,7 @@ The attributes of the Rental Property Rental Business Licence credential are org
   </tr>
   <tr>
     <th>Description</th>
-    <td>The postal code of the licensed property.</td>
+    <td>The postal code of the business licence.</td>
   </tr>
   <tr>
     <th>Source</th>
@@ -624,7 +626,7 @@ The attributes of the Rental Property Rental Business Licence credential are org
   </tr>
   <tr>
     <th>Description</th>
-    <td>The country of the licensed property.</td>
+    <td>The country of the business licence.</td>
   </tr>
   <tr>
     <th>Source</th>
@@ -649,7 +651,7 @@ The attributes of the Rental Property Rental Business Licence credential are org
   </tr>
   <tr>
     <th>Description</th>
-    <td>The complete address of the property associated with the business licence, including unit (if applicable), street number, street name, municipality, province/territory, postal code, and country.</td>
+    <td>Combination of individual address attributes.</td>
   </tr>
   <tr>
     <th>Source</th>
@@ -674,7 +676,7 @@ The attributes of the Rental Property Rental Business Licence credential are org
   </tr>
   <tr>
     <th>Description</th>
-    <td>The neighbourhood or local planning area where the property is located.</td>
+    <td>Local area definition. For Vancouver, one of the twenty-two neighbourhoods where the licensed location exists.</td>
   </tr>
   <tr>
     <th>Source</th>
@@ -699,7 +701,7 @@ The attributes of the Rental Property Rental Business Licence credential are org
   </tr>
   <tr>
     <th>Description</th>
-    <td>Geographic coordinates of the licensed property (latitude and longitude).</td>
+    <td>The geographic coordinates of the licensed location.</td>
   </tr>
   <tr>
     <th>Source</th>
@@ -726,7 +728,7 @@ The attributes of the Rental Property Rental Business Licence credential are org
   </tr>
   <tr>
     <th>Description</th>
-    <td>Indicates the type of residence (e.g., single-family home, condo, apartment).</td>
+    <td>The type of property residence.</td>
   </tr>
   <tr>
     <th>Source</th>
@@ -751,7 +753,7 @@ The attributes of the Rental Property Rental Business Licence credential are org
   </tr>
   <tr>
     <th>Description</th>
-    <td>Specifies whether the rental is the principal residence or another type of dwelling.</td>
+    <td>The type of business licensed location.</td>
   </tr>
   <tr>
     <th>Source</th>
@@ -776,7 +778,7 @@ The attributes of the Rental Property Rental Business Licence credential are org
   </tr>
   <tr>
     <th>Description</th>
-    <td>The number of dwelling units at the licensed property address.</td>
+    <td>The number of dwelling units at the licensed location. Specific to LTR business licence types.</td>
   </tr>
   <tr>
     <th>Source</th>
@@ -801,7 +803,7 @@ The attributes of the Rental Property Rental Business Licence credential are org
   </tr>
   <tr>
     <th>Description</th>
-    <td>The Land Title and Survey Authority’s Parcel Identifier for the property.</td>
+    <td>The nine digit parcel identifier.</td>
   </tr>
   <tr>
     <th>Source</th>
@@ -844,12 +846,12 @@ The attributes of the Rental Property Rental Business Licence credential are org
 
 #### 4.3.5 Attributes about Evidence
 
-*Identity Verification Method*
+*Identity Verification Proof*
 
 <table>
   <tr>
     <th>Attribute</th>
-    <td><code>identity_verification_method</code></td>
+    <td><code>identity_verification_proof</code></td>
   </tr>
   <tr>
     <th>Description</th>
@@ -865,7 +867,13 @@ The attributes of the Rental Property Rental Business Licence credential are org
   </tr>
   <tr>
     <th>Examples</th>
-    <td><code>BC Person Credential</code>
+    <td>
+      <code>BC Person Credential</code><br></br>
+      <pre><code>{
+  "verification_method": "digital",
+  "proofs": ["Person Credential"]
+}</code></pre>
+    </td>
   </tr>
 </table>
 
@@ -890,10 +898,77 @@ The attributes of the Rental Property Rental Business Licence credential are org
   </tr>
   <tr>
     <th>Examples</th>
-    <td><code>ICBC Address Record</code>
+    <td>
+      <code>ICBC Address Record</code><br></br>
+      <pre><code>{
+  "verification_method": "manual",
+  "proofs": ["ICBC Residential Address History"]
+}</code></pre>
+    </td>
   </tr>
 </table>
 
+*Property Owner Proof*
+
+<table>
+  <tr>
+    <th>Attribute</th>
+    <td><code>property_owner_proof</code></td>
+  </tr>
+  <tr>
+    <th>Description</th>
+    <td>Specifies the evidence provided to demonstrate legal ownership of the property associated with the business licence.</td>
+  </tr>
+  <tr>
+    <th>Source</th>
+    <td>Land Title and Survey Authority (LTSA) property records; integrated into the Municipal Business Licence System of Record.</td>
+  </tr>
+  <tr>
+    <th>Data Type</th>
+    <td>String</td>
+  </tr>
+  <tr>
+    <th>Examples</th>
+    <td>
+      <code>LTSA Title Record</code><br></br>
+      <pre><code>{
+  "verification_method": "digital",
+  "proofs": ["LTSA Property Ownership Record"]
+}</code></pre>
+    </td>
+  </tr>
+</table>
+
+*Authorized Verification Proof*
+
+<table>
+  <tr>
+    <th>Attribute</th>
+    <td><code>authorized_verification_proof</code></td>
+  </tr>
+  <tr>
+    <th>Description</th>
+    <td>Specifies the evidence used to confirm that the applicant is authorized by the property owner to apply for or hold the business licence.</td>
+  </tr>
+  <tr>
+    <th>Source</th>
+    <td>Applicant-submitted authorization letters or municipal approval records; stored in the Municipal Business Licence System of Record.</td>
+  </tr>
+  <tr>
+    <th>Data Type</th>
+    <td>String</td>
+  </tr>
+  <tr>
+    <th>Examples</th>
+    <td>
+      <code>Signed Owner Authorization Letter</code><br></br>
+      <pre><code>{
+  "verification_method": "manual",
+  "proofs": ["Owner Authorization Letter", "Municipal Approval Form"]
+}</code></pre>
+    </td>
+  </tr>
+</table>
 
 ## 5. Implementations
 
