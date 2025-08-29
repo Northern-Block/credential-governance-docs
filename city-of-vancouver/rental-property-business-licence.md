@@ -1,8 +1,8 @@
-# Rental Property Rental Business Licence Credential Documentation
+# Rental Property Business Licence Credential Documentation
 
 ## 1. About this Document
 
-This document describes the **Rental Property Rental Business Licence** verifiable credential to help potential verifiers determine whether it is suitable for their needs. The intended audience includes policy analysts, privacy specialists, solution architects, developers, and data architects.
+This document describes the **Rental Property Business Licence** verifiable credential to help potential verifiers determine whether it is suitable for their needs. The intended audience includes policy analysts, privacy specialists, solution architects, developers, and data architects.
 
 The Municipal Property Rental Business Licence credential can be issued by any British Columbia municipality. The first municipality to do so is the **City of Vancouver**, and represents a valid municipal business licence for operating rental properties, initially covering short-term rental (STR) and long-term rental (LTR) business licence types.
 
@@ -13,14 +13,14 @@ The Municipal Property Rental Business Licence credential can be issued by any B
 | <b>1.0</b>      | 26-Aug-2025       | Initial release |
 
 ## 2 Credential Overview
-The Rental Property Rental Business Licence credential is a verifiable credential (VC) issued to individuals or authorized representatives of businesses to prove that they hold a valid City of Vancouver rental business licence.
+The Rental Property Business Licence credential is a verifiable credential (VC) issued to individuals or authorized representatives of businesses to prove that they hold a valid City of Vancouver rental business licence.
 
 The credential is intended to be used in a wide range of contexts, both alone or alongside other credentials (e.g., BC Person Credential, Digital Business Card), as a trusted source of business licence information for verifiers such as platforms (Airbnb, VRBO), municipal inspectors, or other government agencies.
 
 |              |                                                                |
 |-------------------------|---------------------------------------------------------------------------------|
-| **Credential:**         | Rental Property Rental Business Licence                                          |
-| **Schema:**             | Rental Property Rental Business Licence                                          |
+| **Credential:**         | Rental Property Business Licence                                          |
+| **Schema:**             | Rental Property Business Licence                                          |
 | **Issuer:**             | City of Vancouver (Business Licenses Division) <br/> [https://vancouver.ca/](https://vancouver.ca/) |     
 
 ### 2.1 Attribute Summary
@@ -66,7 +66,7 @@ The **32 Attributes** are fully described below in the [Attributes](#bookmark=id
 
 ### 3.1 Issuer
 
-The Rental Property Rental Business Licence credential is issued by **City of Vancouver's Business Licence Office**. The issuer municipality is responsible for reviewing business licence applications, approving, issuing, renewing and revoking all municipal business licences within their jurisdiction and in some cases they could delegate such activities to other organizations.
+The Rental Property Business Licence credential is issued by **City of Vancouver's Business Licence Office**. The issuer municipality is responsible for reviewing business licence applications, approving, issuing, renewing and revoking all municipal business licences within their jurisdiction and in some cases they could delegate such activities to other organizations.
 
 The City of Vancouver is responsible for:
 
@@ -76,13 +76,13 @@ The City of Vancouver is responsible for:
 
 ### 3.2 Schema and Credential Definition Governance
 
-The Rental Property Rental Business Licence credential definition implements the schema published by the City of Vancouver. Both the schema and credential definition are registered on the CANdy Dev Ledger.
+The Rental Property Business Licence credential definition implements the schema published by the City of Vancouver. Both the schema and credential definition are registered on the CANdy Dev Ledger.
 
 The City of Vancouver may, after appropriate consultation and notification, update the credential definition and/or schema to reflect policy or operational changes. Updates will follow the broader municipal credential governance framework and are designed for eventual province-wide interoperability.
 
 ### 3.3 Issuer Data Source
 
-The data in the Municipal Property Rental Business Licence credential comes from the City of Vancouver’s Business Licence system. The City generates some information directly and verifies others against trusted sources.
+The data in the Rental Property Business Licence credential comes from the City of Vancouver’s Business Licence system. The City generates some information directly and verifies others against trusted sources.
 
 - **Business Licence Filing** – the information provided by or on behalf of the applicant during the licence application or renewal process.
 - **City of Vancouver Business Licence System** – system-generated data such as licence number, revision number, and timestamps.
@@ -98,7 +98,7 @@ When a credential is issued, its data reflects the business licence record at th
 
 ### 3.4 Assurance
 
-To minimize risk to verifiers, the City, and licence holders, the Rental Property Rental Business Licence credential is only issued following successful authentication and validation of:
+To minimize risk to verifiers, the City, and licence holders, the Rental Property Business Licence credential is only issued following successful authentication and validation of:
 
 - **Applicant identity** – via the BC Person Credential (high-assurance, Level 3 trusted digital identity).
 - **Primary address history** – verified using ICBC address records or the Person Credential.
@@ -109,7 +109,7 @@ These checks ensure the authenticity of the relationship between the applicant, 
 
 ### 3.5 Revocation
 
-A Rental Property Rental Business Licence credential will be revoked in the following cases:
+A Rental Property Business Licence credential will be revoked in the following cases:
 
 1. The underlying business licence is withdrawn, invalidated, or expires.
 2. The business licence record is updated (e.g., new address, ownership, or trade name).
@@ -121,7 +121,7 @@ In most cases, a revocation triggers a **re-issuance** of the credential with up
 
 ### 4.1 Credential Schema
 
-The Rental Property Rental Business Licence credential is based on the municipal-property-rental-business-licence schema, version 1.0, published by the City of Vancouver and maintained in BCovrin.
+The Rental Property Business Licence credential is based on the rental-property-business-licence schema, version 1.0, published by the City of Vancouver and maintained in BCovrin.
 
 ### 4.2 Subject of the Credential
 
@@ -134,7 +134,7 @@ The credential enables the holder to prove, in real time, that they are licensed
 
 ### 4.3 Attributes
 
-The attributes of the Rental Property Rental Business Licence credential are organized by topic and described below.
+The attributes of the Rental Property Business Licence credential are organized by topic and described below.
 
 #### 4.3.1 Attributes about the Licence
 
@@ -974,7 +974,7 @@ The attributes of the Rental Property Rental Business Licence credential are org
 
 ## 5.1 Technical Format
 
-This credential uses the [Hyperledger AnonCreds](https://github.com/hyperledger/anoncreds/) specification and the "Rental Property Rental Business Licence" schema which has the following defined attributes.
+This credential uses the [Hyperledger AnonCreds](https://github.com/hyperledger/anoncreds/) specification and the "Rental Property Business Licence" schema which has the following defined attributes.
 
 ### 5.2 Issuer List
 The Governing Authority of this Credential document attests that the following issuer information is accurate and can be relied upon by verifiers.
