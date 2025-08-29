@@ -25,7 +25,7 @@ The credential is intended to be used in a wide range of contexts, both alone or
 
 ### 2.1 Attribute Summary
 
-Attributes are fully described below in the [Attributes](#bookmark=id.d4k15yq1kvi3) section.
+The **32 Attributes** are fully described below in the [Attributes](#bookmark=id.d4k15yq1kvi3) section.
 
 | **Name**                     | **Attribute**                      | **Data Type** |
 |-------------------------------|------------------------------------|---------------|
@@ -55,8 +55,8 @@ Attributes are fully described below in the [Attributes](#bookmark=id.d4k15yq1kv
 | Location Type                 | `location_type`                    | String        |
 | Number of Dwelling Units      | `number_of_dwelling_units`         | String        |
 | Parcel Identifier (PID)       | `PID`                              | String        |
-| Strata Property (Yes/No)      | `strata_flag`                      | String        |
-| Map Coordinates (Lat/Long)    | `GIS_coordinates`                  | String        |
+| Strata Property     | `strata_flag`                      | String        |
+| Map Coordinates    | `GIS_coordinates`                  | String        |
 | Identity Verification Proof  | `identity_verification_proof`     | String        |
 | Primary Address Proof    | `primary_address_verification_proof`     | String        |
 | Property Owner Proof    | `property_owner_proof`     | String        |
@@ -151,7 +151,7 @@ The attributes of the Rental Property Rental Business Licence credential are org
   </tr>
   <tr>
     <th>Source</th>
-    <td>Municipal Business Licence System of Record</td>
+    <td>Municipal Business Licence System of Record.</td>
   </tr>
   <tr>
     <th>Data Type</th>
@@ -176,7 +176,7 @@ The attributes of the Rental Property Rental Business Licence credential are org
   </tr>
   <tr>
     <th>Source</th>
-    <td>Municipal Business Licence System of Record</td>
+    <td>Municipal Business Licence System of Record.</td>
   </tr>
   <tr>
     <th>Data Type</th>
@@ -197,11 +197,11 @@ The attributes of the Rental Property Rental Business Licence credential are org
   </tr>
   <tr>
     <th>Description</th>
-    <td>The issued licence number of the business licence</td>
+    <td>The issued licence number of the business licence.</td>
   </tr>
   <tr>
     <th>Source</th>
-    <td>Municipal Business Licence System of Record</td>
+    <td>Municipal Business Licence System of Record.</td>
   </tr>
   <tr>
     <th>Data Type</th>
@@ -226,7 +226,7 @@ The attributes of the Rental Property Rental Business Licence credential are org
   </tr>
   <tr>
     <th>Source</th>
-    <td>Municipal Business Licence System of Record</td>
+    <td>Municipal Business Licence System of Record.</td>
   </tr>
   <tr>
     <th>Data Type</th>
@@ -251,7 +251,7 @@ The attributes of the Rental Property Rental Business Licence credential are org
   </tr>
   <tr>
     <th>Source</th>
-    <td>Municipal Business Licence System of Record</td>
+    <td>Municipal Business Licence System of Record.</td>
   </tr>
   <tr>
     <th>Data Type</th>
@@ -276,7 +276,7 @@ The attributes of the Rental Property Rental Business Licence credential are org
   </tr>
   <tr>
     <th>Source</th>
-    <td>Municipal Business Licence System of Record</td>
+    <td>Municipal Business Licence System of Record.</td>
   </tr>
   <tr>
     <th>Data Type</th>
@@ -301,7 +301,7 @@ The attributes of the Rental Property Rental Business Licence credential are org
   </tr>
   <tr>
     <th>Source</th>
-    <td>Municipal Business Licence System of Record</td>
+    <td>Municipal Business Licence System of Record.</td>
   </tr>
   <tr>
     <th>Data Type</th>
@@ -328,7 +328,7 @@ The attributes of the Rental Property Rental Business Licence credential are org
   </tr>
   <tr>
     <th>Source</th>
-    <td>Municipal Business Licence System of Record (as reported by the applicant)</td>
+    <td>Municipal Business Licence System of Record (as reported by the applicant).</td>
   </tr>
   <tr>
     <th>Data Type</th>
@@ -405,7 +405,7 @@ The attributes of the Rental Property Rental Business Licence credential are org
   </tr>
   <tr>
     <th>Source</th>
-    <td>Municipal Business Licence System of Record (provided by the applicant and verified against property records)</td>
+    <td>Municipal Business Licence System of Record (provided by the applicant and verified against property records).</td>
   </tr>
   <tr>
     <th>Data Type</th>
@@ -430,7 +430,7 @@ The attributes of the Rental Property Rental Business Licence credential are org
   </tr>
   <tr>
     <th>Source</th>
-    <td>Municipal Business Licence System of Record</td>
+    <td>Municipal Business Licence System of Record.</td>
   </tr>
   <tr>
     <th>Data Type</th>
@@ -455,7 +455,7 @@ The attributes of the Rental Property Rental Business Licence credential are org
   </tr>
   <tr>
     <th>Source</th>
-    <td>Municipal Business Licence System of Record (verified against civic address records)</td>
+    <td>Municipal Business Licence System of Record (verified against civic address records).</td>
   </tr>
   <tr>
     <th>Data Type</th>
@@ -480,7 +480,7 @@ The attributes of the Rental Property Rental Business Licence credential are org
   </tr>
   <tr>
     <th>Source</th>
-    <td>Municipal Business Licence System of Record (verified against civic address records)</td>
+    <td>Municipal Business Licence System of Record (verified against civic address records).</td>
   </tr>
   <tr>
     <th>Data Type</th>
@@ -505,7 +505,7 @@ The attributes of the Rental Property Rental Business Licence credential are org
   </tr>
   <tr>
     <th>Source</th>
-    <td>Municipal Business Licence System of Record</td>
+    <td>Municipal Business Licence System of Record.</td>
   </tr>
   <tr>
     <th>Data Type</th>
@@ -530,7 +530,7 @@ The attributes of the Rental Property Rental Business Licence credential are org
   </tr>
   <tr>
     <th>Source</th>
-    <td>Municipal Business Licence System of Record</td>
+    <td>Municipal Business Licence System of Record.</td>
   </tr>
   <tr>
     <th>Data Type</th>
@@ -555,7 +555,7 @@ The attributes of the Rental Property Rental Business Licence credential are org
   </tr>
   <tr>
     <th>Source</th>
-    <td>Municipal Business Licence System of Record (derived from property records)</td>
+    <td>Municipal Business Licence System of Record (derived from property records).</td>
   </tr>
   <tr>
     <th>Data Type</th>
@@ -580,7 +580,7 @@ The attributes of the Rental Property Rental Business Licence credential are org
   </tr>
   <tr>
     <th>Source</th>
-    <td>Municipal Business Licence System of Record</td>
+    <td>Municipal Business Licence System of Record.</td>
   </tr>
   <tr>
     <th>Data Type</th>
@@ -605,7 +605,7 @@ The attributes of the Rental Property Rental Business Licence credential are org
   </tr>
   <tr>
     <th>Source</th>
-    <td>Municipal Business Licence System of Record (verified against Canada Post format)</td>
+    <td>Municipal Business Licence System of Record (verified against Canada Post format).</td>
   </tr>
   <tr>
     <th>Data Type</th>
@@ -630,7 +630,7 @@ The attributes of the Rental Property Rental Business Licence credential are org
   </tr>
   <tr>
     <th>Source</th>
-    <td>Municipal Business Licence System of Record</td>
+    <td>Municipal Business Licence System of Record.</td>
   </tr>
   <tr>
     <th>Data Type</th>
@@ -655,7 +655,7 @@ The attributes of the Rental Property Rental Business Licence credential are org
   </tr>
   <tr>
     <th>Source</th>
-    <td>Municipal Business Licence System of Record (derived from applicant submissions and verified against property and identity records)</td>
+    <td>Municipal Business Licence System of Record (derived from applicant submissions and verified against property and identity records).</td>
   </tr>
   <tr>
     <th>Data Type</th>
@@ -680,7 +680,7 @@ The attributes of the Rental Property Rental Business Licence credential are org
   </tr>
   <tr>
     <th>Source</th>
-    <td>Municipal Business Licence System of Record (derived from municipal planning datasets)</td>
+    <td>Municipal Business Licence System of Record (derived from municipal planning datasets).</td>
   </tr>
   <tr>
     <th>Data Type</th>
@@ -732,7 +732,7 @@ The attributes of the Rental Property Rental Business Licence credential are org
   </tr>
   <tr>
     <th>Source</th>
-    <td>Municipal Business Licence System of Record (may be cross-verified with LTSA records)</td>
+    <td>Municipal Business Licence System of Record (may be cross-verified with LTSA records).</td>
   </tr>
   <tr>
     <th>Data Type</th>
@@ -782,7 +782,7 @@ The attributes of the Rental Property Rental Business Licence credential are org
   </tr>
   <tr>
     <th>Source</th>
-    <td>Municipal Business Licence System of Record (verified against property assessment and LTSA records)</td>
+    <td>Municipal Business Licence System of Record (verified against property assessment and LTSA records).</td>
   </tr>
   <tr>
     <th>Data Type</th>
@@ -807,7 +807,7 @@ The attributes of the Rental Property Rental Business Licence credential are org
   </tr>
   <tr>
     <th>Source</th>
-    <td>LTSA property records; integrated with Municipal Business Licence System of Record</td>
+    <td>LTSA property records; integrated with Municipal Business Licence System of Record.</td>
   </tr>
   <tr>
     <th>Data Type</th>
@@ -859,7 +859,7 @@ The attributes of the Rental Property Rental Business Licence credential are org
   </tr>
   <tr>
     <th>Source</th>
-    <td>Municipal Business Licence System of Record (validated against BC Person Credential or supporting identity documents)</td>
+    <td>Municipal Business Licence System of Record (validated against BC Person Credential).</td>
   </tr>
   <tr>
     <th>Data Type</th>
@@ -886,7 +886,7 @@ The attributes of the Rental Property Rental Business Licence credential are org
   </tr>
   <tr>
     <th>Description</th>
-    <td>Specifies the method used to verify the applicant’s primary residential address (e.g., ICBC driver’s licence address, LTSA property records).</td>
+    <td>Specifies the method used to verify the applicant’s primary residential address.</td>
   </tr>
   <tr>
     <th>Source</th>
