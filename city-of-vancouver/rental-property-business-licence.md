@@ -43,7 +43,7 @@ The full set of attributes is described in [Section 4.3 Attributes](#43-attribut
 | 012         | Street Number                 | `street_number`                    | String        |
 | 013         | Street Name                   | `street_name`                      | String        |
 | 014         | Municipality                  | `municipality`                     | String        |
-| 015         | Municipality Type             | `municipality_status`              | String        |
+| 015         | Municipality Status           | `municipality_status`              | String        |
 | 016         | Regional District             | `regional_district`                | String        |
 | 017         | Province / Territory          | `province_territory`               | String        |
 | 018         | Postal Code                   | `postal_code`                      | String        |
@@ -55,7 +55,7 @@ The full set of attributes is described in [Section 4.3 Attributes](#43-attribut
 | 024         | Number of Dwelling Units      | `number_of_dwelling_unitsint`         | Integer        |
 | 025         | Parcel Identifier (PID)       | `PID`                              | String        |
 | 026         | Strata Flag                   | `strata_flag`                      | Boolean       |
-| 027         | Map Coordinates               | `GIS_coordinates`                  | String        |
+| 027         | GIS Coordinates               | `GIS_coordinates`                  | String        |
 | 028         | Identity Verification Proof   | `identity_verification_proof`     | String        |
 | 029         | Primary Address Proof         | `primary_address_verification_proof`     | String        |
 | 030         | Property Owner Proof          | `property_owner_proof`     | String        |
@@ -83,25 +83,26 @@ The City of Vancouver may, after appropriate consultation and notification, upda
 
 The data in the Rental Property Business Licence credential is sourced from applicant identity credentials and municipal systems of record. Some information is generated directly by the Issuer, while other elements are verified against trusted external sources.
 
-- **Applicant identity** – via the BC Person Credential (high-assurance, Level 3 trusted digital identity).
-- **Primary address history** – verified using ICBC address records or the Person Credential, for short-term rental licence applications.
-- **Property ownership** – verified against internal systems, for long-term rental licence applications.
-- **Authorization** – verified by requiring an Owner’s Letter of Authorization if the applicant is not the property owner, for short term rental applications.
+- **Business Licence Filing** – the information provided by or on behalf of the applicant during the licence application or renewal process.
+- **City of Vancouver Business Licence System** – system-generated data such as licence number, revision number, and timestamps.
+- **Foundational Identity Verification** – the applicant’s identity is confirmed using the BC Person Credential.
+- **Property Ownership Verification** – records are checked through internal systems of record to confirm ownership or authorized use of the property.
+- **Authorization Verification** – an Owner’s Letter of Authorization, where applicable, is collected and retained.
 
-The source of each attribute is described in the Attributes section.
+The source of each attribute is described in [Section 4.3 Attributes](#43-attributes).
 
 #### 3.3.1 Data Updates
 
-When a credential is issued, its data reflects the business licence record at the time of issuance. Changes to licence records (e.g., business trade name, ownership, address) trigger a revocation and re-issuance of the credential so that the holder’s credential always reflects current information.
+When a credential is issued, its data reflects the business licence record at the time of issuance. Changes to licence records (*e.g., business trade name, ownership, address*) trigger a revocation and re-issuance of the credential so that the holder’s credential always reflects current information.
 
 ### 3.4 Assurance
 
 To minimize risk to verifiers, the City, and licence holders, the Rental Property Business Licence credential is only issued following successful authentication and validation of:
 
 - **Applicant identity** – via the BC Person Credential (high-assurance, Level 3 trusted digital identity).
-- **Primary address history** – verified using ICBC address records or the Person Credential.
-- **Property ownership** – verified against LTSA property records.
-- **Authorization** – verified by requiring an Owner’s Letter of Authorization if the applicant is not the property owner.
+- **Primary address history** – verified using ICBC address records or the Person Credential, for short-term rental licence applications.
+- **Property ownership** – verified against internal systems, for long-term rental licence applications.
+- **Authorization** – verified by requiring an Owner’s Letter of Authorization if the applicant is not the property owner, for short term rental applications.
 
 These checks ensure the authenticity of the relationship between the applicant, the business, and the property location.
 
@@ -136,7 +137,7 @@ The attributes of the Rental Property Business Licence credential are organized 
 
 #### 4.3.1 Attributes about the Licence
 
-*Business Licence Type*
+*Business Licence Type (001)*
 
 <table>
   <tr>
@@ -161,7 +162,7 @@ The attributes of the Rental Property Business Licence credential are organized 
   </tr>
 </table>
 
-*Business Sub-Type*
+*Business Sub-Type (002)*
 
 <table>
   <tr>
@@ -186,7 +187,7 @@ The attributes of the Rental Property Business Licence credential are organized 
   </tr>
 </table>
 
-*Licence Number*
+*Licence Number (004)*
 
 <table>
   <tr>
@@ -211,7 +212,7 @@ The attributes of the Rental Property Business Licence credential are organized 
   </tr>
 </table>
 
-*Licence Revision Number*
+*Licence Revision Number (005)*
 
 <table>
   <tr>
@@ -236,7 +237,7 @@ The attributes of the Rental Property Business Licence credential are organized 
   </tr>
 </table>
 
-*Issue Date*
+*Issue Date (008)*
 
 <table>
   <tr>
@@ -261,7 +262,7 @@ The attributes of the Rental Property Business Licence credential are organized 
   </tr>
 </table>
 
-*Expiry Date*
+*Expiry Date (009)*
 
 <table>
   <tr>
@@ -288,7 +289,7 @@ The attributes of the Rental Property Business Licence credential are organized 
 
 #### 4.3.2 Attributes about the Business / Licence Holder
 
-*Business / Trade Name*
+*Business / Trade Name (003)*
 
 <table>
   <tr>
@@ -313,7 +314,7 @@ The attributes of the Rental Property Business Licence credential are organized 
   </tr>
 </table>
 
-*Licence Holder First Name*
+*Licence Holder First Name (006)*
 
 <table>
   <tr>
@@ -338,7 +339,7 @@ The attributes of the Rental Property Business Licence credential are organized 
   </tr>
 </table>
 
-*Licence Holder Last Name*
+*Licence Holder Last Name (007)*
 
 <table>
   <tr>
@@ -365,7 +366,7 @@ The attributes of the Rental Property Business Licence credential are organized 
 
 #### 4.3.3 Attributes about the Location
 
-*Unit*
+*Unit (010)*
 
 <table>
   <tr>
@@ -390,7 +391,7 @@ The attributes of the Rental Property Business Licence credential are organized 
   </tr>
 </table>
 
-*Unit Type*
+*Unit Type (011)*
 
 <table>
   <tr>
@@ -415,7 +416,7 @@ The attributes of the Rental Property Business Licence credential are organized 
   </tr>
 </table>
 
-*Street Number*
+*Street Number (012)*
 
 <table>
   <tr>
@@ -440,7 +441,7 @@ The attributes of the Rental Property Business Licence credential are organized 
   </tr>
 </table>
 
-*Street Name*
+*Street Name (013)*
 
 <table>
   <tr>
@@ -465,7 +466,7 @@ The attributes of the Rental Property Business Licence credential are organized 
   </tr>
 </table>
 
-*Municipality*
+*Municipality (014)*
 
 <table>
   <tr>
@@ -490,7 +491,7 @@ The attributes of the Rental Property Business Licence credential are organized 
   </tr>
 </table>
 
-*Municipality Status*
+*Municipality Status (015)*
 
 <table>
   <tr>
@@ -515,7 +516,7 @@ The attributes of the Rental Property Business Licence credential are organized 
   </tr>
 </table>
 
-*Regional District*
+*Regional District (016)*
 
 <table>
   <tr>
@@ -540,7 +541,7 @@ The attributes of the Rental Property Business Licence credential are organized 
   </tr>
 </table>
 
-*Province or Territory*
+*Province or Territory (017)*
 
 <table>
   <tr>
@@ -565,7 +566,7 @@ The attributes of the Rental Property Business Licence credential are organized 
   </tr>
 </table>
 
-*Postal Code*
+*Postal Code (018)*
 
 <table>
   <tr>
@@ -590,7 +591,7 @@ The attributes of the Rental Property Business Licence credential are organized 
   </tr>
 </table>
 
-*Country*
+*Country (019)*
 
 <table>
   <tr>
@@ -615,7 +616,7 @@ The attributes of the Rental Property Business Licence credential are organized 
   </tr>
 </table>
 
-*Full Licence Address*
+*Full Licence Address (020)*
 
 <table>
   <tr>
@@ -640,7 +641,7 @@ The attributes of the Rental Property Business Licence credential are organized 
   </tr>
 </table>
 
-*Local Area*
+*Local Area (022)*
 
 <table>
   <tr>
@@ -665,7 +666,7 @@ The attributes of the Rental Property Business Licence credential are organized 
   </tr>
 </table>
 
-*GIS Coordinates*
+*GIS Coordinates (027)*
 
 <table>
   <tr>
@@ -692,7 +693,7 @@ The attributes of the Rental Property Business Licence credential are organized 
 
 #### 4.3.4 Attributes about the Property
 
-*Property Residence Type*
+*Property Residence Type (021)*
 
 <table>
   <tr>
@@ -705,7 +706,7 @@ The attributes of the Rental Property Business Licence credential are organized 
   </tr>
   <tr>
     <th>Source</th>
-    <td>Municipal Business Licence System of Record (may be cross-verified with LTSA records).</td>
+    <td>Municipal Business Licence System of Record.</td>
   </tr>
   <tr>
     <th>Data Type</th>
@@ -717,7 +718,7 @@ The attributes of the Rental Property Business Licence credential are organized 
   </tr>
 </table>
 
-*Location Type*
+*Location Type (023)*
 
 <table>
   <tr>
@@ -742,7 +743,7 @@ The attributes of the Rental Property Business Licence credential are organized 
   </tr>
 </table>
 
-*Number of Dwelling Units*
+*Number of Dwelling Units (024)*
 
 <table>
   <tr>
@@ -755,7 +756,7 @@ The attributes of the Rental Property Business Licence credential are organized 
   </tr>
   <tr>
     <th>Source</th>
-    <td>Municipal Business Licence System of Record (verified against property assessment and LTSA records).</td>
+    <td>Municipal Business Licence System of Record (verified against property assessment records).</td>
   </tr>
   <tr>
     <th>Data Type</th>
@@ -767,7 +768,7 @@ The attributes of the Rental Property Business Licence credential are organized 
   </tr>
 </table>
 
-*Parcel Identifier (PID)*
+*Parcel Identifier (PID) (025)*
 
 <table>
   <tr>
@@ -780,7 +781,7 @@ The attributes of the Rental Property Business Licence credential are organized 
   </tr>
   <tr>
     <th>Source</th>
-    <td>LTSA property records; integrated with Municipal Business Licence System of Record.</td>
+    <td>Municipal Business Licence System of Record.</td>
   </tr>
   <tr>
     <th>Data Type</th>
@@ -792,7 +793,7 @@ The attributes of the Rental Property Business Licence credential are organized 
   </tr>
 </table>
 
-*Strata Flag*
+*Strata Flag (026)*
 
 <table>
   <tr>
@@ -805,7 +806,7 @@ The attributes of the Rental Property Business Licence credential are organized 
   </tr>
   <tr>
     <th>Source</th>
-    <td>LTSA property records; confirmed by Municipal Business Licence System of Record during application review.</td>
+    <td>Municipal Business Licence System of Record.</td>
   </tr>
   <tr>
     <th>Data Type</th>
@@ -821,7 +822,7 @@ The attributes of the Rental Property Business Licence credential are organized 
 
 > **Note:** The example values for evidence attributes are shown as JSON objects, since this is the expected data structure. However, in Section 2.1 they are defined as **String** types because Anoncreds credentials do not support nested data attributes.
 
-*Identity Verification Proof*
+*Identity Verification Proof (028)*
 
 <table>
   <tr>
@@ -852,12 +853,12 @@ The attributes of the Rental Property Business Licence credential are organized 
   </tr>
 </table>
 
-*Primary Address Verification Method*
+*Primary Address Verification Proof (029)*
 
 <table>
   <tr>
     <th>Attribute</th>
-    <td><code>primary_address_verification_method</code></td>
+    <td><code>primary_address_verification_proof</code></td>
   </tr>
   <tr>
     <th>Description</th>
@@ -883,7 +884,7 @@ The attributes of the Rental Property Business Licence credential are organized 
   </tr>
 </table>
 
-*Property Owner Proof*
+*Property Owner Proof (030)*
 
 <table>
   <tr>
@@ -896,7 +897,7 @@ The attributes of the Rental Property Business Licence credential are organized 
   </tr>
   <tr>
     <th>Source</th>
-    <td>Land Title and Survey Authority (LTSA) property records; integrated into the Municipal Business Licence System of Record.</td>
+    <td>Municipal Business Licence System of Record.</td>
   </tr>
   <tr>
     <th>Data Type</th>
@@ -905,16 +906,16 @@ The attributes of the Rental Property Business Licence credential are organized 
   <tr>
     <th>Examples</th>
     <td>
-      <code>LTSA Title Record</code><br></br>
+      <code>Title Record</code><br></br>
       <pre><code>{
   "verification_method": "digital",
-  "proofs": ["LTSA Property Ownership Record"]
+  "proofs": ["Property Ownership Record"]
 }</code></pre>
     </td>
   </tr>
 </table>
 
-*Authorized Verification Proof*
+*Authorized Verification Proof (031)*
 
 <table>
   <tr>
