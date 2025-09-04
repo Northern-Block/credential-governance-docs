@@ -25,42 +25,41 @@ The credential is intended to be used in a wide range of contexts, both alone or
 
 ### 2.1 Attribute Summary
 
-The **32 Attributes** are fully described below in the [Attributes](#bookmark=id.d4k15yq1kvi3) section.
+The full set of attributes is described in [Section 4.3 Attributes](#43-attributes).
 
-| **Name**                     | **Attribute**                      | **Data Type** |
-|-------------------------------|------------------------------------|---------------|
-| Business Licence Type         | `business_licence_type`            | String        |
-| Business Sub-Type             | `business_sub_type`                | String        |
-| Business / Trade Name         | `business_trade_name`              | String        |
-| Licence Number                | `licence_number`                   | String        |
-| Licence Revision Number       | `licence_revision_number`          | String        |
-| Licence Holder First Name     | `licence_holder_given_name`        | String        |
-| Licence Holder Last Name      | `licence_holder_family_name`       | String        |
-| Licence Year                  | `validity_yearint`                 | Integer       |
-| Issue Date                    | `licence_issued_dateint`           | Integer       |
-| Expiry Date                   | `licence_expiry_dateint`           | Integer       |
-| Unit Number                   | `unit`                             | String        |
-| Unit Type                     | `unit_type`                        | String        |
-| Street Number                 | `street_number`                    | String        |
-| Street Name                   | `street_name`                      | String        |
-| Municipality                  | `municipality`                     | String        |
-| Municipality Type             | `municipality_status`              | String        |
-| Regional District             | `regional_district`                | String        |
-| Province / Territory          | `province_territory`               | String        |
-| Postal Code                   | `postal_code`                      | String        |
-| Country                       | `country`                          | String        |
-| Full Licence Address          | `full_licence_address`             | String        |
-| Property Residence Type       | `property_residence_type`          | String        |
-| Neighbourhood / Local Area    | `local_area`                       | String        |
-| Location Type                 | `location_type`                    | String        |
-| Number of Dwelling Units      | `number_of_dwelling_units`         | String        |
-| Parcel Identifier (PID)       | `PID`                              | String        |
-| Strata Property     | `strata_flag`                      | String        |
-| Map Coordinates    | `GIS_coordinates`                  | String        |
-| Identity Verification Proof  | `identity_verification_proof`     | String        |
-| Primary Address Proof    | `primary_address_verification_proof`     | String        |
-| Property Owner Proof    | `property_owner_proof`     | String        |
-| Authorized Verification Proof    | `authorized_verification_proof`     | String        |
+| **#**       | **Name**                      | **Attribute**                      | **Data Type** |
+|-------------|-------------------------------|------------------------------------|---------------|
+| 001         | Business Licence Type         | `business_licence_type`            | String        |
+| 002         | Business Sub-Type             | `business_sub_type`                | String        |
+| 003         | Business / Trade Name         | `business_trade_name`              | String        |
+| 004         | Licence Number                | `licence_number`                   | String        |
+| 005         | Licence Revision Number       | `licence_revision_number`          | String        |
+| 006         | Licence Holder First Name     | `licence_holder_given_name`        | String        |
+| 007         | Licence Holder Last Name      | `licence_holder_family_name`       | String        |
+| 008         | Issue Date                    | `licence_issued_dateint`           | Integer       |
+| 009         | Expiry Date                   | `licence_expiry_dateint`           | Integer       |
+| 010         | Unit Number                   | `unit`                             | String        |
+| 011         | Unit Type                     | `unit_type`                        | String        |
+| 012         | Street Number                 | `street_number`                    | String        |
+| 013         | Street Name                   | `street_name`                      | String        |
+| 014         | Municipality                  | `municipality`                     | String        |
+| 015         | Municipality Type             | `municipality_status`              | String        |
+| 016         | Regional District             | `regional_district`                | String        |
+| 017         | Province / Territory          | `province_territory`               | String        |
+| 018         | Postal Code                   | `postal_code`                      | String        |
+| 019         | Country                       | `country`                          | String        |
+| 020         | Full Licence Address          | `full_licence_address`             | String        |
+| 021         | Property Residence Type       | `property_residence_type`          | String        |
+| 022         | Neighbourhood / Local Area    | `local_area`                       | String        |
+| 023         | Location Type                 | `location_type`                    | String        |
+| 024         | Number of Dwelling Units      | `number_of_dwelling_unitsint`         | Integer        |
+| 025         | Parcel Identifier (PID)       | `PID`                              | String        |
+| 026         | Strata Flag                   | `strata_flag`                      | Boolean       |
+| 027         | Map Coordinates               | `GIS_coordinates`                  | String        |
+| 028         | Identity Verification Proof   | `identity_verification_proof`     | String        |
+| 029         | Primary Address Proof         | `primary_address_verification_proof`     | String        |
+| 030         | Property Owner Proof          | `property_owner_proof`     | String        |
+| 031         | Authorized Verification Proof | `authorized_verification_proof`     | String        |
 
 ## 3. Credential Details
 
@@ -70,7 +69,7 @@ The Rental Property Business Licence credential is issued by **City of Vancouver
 
 The City of Vancouver is responsible for:
 
-- Administering the <a href="https://vancouver.ca/your-government/licence-bylaw.aspx">Business Licence Bylaw</a>, including processing applications, renewals, and amendments to licences.
+- Administering the <a href="https://vancouver.ca/your-government/licence-bylaw.aspx">Licence Bylaw</a>, including processing applications, renewals, and amendments to licences.
 - Operating the **Business Licence System of Record**, which records licence issuance, renewals, revocations, and changes to attributes such as business trade name or location.
 - Reviewing foundational identity, property ownership, and authorization documentation as part of the licensing process.
 
@@ -82,13 +81,12 @@ The City of Vancouver may, after appropriate consultation and notification, upda
 
 ### 3.3 Issuer Data Source
 
-The data in the Rental Property Business Licence credential comes from the City of Vancouver’s Business Licence system. The City generates some information directly and verifies others against trusted sources.
+The data in the Rental Property Business Licence credential is sourced from applicant identity credentials and municipal systems of record. Some information is generated directly by the Issuer, while other elements are verified against trusted external sources.
 
-- **Business Licence Filing** – the information provided by or on behalf of the applicant during the licence application or renewal process.
-- **City of Vancouver Business Licence System** – system-generated data such as licence number, revision number, and timestamps.
-- **Foundational Identity Verification** – the applicant’s identity is confirmed using the BC Person Credential or other government-issued photo identification.  
-- **Property Ownership Verification** – records are checked through the <a href="https://ltsa.ca/">Land Title and Survey Authority (LTSA)</a> to confirm ownership or authorized use of the property.  
-- **Authorization Verification** – an Owner’s Letter of Authorization, where applicable, is collected and retained.
+- **Applicant identity** – via the BC Person Credential (high-assurance, Level 3 trusted digital identity).
+- **Primary address history** – verified using ICBC address records or the Person Credential, for short-term rental licence applications.
+- **Property ownership** – verified against internal systems, for long-term rental licence applications.
+- **Authorization** – verified by requiring an Owner’s Letter of Authorization if the applicant is not the property owner, for short term rental applications.
 
 The source of each attribute is described in the Attributes section.
 
@@ -235,31 +233,6 @@ The attributes of the Rental Property Business Licence credential are organized 
   <tr>
     <th>Examples</th>
     <td><code>1</code><br></br><code>2</code></td>
-  </tr>
-</table>
-
-*Licence Year*
-
-<table>
-  <tr>
-    <th>Attribute</th>
-    <td><code>validity_yearint</code></td>
-  </tr>
-  <tr>
-    <th>Description</th>
-    <td>The year the licence is active for the business licence.</td>
-  </tr>
-  <tr>
-    <th>Source</th>
-    <td>Municipal Business Licence System of Record.</td>
-  </tr>
-  <tr>
-    <th>Data Type</th>
-    <td>Integer (YYYY)</td>
-  </tr>
-  <tr>
-    <th>Examples</th>
-    <td><code>2025</code></td>
   </tr>
 </table>
 
@@ -774,7 +747,7 @@ The attributes of the Rental Property Business Licence credential are organized 
 <table>
   <tr>
     <th>Attribute</th>
-    <td><code>number_of_dwelling_units</code></td>
+    <td><code>number_of_dwelling_unitsint</code></td>
   </tr>
   <tr>
     <th>Description</th>
@@ -846,6 +819,8 @@ The attributes of the Rental Property Business Licence credential are organized 
 
 #### 4.3.5 Attributes about Evidence
 
+> **Note:** The example values for evidence attributes are shown as JSON objects, since this is the expected data structure. However, in Section 2.1 they are defined as **String** types because Anoncreds credentials do not support nested data attributes.
+
 *Identity Verification Proof*
 
 <table>
@@ -863,7 +838,7 @@ The attributes of the Rental Property Business Licence credential are organized 
   </tr>
   <tr>
     <th>Data Type</th>
-    <td>String</td>
+    <td>JSON</td>
   </tr>
   <tr>
     <th>Examples</th>
@@ -894,7 +869,7 @@ The attributes of the Rental Property Business Licence credential are organized 
   </tr>
   <tr>
     <th>Data Type</th>
-    <td>String</td>
+    <td>JSON</td>
   </tr>
   <tr>
     <th>Examples</th>
@@ -925,7 +900,7 @@ The attributes of the Rental Property Business Licence credential are organized 
   </tr>
   <tr>
     <th>Data Type</th>
-    <td>String</td>
+    <td>JSON</td>
   </tr>
   <tr>
     <th>Examples</th>
@@ -956,7 +931,7 @@ The attributes of the Rental Property Business Licence credential are organized 
   </tr>
   <tr>
     <th>Data Type</th>
-    <td>String</td>
+    <td>JSON</td>
   </tr>
   <tr>
     <th>Examples</th>
