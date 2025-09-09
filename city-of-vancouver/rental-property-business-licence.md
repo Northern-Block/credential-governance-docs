@@ -4,7 +4,7 @@
 
 This document describes the **Rental Property Business Licence** verifiable credential to help potential verifiers determine whether it is suitable for their needs. The intended audience includes policy analysts, privacy specialists, solution architects, developers, and data architects.
 
-The Municipal Property Rental Business Licence credential can be issued by any British Columbia municipality. The first municipality to do so is the **City of Vancouver**, and represents a valid municipal business licence for operating rental properties.
+The Rental Property Business Licence credential can be issued by any British Columbia municipality. The first municipality to do so is the **City of Vancouver**, and represents a valid municipal business licence for operating rental properties.
 
 > **Note:** This credential schema was originally designed to support both short-term rental (STR) and long-term rental (LTR) business licence types.
 
