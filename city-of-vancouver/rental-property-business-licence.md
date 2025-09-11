@@ -12,7 +12,7 @@ The Rental Property Business Licence credential can be issued by any British Col
 
 | Ver.      | Date | Notes |
 | ----------- | ----------- | ----------- |
-| <b>1.0</b>      | 7-Sep-2025       | Initial release |
+| <b>1.0</b>      | 11-Sep-2025       | Initial release |
 
 ## 2 Credential Overview
 The Rental Property Business Licence credential is a verifiable credential (VC) issued to individuals or authorized representatives of businesses to prove that they hold a valid City of Vancouver rental business licence.
@@ -1026,10 +1026,10 @@ The Governing Authority of this Credential document attests that the following i
 |Environment|Ledger|Schema ID|
 |---|---|---|
 |CANdy Production|TBA|TBA|TBA|
-|CANdy Dev|[municipal-property-rental-business-licence](https://candyscan.digitaltrust.gov.bc.ca/tx/CANDY_DEV/domain/37509)|<code>HFZfqC6Jzbt57FxcXqn78a:2:municipal-property-rental-business-licence:1.0</code>|
+|CANdy Dev|[rental-property-business-licence](https://candyscan.digitaltrust.gov.bc.ca/tx/CANDY_DEV/domain/37570) | <code>HFZfqC6Jzbt57FxcXqn78a:2:Rental Property Business Licence:1.0</code>|
 
 ### 5.4 Credential Implementation
 |Environment|Ledger|Credential Definition ID|OCA Bundle|
 |---|---|---|---|
 |CANdy Production|TBA|TBA|TBA|
-|CANdy Dev|[municipal-property-rental-business-licence](https://candyscan.digitaltrust.gov.bc.ca/tx/CANDY_DEV/domain/37511)|<code>HFZfqC6Jzbt57FxcXqn78a:3:CL:37509:municipal-property-rental-business-licence</code>|[City of Vancouver TEST Property Rental Business License](https://github.com/bcgov/aries-oca-bundles/tree/main/OCABundles/schema/CityOfVancouver/test-property-rental-business-licence)|
+|CANdy Dev|[rental-property-business-licence](https://candyscan.digitaltrust.gov.bc.ca/tx/CANDY_DEV/domain/37571)|<code>HFZfqC6Jzbt57FxcXqn78a:3:CL:37570:Rental Property Business Licence/code>|[City of Vancouver TEST Property Rental Business License](https://github.com/bcgov/aries-oca-bundles/tree/main/OCABundles/schema/CityOfVancouver/test-property-rental-business-licence)|
