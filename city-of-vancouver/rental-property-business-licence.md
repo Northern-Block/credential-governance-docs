@@ -883,7 +883,7 @@ The attributes of the Rental Property Business Licence credential are organized 
 
 #### 4.3.5 Attributes about Evidence
 
-> **Note:** The example values for evidence attributes are shown as JSON objects, since this is the expected data structure. However, in Section 2.1 they are defined as **String** types because Anoncreds credentials do not support nested data attributes.
+> **Note:** The example values for evidence attributes are shown as JSON objects, since this is the expected data structure. However, in Section 2.1 they are defined as **String** types, as credential attribute values must remain flat.
 
 *Identity Verification Proof (028)*
 
