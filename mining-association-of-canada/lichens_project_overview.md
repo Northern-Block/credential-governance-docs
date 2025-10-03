@@ -1,0 +1,1 @@
+Lichens is a platform that mining operators use to capture, collect and organize evidence (files, data) that are required for sustainability purposes, and Lichens then helps the user leverage their evidence to complete sustainability reporting requirents against standards such as Towards Sutainable 
