@@ -12,7 +12,7 @@ The Rental Property Business Licence credential can be issued by any British Col
 
 | Ver.      | Date | Notes |
 | ----------- | ----------- | ----------- |
-| <b>1.0</b>      | 5-Oct-2025       | Initial release |
+| <b>1.0</b>      | 11-Oct-2025       | Initial release |
 
 ## 2 Credential Overview
 The Rental Property Business Licence credential is a verifiable credential (VC) issued to individuals or authorized representatives of businesses to prove that they hold a valid City of Vancouver rental business licence.
@@ -1044,20 +1044,20 @@ This credential uses the [Hyperledger AnonCreds](https://github.com/hyperledger/
 The Governing Authority of this Credential document attests that the following issuer information is accurate and can be relied upon by verifiers.
 | Environment | Issuer Name | Issuer DID |
 |------|------|-------|
-| CANdy Production  | City of Vancouver     | TBA   |
-| CANdy Test  | City of Vancouver     | TBA   |
-| CANdy Dev  | City of Vancouver     | <code>HFZfqC6Jzbt57FxcXqn78a</code>   |
+| CANdy Production  | City of Vancouver  | TBA   |
+| CANdy Test  | City of Vancouver (UAT)  | TBA   |
+| CANdy Dev  | City of Vancouver (DEV)   | <code>YWnESLB4SH275SMNvaJJ1L</code>   |
 
 ### 5.3 Schema Implementation
 |Environment|Ledger|Schema ID|
 |---|---|---|
 |CANdy Production|TBA|TBA|TBA|
 |CANdy Test|TBA|TBA|TBA|
-|CANdy Dev|[rental-property-business-licence](https://candyscan.digitaltrust.gov.bc.ca/tx/CANDY_DEV/domain/37570) | <code>HFZfqC6Jzbt57FxcXqn78a:2:Rental Property Business Licence:1.0</code>|
+|CANdy Dev|[Rental Property Business Licence](https://candyscan.digitaltrust.gov.bc.ca/tx/CANDY_DEV/domain/38195) | <code>YWnESLB4SH275SMNvaJJ1L:2:Rental Property Business Licence:1.0</code>|
 
 ### 5.4 Credential Implementation
 |Environment|Ledger|Credential Definition ID|OCA Bundle|
 |---|---|---|---|
 |CANdy Production|TBA|TBA|TBA|
 |CANdy Test|TBA|TBA|TBA|
-|CANdy Dev|[rental-property-business-licence](https://candyscan.digitaltrust.gov.bc.ca/tx/CANDY_DEV/domain/37571)|<code>HFZfqC6Jzbt57FxcXqn78a:3:CL:37570:Rental Property Business Licence/code>|[City of Vancouver TEST Property Rental Business License](https://github.com/bcgov/aries-oca-bundles/tree/main/OCABundles/schema/CityOfVancouver/test-property-rental-business-licence)|
+|CANdy Dev|[Rental Property Business Licence](https://candyscan.digitaltrust.gov.bc.ca/tx/CANDY_DEV/domain/38196)|<code>YWnESLB4SH275SMNvaJJ1L:3:CL:38195:Rental Property Business Licence/code>|[City of Vancouver TEST Property Rental Business License](https://github.com/bcgov/aries-oca-bundles/tree/main/OCABundles/schema/CityOfVancouver/test-property-rental-business-licence) (TO BE UPDATED)|
