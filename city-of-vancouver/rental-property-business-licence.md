@@ -1045,19 +1045,19 @@ The Governing Authority of this Credential document attests that the following i
 | Environment | Issuer Name | Issuer DID |
 |------|------|-------|
 | CANdy Production  | City of Vancouver  | TBA   |
-| CANdy Test  | City of Vancouver (UAT)  | TBA   |
+| CANdy Test  | City of Vancouver (UAT)  | <code>ARK5s3QZtjL5X65mLoubdk</code>   |
 | CANdy Dev  | City of Vancouver (DEV)   | <code>YWnESLB4SH275SMNvaJJ1L</code>   |
 
 ### 5.3 Schema Implementation
 |Environment|Ledger|Schema ID|
 |---|---|---|
 |CANdy Production|TBA|TBA|TBA|
-|CANdy Test|TBA|TBA|TBA|
+|CANdy Test|[Rental Property Business Licence](https://candyscan.digitaltrust.gov.bc.ca/tx/CANDY_TEST/domain/921) | <code>ARK5s3QZtjL5X65mLoubdk:2:Rental Property Business Licence:1.0</code>|
 |CANdy Dev|[Rental Property Business Licence](https://candyscan.digitaltrust.gov.bc.ca/tx/CANDY_DEV/domain/38195) | <code>YWnESLB4SH275SMNvaJJ1L:2:Rental Property Business Licence:1.0</code>|
 
 ### 5.4 Credential Implementation
 |Environment|Ledger|Credential Definition ID|OCA Bundle|
 |---|---|---|---|
 |CANdy Production|TBA|TBA|TBA|
-|CANdy Test|TBA|TBA|TBA|
-|CANdy Dev|[Rental Property Business Licence](https://candyscan.digitaltrust.gov.bc.ca/tx/CANDY_DEV/domain/38196)|<code>YWnESLB4SH275SMNvaJJ1L:3:CL:38195:Rental Property Business Licence/code>|[City of Vancouver TEST Property Rental Business License](https://github.com/bcgov/aries-oca-bundles/tree/main/OCABundles/schema/CityOfVancouver/test-property-rental-business-licence) (TO BE UPDATED)|
+|CANdy Test|[Rental Property Business Licence](https://candyscan.digitaltrust.gov.bc.ca/tx/CANDY_TEST/domain/922)|<code>ARK5s3QZtjL5X65mLoubdk:3:CL:921:Rental Property Business Licence</code>|TBA|
+|CANdy Dev|[Rental Property Business Licence](https://candyscan.digitaltrust.gov.bc.ca/tx/CANDY_DEV/domain/38196)|<code>YWnESLB4SH275SMNvaJJ1L:3:CL:38195:Rental Property Business Licence/code>|[test-property-rental-business-licence](https://github.com/bcgov/aries-oca-bundles/tree/main/OCABundles/schema/CityOfVancouver/test-property-rental-business-licence)|
