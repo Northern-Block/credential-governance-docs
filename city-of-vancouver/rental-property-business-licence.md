@@ -1051,13 +1051,13 @@ The Governing Authority of this Credential document attests that the following i
 ### 5.3 Schema Implementation
 |Environment|Ledger|Schema ID|
 |---|---|---|
-|CANdy Production|Rental Property Business Licence | <code>R12pguaP3VF2WiE6vAsiPF:2:Rental Property Business Licence:1.0</code>|
+|CANdy Production|[Rental Property Business Licence](https://candyscan.digitaltrust.gov.bc.ca/tx/CANDY_PROD/domain/4574) | <code>R12pguaP3VF2WiE6vAsiPF:2:Rental Property Business Licence:1.0</code>|
 |CANdy Test|[Rental Property Business Licence](https://candyscan.digitaltrust.gov.bc.ca/tx/CANDY_TEST/domain/921) | <code>ARK5s3QZtjL5X65mLoubdk:2:Rental Property Business Licence:1.0</code>|
 |CANdy Dev|[Rental Property Business Licence](https://candyscan.digitaltrust.gov.bc.ca/tx/CANDY_DEV/domain/38195) | <code>YWnESLB4SH275SMNvaJJ1L:2:Rental Property Business Licence:1.0</code>|
 
 ### 5.4 Credential Implementation
 |Environment|Ledger|Credential Definition ID|OCA Bundle|
 |---|---|---|---|
-|CANdy Production|Rental Property Business Licence|<code>R12pguaP3VF2WiE6vAsiPF:3:CL:921:Rental Property Business Licence</code>|TBA|
+|CANdy Production|[Rental Property Business Licence](https://candyscan.digitaltrust.gov.bc.ca/tx/CANDY_PROD/domain/4575)|<code>R12pguaP3VF2WiE6vAsiPF:3:CL:921:Rental Property Business Licence</code>|TBA|
 |CANdy Test|[Rental Property Business Licence](https://candyscan.digitaltrust.gov.bc.ca/tx/CANDY_TEST/domain/922)|<code>ARK5s3QZtjL5X65mLoubdk:3:CL:921:Rental Property Business Licence</code>|TBA|
 |CANdy Dev|[Rental Property Business Licence](https://candyscan.digitaltrust.gov.bc.ca/tx/CANDY_DEV/domain/38196)|<code>YWnESLB4SH275SMNvaJJ1L:3:CL:38195:Rental Property Business Licence/code>|[test-property-rental-business-licence](https://github.com/bcgov/aries-oca-bundles/tree/main/OCABundles/schema/CityOfVancouver/test-property-rental-business-licence)|
