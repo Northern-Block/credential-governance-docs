@@ -116,7 +116,26 @@ The City of Vancouver currently serves as the governing authority for the MSDiLO
 - Coordinating standardization across municipalities
 - Evangelizing and communicating value to drive adoption
 
+**Governing Authority Contact:**
+- Name: René Cravioto
+- Title: Sr. Manager – Innovation and Service Delivery / Identity & Verification
+- Organization: City of Vancouver
+- Email: rene.cravioto@vancouver.ca
+
 In future iterations, governance may evolve into a province-wide municipal steering committee as other municipalities adopt the credential.
+
+**Administering Authority:**
+Within the City of Vancouver, the Administering Authority is responsible for:
+- Verification & Identity product roadmap and backlog
+- Day-to-day technical administration and support of the credentialing process
+- Implementation and technical oversight
+- Achieving standardization of MSDiLOA schema across municipalities
+
+**Administering Authority Contact:**
+- Name: René Cravioto
+- Title: Sr. Manager – Innovation and Service Delivery / Identity & Verification
+- Organization: City of Vancouver
+- Email: rene.cravioto@vancouver.ca
 
 **Issuing Municipalities:**
 Municipalities that issue MSDiLOA credentials are responsible for:
