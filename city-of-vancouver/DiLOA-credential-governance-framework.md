@@ -10,7 +10,7 @@ The MSDiLOA credential can be issued by any British Columbia municipality. The f
 
 The initiative is designed to enhance municipal service delivery, increase governance, protect homeowners and aims to establish a standard across municipalities in BC. This means that the MSDiLOA is designed to align with the digital verifiable credential ecosystem and can become a standard across BC municipalities, able to accommodate the distinct attributes needed by the ecosystem.
 
-**Acknowledgements:** The development of this documentation follows the governance framework created by the Trust over IP Foundation (ToIP), specifically the Governance Metamodel Specification created by the Governance Stack Working Group (GSWG).
+**Acknowledgements:** The development of this documentation follows the governance framework created by the [Trust over IP Foundation (ToIP)](https://trustoverip.org/), specifically the [Governance Metamodel Specification](https://trustoverip.org/permalink/ToIP-Governance-Metamodel-Specification-V1.0-2022-12-21.pdf) created by the [Governance Stack Working Group (GSWG)](https://wiki.trustoverip.org/display/HOME/Governance+Stack+Working+Group).
 
 ### 1.1 Version History
 
@@ -20,9 +20,9 @@ The initiative is designed to enhance municipal service delivery, increase gover
 
 ### 1.2 Terminology and Notation
 
-Please reference Glossary - General Trust Over IP Terms.
+Please reference [Glossary - General Trust Over IP Terms](https://trustoverip.github.io/toip/glossary).
 
-Requirements include any combination of Machine-Testable Requirements and Human-Auditable Requirements. Unless otherwise stated, all Requirements MUST be expressed as defined in RFC 2119.
+Requirements include any combination of Machine-Testable Requirements and Human-Auditable Requirements. Unless otherwise stated, all Requirements MUST be expressed as defined in [RFC 2119](https://www.rfc-editor.org/rfc/rfc2119).
 
 - **Mandates** are Requirements that use a MUST, MUST NOT, SHALL, SHALL NOT, or REQUIRED keyword.
 - **Recommendations** are Requirements that use a SHOULD, SHOULD NOT, or RECOMMENDED keyword.
