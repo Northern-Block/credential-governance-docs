@@ -520,8 +520,9 @@ The Governing Authority of this Credential document attests that the following i
 
 | Environment | Issuer Name | Issuer DID |
 |------|------|-------|
-| BCovrin Test  | City of Vancouver (TEST)  | TBD   |
-| BCovrin Dev  | City of Vancouver (DEV)   | TBD   |
+| CANdy Production  | City of Vancouver  | TBD   |
+| CANdy Test  | City of Vancouver (UAT)  | TBD   |
+| CANdy Dev  | City of Vancouver (DEV)   | TBD   |
 
 > **Note:** Additional municipalities will be added to this list as they adopt the MSDiLOA credential.
 
@@ -529,15 +530,17 @@ The Governing Authority of this Credential document attests that the following i
 
 |Environment|Ledger|Schema ID|
 |---|---|---|
-|BCovrin Test|Municipal Services Digital Letter of Authorization| TBD |
-|BCovrin Dev|Municipal Services Digital Letter of Authorization| TBD |
+|CANdy Production|Municipal Services Digital Letter of Authorization| TBD |
+|CANdy Test|Municipal Services Digital Letter of Authorization| TBD |
+|CANdy Dev|Municipal Services Digital Letter of Authorization| TBD |
 
 ### 5.4 Credential Implementation
 
 |Environment|Ledger|Credential Definition ID|OCA Bundle|
 |---|---|---|---|
-|BCovrin Test|Municipal Services Digital Letter of Authorization|TBD|TBD|
-|BCovrin Dev|Municipal Services Digital Letter of Authorization|TBD|TBD|
+|CANdy Production|Municipal Services Digital Letter of Authorization|TBD|TBD|
+|CANdy Test|Municipal Services Digital Letter of Authorization|TBD|TBD|
+|CANdy Dev|Municipal Services Digital Letter of Authorization|TBD|TBD|
 
 ## Appendix A: Glossary
 
