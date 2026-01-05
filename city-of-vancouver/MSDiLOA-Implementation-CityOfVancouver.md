@@ -165,15 +165,15 @@ Note that obtaining a MSDiLOA requires both the applicant and authorizer to vali
 The [City of Vancouver Business License Bylaw](https://vancouver.ca/your-government/licence-bylaw.aspx) governs all licensing rules, criteria, and conditions for compliance for the underlying business licencing framework.
 
 **Freedom of Information and Protection of Privacy Act**
-The Freedom of Information and Protection of Privacy Act sets out the access and privacy rights of individuals as they relate to the public sector in British Columbia.
+The [Freedom of Information and Protection of Privacy Act](https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/96165_00) sets out the access and privacy rights of individuals as they relate to the public sector in British Columbia.
 
 ### 6.2 Risk Assessments
 
 **Privacy Impact Assessment (PIA)**
-In accordance with B.C. government procedures and policies, the standard Privacy Impact Assessment (PIA) has been or will be completed for the use of this credential technology.
+In accordance with B.C. government procedures and policies, the standard [Privacy Impact Assessment (PIA)](https://www2.gov.bc.ca/gov/content/governments/services-for-government/information-management-technology/privacy/privacy-impact-assessments) has been or will be completed for the use of this credential technology.
 
 **Security Threat and Risk Assessment (STRA)**
-In accordance with B.C. government procedures and policies, the standard Security Threat and Risk Assessment (STRA) has been or will be completed for the use of this credential technology.
+In accordance with B.C. government procedures and policies, the standard [Security Threat and Risk Assessment (STRA)](https://www2.gov.bc.ca/gov/content/governments/services-for-government/information-management-technology/information-security/security-threat-and-risk-assessment) has been or will be completed for the use of this credential technology.
 
 ### 6.3 Legal Agreements
 
