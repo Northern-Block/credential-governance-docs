@@ -82,9 +82,9 @@
         "expiry_date_attribute": "",
         "primary_background_color": "#2174B7",
         "secondary_background_color": "#27BF84",
-        "logo": "https://trust-registry-badges-dev.s3.ca-central-1.amazonaws.com/Logo.png",
-        "background_image_slice": "https://trust-registry-badges-dev.s3.ca-central-1.amazonaws.com/Background+Slice.png",
-        "background_image": "https://trust-registry-badges-dev.s3.ca-central-1.amazonaws.com/Background+Image.png",
+        "logo": "https://raw.githubusercontent.com/Northern-Block/credential-governance-docs/main/mining-association-of-canada/OCABundles/Towards-Sustainable-Mining-2023/tsm-logo.png",
+        "background_image_slice": "https://raw.githubusercontent.com/Northern-Block/credential-governance-docs/main/mining-association-of-canada/OCABundles/Towards-Sustainable-Mining-2023/TSM-background-slice.png",
+        "background_image": "https://raw.githubusercontent.com/Northern-Block/credential-governance-docs/main/mining-association-of-canada/OCABundles/Towards-Sustainable-Mining-2023/TSM-background-image.png",
         "primary_attribute": "company_name",
         "secondary_attribute": "facility_name",
         "type": "aries/overlays/branding/1.0"
