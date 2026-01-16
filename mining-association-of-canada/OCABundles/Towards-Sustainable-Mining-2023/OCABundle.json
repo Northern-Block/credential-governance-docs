@@ -1,0 +1,94 @@
+[
+  {
+    "capture_base": {
+      "attributes": {
+        "biodiversity_conservation_q1": "Text",
+        "biodiversity_conservation_q2": "Text",
+        "biodiversity_conservation_q3": "Text",
+        "company_name": "Text",
+        "corp_climate_q1": "Text",
+        "corp_climate_q2": "Text",
+        "corp_climate_q3": "Text",
+        "facility_name": "Text"
+      },
+      "classification": "",
+      "digest": "EwuEuugUC6bcj9UydGcPGyi1TCuDa3siLC1BVNNE-p1M",
+      "flagged_attributes": [],
+      "type": "spec/capture_base/1.0"
+    },
+    "overlays": [
+      {
+        "attribute_character_encoding": {
+          "biodiversity_conservation_q1": "utf-8",
+          "biodiversity_conservation_q2": "utf-8",
+          "biodiversity_conservation_q3": "utf-8",
+          "company_name": "utf-8",
+          "corp_climate_q1": "utf-8",
+          "corp_climate_q2": "utf-8",
+          "corp_climate_q3": "utf-8",
+          "facility_name": "utf-8"
+        },
+        "capture_base": "EwuEuugUC6bcj9UydGcPGyi1TCuDa3siLC1BVNNE-p1M",
+        "default_character_encoding": "utf-8",
+        "digest": "ECHARACTERENCODINGDIGEST",
+        "type": "spec/overlays/character_encoding/1.0"
+      },
+      {
+        "attribute_labels": {
+          "biodiversity_conservation_q1": "Biodiversity Conservation Management – Indicator 1",
+          "biodiversity_conservation_q2": "Biodiversity Conservation Management – Indicator 2",
+          "biodiversity_conservation_q3": "Biodiversity Conservation Management – Indicator 3",
+          "company_name": "Company Name",
+          "corp_climate_q1": "Climate Change – Indicator 1",
+          "corp_climate_q2": "Climate Change – Indicator 2",
+          "corp_climate_q3": "Climate Change – Indicator 3",
+          "facility_name": "Facility Name"
+        },
+        "attribute_categories": [],
+        "category_labels": {},
+        "capture_base": "EwuEuugUC6bcj9UydGcPGyi1TCuDa3siLC1BVNNE-p1M",
+        "digest": "ELABELSDIGEST",
+        "language": "en",
+        "type": "spec/overlays/label/1.0"
+      },
+      {
+        "attribute_information": {
+          "biodiversity_conservation_q1": "Facility performance rating on Indicator 1 of biodiversity conservation management.",
+          "biodiversity_conservation_q2": "Facility performance rating on Indicator 2 of biodiversity conservation management.",
+          "biodiversity_conservation_q3": "Facility performance rating on Indicator 3 of biodiversity conservation management.",
+          "company_name": "Registered name of the mining company.",
+          "corp_climate_q1": "Corporate performance rating on Indicator 1 of climate change management.",
+          "corp_climate_q2": "Corporate performance rating on Indicator 2 of climate change management.",
+          "corp_climate_q3": "Corporate performance rating on Indicator 3 of climate change management.",
+          "facility_name": "Registered name of the mining facility."
+        },
+        "capture_base": "EwuEuugUC6bcj9UydGcPGyi1TCuDa3siLC1BVNNE-p1M",
+        "digest": "EINFORMATIONDIGEST",
+        "language": "en",
+        "type": "spec/overlays/information/1.0"
+      },
+      {
+        "capture_base": "EwuEuugUC6bcj9UydGcPGyi1TCuDa3siLC1BVNNE-p1M",
+        "description": "A verifiable credential schema for a Mining company",
+        "digest": "EnkKH1FTBAzGLXCZZYchN3FFkIt8-cqrHbC9UI2oX2Z0",
+        "issuer": "Mining Association of Canada",
+        "language": "en",
+        "name": "Towards Sustainable Mining",
+        "type": "spec/overlays/meta/1.0"
+      },
+      {
+        "capture_base": "EwuEuugUC6bcj9UydGcPGyi1TCuDa3siLC1BVNNE-p1M",
+        "digest": "",
+        "expiry_date_attribute": "",
+        "primary_background_color": "#2174B7",
+        "secondary_background_color": "#27BF84",
+        "logo": "https://trust-registry-badges-dev.s3.ca-central-1.amazonaws.com/Logo.png",
+        "background_image_slice": "https://trust-registry-badges-dev.s3.ca-central-1.amazonaws.com/Background+Slice.png",
+        "background_image": "https://trust-registry-badges-dev.s3.ca-central-1.amazonaws.com/Background+Image.png",
+        "primary_attribute": "company_name",
+        "secondary_attribute": "facility_name",
+        "type": "aries/overlays/branding/1.0"
+      }
+    ]
+  }
+]
