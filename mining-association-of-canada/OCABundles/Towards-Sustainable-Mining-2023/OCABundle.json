@@ -230,7 +230,7 @@
       {
         "capture_base": "msDltH_UK4VeCMO_vYYnxq_s9gCHD_PZFjcOM743X2o",
         "credential_support_url": "https://northernblock.io/",
-        "description": "A verifiable credential schema for a Mining company",
+        "description": "A verifiable credential schema for reporting on mining and metallurgical facilities’ performance on the Towards Sustainable Mining protocols",
          "issuer": "Mining Association of Canada",
         "issuer_description": "",
         "issuer_url": "https://northernblock.io/",
