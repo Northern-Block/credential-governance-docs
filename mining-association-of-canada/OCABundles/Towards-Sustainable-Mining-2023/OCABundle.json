@@ -11,7 +11,7 @@
         "corp_crisis_review": "Text",
         "corp_crisis_training": "Text",
         "corp_edi_q1": "Text",
-        "country_operation": "Numeric",
+        "country_operation": "Text",
         "edi_q1": "Text",
         "edi_q2": "Text",
         "facility_name": "Text",
