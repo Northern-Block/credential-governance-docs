@@ -91,7 +91,7 @@
             "type": "string",
             "title": "Commodities Produced",
             "description": "",
-            "minLength": 1,
+            "minLength": 0,
             "maxLength": 50,
             "values": []
           },
