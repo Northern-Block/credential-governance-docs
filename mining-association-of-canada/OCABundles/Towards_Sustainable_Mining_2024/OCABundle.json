@@ -44,7 +44,12 @@
         "water_stewardship_q1": "text",
         "water_stewardship_q2": "text",
         "water_stewardship_q3": "text",
-        "water_stewardship_q4": "text"
+        "water_stewardship_q4": "text",
+        "safety_q1": "text",
+        "safety_q2": "text",
+        "safety_q3": "text",
+        "safety_q4": "text",
+        "safety_q5": "text"
       },
       "classification": "",
       "flagged_attributes": [],
@@ -96,7 +101,12 @@
           "water_stewardship_q1": "utf-8",
           "water_stewardship_q2": "utf-8",
           "water_stewardship_q3": "utf-8",
-          "water_stewardship_q4": "utf-8"
+          "water_stewardship_q4": "utf-8",
+          "safety_q1": "utf-8",
+          "safety_q2": "utf-8",
+          "safety_q3": "utf-8",
+          "safety_q4": "utf-8",
+          "safety_q5": "utf-8"
         },
         "capture_base": "msDltH_UK4VeCMO_vYYnxq_s9gCHD_PZFjcOM743X2o",
         "default_character_encoding": "utf-8",
@@ -142,7 +152,12 @@
           "tailings_management_q2",
           "tailings_management_q3",
           "tailings_management_q4",
-          "tailings_management_q5"
+          "tailings_management_q5",
+          "safety_q1",
+          "safety_q2",
+          "safety_q3",
+          "safety_q4",
+          "safety_q5"
         ],
         "capture_base": "msDltH_UK4VeCMO_vYYnxq_s9gCHD_PZFjcOM743X2o",
         "default_character_encoding": "utf-8",
@@ -159,7 +174,8 @@
           "prevention_of_child_and_forced_labour": "Prevention of Child and Forced Labour",
           "safe_healthy_and_respectful_workplaces": "Safe, Healthy and Respectful Workplaces",
           "tailings_management": "Tailings Management",
-          "water_stewardship": "Water Stewardship"
+          "water_stewardship": "Water Stewardship",
+          "safety_and_health": "Safety and Health"
         }
       },
       {
@@ -206,7 +222,12 @@
           "water_stewardship_q1": "water_stewardship",
           "water_stewardship_q2": "water_stewardship",
           "water_stewardship_q3": "water_stewardship",
-          "water_stewardship_q4": "water_stewardship"
+          "water_stewardship_q4": "water_stewardship",
+          "safety_q1": "safety_and_health",
+          "safety_q2": "safety_and_health",
+          "safety_q3": "safety_and_health",
+          "safety_q4": "safety_and_health",
+          "safety_q5": "safety_and_health"
         },
         "attribute_labels": {
           "company_name": "Company Name",
@@ -251,7 +272,12 @@
           "water_stewardship_q1": "Water Stewardship - Indicator 1",
           "water_stewardship_q2": "Water Stewardship - Indicator 2",
           "water_stewardship_q3": "Water Stewardship - Indicator 3",
-          "water_stewardship_q4": "Water Stewardship - Indicator 4"
+          "water_stewardship_q4": "Water Stewardship - Indicator 4",
+          "safety_q1": "Safety and Health - Indicator 1",
+          "safety_q2": "Safety and Health - Indicator 2",
+          "safety_q3": "Safety and Health - Indicator 3",
+          "safety_q4": "Safety and Health - Indicator 4",
+          "safety_q5": "Safety and Health - Indicator 5"
         },
         "capture_base": "msDltH_UK4VeCMO_vYYnxq_s9gCHD_PZFjcOM743X2o",
         "category_labels": {},
@@ -303,7 +329,12 @@
           "water_stewardship_q1": "Facility performance rating on Indicator 1 of the TSM Water Stewardship Protocol",
           "water_stewardship_q2": "Facility performance rating on Indicator 2 of the TSM Water Stewardship Protocol",
           "water_stewardship_q3": "Facility performance rating on Indicator 3 of the TSM Water Stewardship Protocol",
-          "water_stewardship_q4": "Facility performance rating on Indicator 4 of the TSM Water Stewardship Protocol"
+          "water_stewardship_q4": "Facility performance rating on Indicator 4 of the TSM Water Stewardship Protocol",
+          "safety_q1": "Facility performance rating on Indicator 1 of the TSM Safety and Health Protocol",
+          "safety_q2": "Facility performance rating on Indicator 2 of the TSM Safety and Health Protocol",
+          "safety_q3": "Facility performance rating on Indicator 3 of the TSM Safety and Health Protocol",
+          "safety_q4": "Facility performance rating on Indicator 4 of the TSM Safety and Health Protocol",
+          "safety_q5": "Facility performance rating on Indicator 5 of the TSM Safety and Health Protocol"
         },
         "capture_base": "msDltH_UK4VeCMO_vYYnxq_s9gCHD_PZFjcOM743X2ob",
         "language": "en",
@@ -354,7 +385,12 @@
           "water_stewardship_q1": "40",
           "water_stewardship_q2": "41",
           "water_stewardship_q3": "42",
-          "water_stewardship_q4": "43"
+          "water_stewardship_q4": "43",
+          "safety_q1": "44",
+          "safety_q2": "45",
+          "safety_q3": "46",
+          "safety_q4": "47",
+          "safety_q5": "48"
         },
         "capture_base": "msDltH_UK4VeCMO_vYYnxq_s9gCHD_PZFjcOM743X2o",
         "type": "spec/overlays/entry/1.0",
@@ -404,7 +440,12 @@
           "water_stewardship_q1": true,
           "water_stewardship_q2": true,
           "water_stewardship_q3": true,
-          "water_stewardship_q4": true
+          "water_stewardship_q4": true,
+          "safety_q1": true,
+          "safety_q2": true,
+          "safety_q3": true,
+          "safety_q4": true,
+          "safety_q5": true
         },
         "capture_base": "msDltH_UK4VeCMO_vYYnxq_s9gCHD_PZFjcOM743X2o",
         "type": "spec/overlays/presentation/1.0",
@@ -425,8 +466,8 @@
       },
       {
         "logo": "https://raw.githubusercontent.com/Northern-Block/credential-governance-docs/main/mining-association-of-canada/OCABundles/Towards_Sustainable_Mining_2024/tsm-logo.png",
-        "background_image_slice": "https://raw.githubusercontent.com/Northern-Block/credential-governance-docs/main/mining-association-of-canada/OCABundles/Towards-Sustainable-Mining-2023/TSM-background-slice.png",
-        "background_image": "https://raw.githubusercontent.com/Northern-Block/credential-governance-docs/main/mining-association-of-canada/OCABundles/Towards-Sustainable-Mining-2023/TSM-background-image.png",
+        "background_image_slice": "https://raw.githubusercontent.com/Northern-Block/credential-governance-docs/main/mining-association-of-canada/OCABundles/Towards_Sustainable_Mining_2024/TSM-background-slice.png",
+        "background_image": "https://raw.githubusercontent.com/Northern-Block/credential-governance-docs/main/mining-association-of-canada/OCABundles/Towards_Sustainable_Mining_2024/TSM-background-image.png",
         "primary_background_color": "#2174B7",
         "secondary_background_color": "#27BF84",
         "capture_base": "msDltH_UK4VeCMO_vYYnxq_s9gCHD_PZFjcOM743X2o",

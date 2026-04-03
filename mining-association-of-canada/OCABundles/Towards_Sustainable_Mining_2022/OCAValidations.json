@@ -1,7 +1,7 @@
 [
     {
         "capture_base": {
-            "name": "Towards Sustainable Mining <b>2024</b>",
+            "name": "Towards Sustainable Mining <b>2022</b>",
             "attributes": {
                 "company_name": "text",
                 "facility_name": "text",
@@ -21,9 +21,6 @@
                 "site_crisis_and_communication_preparedness": "text",
                 "site_crisis_and_communication_review": "text",
                 "site_crisis_and_communication_training": "text",
-                "corp_edi_q1": "text",
-                "edi_q2": "text",
-                "edi_q3": "text",
                 "indigenous_q1": "text",
                 "indigenous_q2": "text",
                 "indigenous_q3": "text",
@@ -31,12 +28,6 @@
                 "indigenous_q5": "text",
                 "labour_child_q2": "text",
                 "labour_forced_q1": "text",
-                "shr_work_q1": "text",
-                "shr_work_q2": "text",
-                "shr_work_q3": "text",
-                "shr_work_q4": "text",
-                "shr_work_q5": "text",
-                "shr_work_q6": "text",
                 "tailings_management_q1": "text",
                 "tailings_management_q2": "text",
                 "tailings_management_q3": "text",
@@ -50,7 +41,10 @@
                 "safety_q2": "text",
                 "safety_q3": "text",
                 "safety_q4": "text",
-                "safety_q5": "text"
+                "safety_q5": "text",
+                "energy_q1": "text",
+                "energy_q2": "text",
+                "energy_q3": "text"
             },
             "classification": "",
             "flagged_attributes": [],
@@ -204,30 +198,6 @@
                         "maxLength": 50,
                         "values": ["YES", "NO"]
                     },
-                    "corp_edi_q1": {
-                        "type": "string",
-                        "title": "Equity, Diversity, Inclusion - Indicator 1",
-                        "description": "Corporate performance rating on Indicator 1 of the TSM Equitable, Diverse, and Inclusive Workplaces Protocol",
-                        "minLength": 0,
-                        "maxLength": 50,
-                        "values": ["C", "B", "A", "AA", "AAA"]
-                    },
-                    "edi_q2": {
-                        "type": "string",
-                        "title": "Equity, Diversity, Inclusion - Indicator 2",
-                        "description": "Facility performance rating on Indicator 2 of the TSM Equitable, Diverse, and Inclusive Workplaces Protocol",
-                        "minLength": 0,
-                        "maxLength": 50,
-                        "values": ["C", "B", "A", "AA", "AAA"]
-                    },
-                    "edi_q3": {
-                        "type": "string",
-                        "title": "Equity, Diversity, Inclusion - Indicator 3",
-                        "description": "Facility performance rating on Indicator 3 of the TSM Equitable, Diverse, and Inclusive Workplaces Protocol",
-                        "minLength": 0,
-                        "maxLength": 50,
-                        "values": ["C", "B", "A", "AA", "AAA"]
-                    },
                     "indigenous_q1": {
                         "type": "string",
                         "title": "Indigenous & Community Relationships - Indicator 1",
@@ -283,54 +253,6 @@
                         "minLength": 0,
                         "maxLength": 50,
                         "values": ["YES", "NO"]
-                    },
-                    "shr_work_q1": {
-                        "type": "string",
-                        "title": "Safety, Health, Respect - Indicator 1",
-                        "description": "Facility performance rating on Indicator 1 of the TSM Safe, Healthy, and Respectful Workplaces Protocol",
-                        "minLength": 0,
-                        "maxLength": 50,
-                        "values": ["C", "B", "A", "AA", "AAA"]
-                    },
-                    "shr_work_q2": {
-                        "type": "string",
-                        "title": "Safety, Health, Respect - Indicator 2",
-                        "description": "Facility performance rating on Indicator 2 of the TSM Safe, Healthy, and Respectful Workplaces Protocol",
-                        "minLength": 0,
-                        "maxLength": 50,
-                        "values": ["C", "B", "A", "AA", "AAA"]
-                    },
-                    "shr_work_q3": {
-                        "type": "string",
-                        "title": "Safety, Health, Respect - Indicator 3",
-                        "description": "Facility performance rating on Indicator 3 of the TSM Safe, Healthy, and Respectful Workplaces Protocol",
-                        "minLength": 0,
-                        "maxLength": 50,
-                        "values": ["C", "B", "A", "AA", "AAA"]
-                    },
-                    "shr_work_q4": {
-                        "type": "string",
-                        "title": "Safety, Health, Respect - Indicator 4",
-                        "description": "Facility performance rating on Indicator 4 of the TSM Safe, Healthy, and Respectful Workplaces Protocol",
-                        "minLength": 0,
-                        "maxLength": 50,
-                        "values": ["C", "B", "A", "AA", "AAA"]
-                    },
-                    "shr_work_q5": {
-                        "type": "string",
-                        "title": "Safety, Health, Respect - Indicator 5",
-                        "description": "Facility performance rating on Indicator 5 of the TSM Safe, Healthy, and Respectful Workplaces Protocol",
-                        "minLength": 0,
-                        "maxLength": 50,
-                        "values": ["C", "B", "A", "AA", "AAA"]
-                    },
-                    "shr_work_q6": {
-                        "type": "string",
-                        "title": "Safety, Health, Respect - Indicator 6",
-                        "description": "Facility performance rating on Indicator 6 of the TSM Safe, Healthy, and Respectful Workplaces Protocol",
-                        "minLength": 0,
-                        "maxLength": 50,
-                        "values": ["C", "B", "A", "AA", "AAA"]
                     },
                     "tailings_management_q1": {
                         "type": "string",
@@ -443,6 +365,30 @@
                         "minLength": 0,
                         "maxLength": 50,
                         "values": ["C", "B", "A", "AA", "AAA"]
+                    },
+                    "energy_q1": {
+                        "type": "string",
+                        "title": "Energy Use and GHG Emissions - Indicator 1",
+                        "description": "Facility performance rating on Indicator 1 of the TSM Energy Use and GHG Protocol",
+                        "minLength": 0,
+                        "maxLength": 50,
+                        "values": ["C", "B", "A", "AA", "AAA"]
+                    },
+                    "energy_q2": {
+                        "type": "string",
+                        "title": "Energy Use and GHG Emissions - Indicator 2",
+                        "description": "Facility performance rating on Indicator 2 of the TSM Energy Use and GHG Protocol",
+                        "minLength": 0,
+                        "maxLength": 50,
+                        "values": ["C", "B", "A", "AA", "AAA"]
+                    },
+                    "energy_q3": {
+                        "type": "string",
+                        "title": "Energy Use and GHG Emissions - Indicator 3",
+                        "description": "Facility performance rating on Indicator 3 of the TSM Energy Use and GHG Protocol",
+                        "minLength": 0,
+                        "maxLength": 50,
+                        "values": ["C", "B", "A", "AA", "AAA"]
                     }
                 },
                 "capture_base": "msDltH_UK4VeCMO_vYYnxq_s9gCHD_PZFjcOM743X2o",
@@ -458,15 +404,15 @@
                 "issuer_description": "",
                 "issuer_url": "https://northernblock.io/",
                 "language": "en",
-                "name": "Towards Sustainable Mining <b>2024</b>",
+                "name": "Towards Sustainable Mining <b>2022</b>",
                 "type": "spec/overlays/meta/1.0",
                 "watermark": "DEMO",
                 "digest": "vp1u5w6mxRhY46Qc_0XGCQIoksK8aVsdgbLoN5z5n7Q"
             },
             {
-                "logo": "https://raw.githubusercontent.com/Northern-Block/credential-governance-docs/main/mining-association-of-canada/OCABundles/Towards_Sustainable_Mining_2024/tsm-logo.png",
-                "background_image_slice": "https://raw.githubusercontent.com/Northern-Block/credential-governance-docs/main/mining-association-of-canada/OCABundles/Towards_Sustainable_Mining_2024/TSM-background-slice.png",
-                "background_image": "https://raw.githubusercontent.com/Northern-Block/credential-governance-docs/main/mining-association-of-canada/OCABundles/Towards_Sustainable_Mining_2024/TSM-background-image.png",
+                "logo": "https://raw.githubusercontent.com/Northern-Block/credential-governance-docs/main/mining-association-of-canada/OCABundles/Towards_Sustainable_Mining_2022/tsm-logo.png",
+                "background_image_slice": "https://raw.githubusercontent.com/Northern-Block/credential-governance-docs/main/mining-association-of-canada/OCABundles/Towards_Sustainable_Mining_2022/TSM-background-slice.png",
+                "background_image": "https://raw.githubusercontent.com/Northern-Block/credential-governance-docs/main/mining-association-of-canada/OCABundles/Towards_Sustainable_Mining_2022/TSM-background-image.png",
                 "primary_background_color": "#2174B7",
                 "secondary_background_color": "#27BF84",
                 "capture_base": "msDltH_UK4VeCMO_vYYnxq_s9gCHD_PZFjcOM743X2o",
