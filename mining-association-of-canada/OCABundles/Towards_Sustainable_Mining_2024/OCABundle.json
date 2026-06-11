@@ -237,6 +237,8 @@
         },
         {
             "logo": "https://raw.githubusercontent.com/Northern-Block/credential-governance-docs/main/mining-association-of-canada/OCABundles/Towards_Sustainable_Mining_2024/tsm-logo.png",
+            "background_image_slice": "https://raw.githubusercontent.com/Northern-Block/credential-governance-docs/main/mining-association-of-canada/OCABundles/Towards_Sustainable_Mining_2024/TSM-background-slice.png",
+            "background_image": "https://raw.githubusercontent.com/Northern-Block/credential-governance-docs/main/mining-association-of-canada/OCABundles/Towards_Sustainable_Mining_2024/TSM-background-image.png",
             "primary_background_color": "#2174B7",
             "secondary_background_color": "#27BF84",
             "primary_attribute": "company_name",
