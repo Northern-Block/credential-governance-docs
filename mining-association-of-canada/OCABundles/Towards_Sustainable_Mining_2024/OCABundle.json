@@ -2,57 +2,57 @@
   {
     "capture_base": {
       "attributes": {
-            "company_name": "Text",
-            "facility_name": "Text",
-            "country_operation": "Text",
-            "operation_type": "Text",
-            "products_name": "Text",
-            "verification_activities_summary": "Text",
-            "biodiversity_conservation_q1": "Text",
-            "biodiversity_conservation_q2": "Text",
-            "biodiversity_conservation_q3": "Text",
-            "corp_climate_q1": "Text",
-            "site_climate_q1": "Text",
-            "site_climate_q2": "Text",
-            "corp_crisis_preparedness": "Text",
-            "corp_crisis_review": "Text",
-            "corp_crisis_training": "Text",
-            "site_crisis_and_communication_preparedness": "Text",
-            "site_crisis_and_communication_review": "Text",
-            "site_crisis_and_communication_training": "Text",
-            "corp_edi_q1": "Text",
-            "edi_q2": "Text",
-            "edi_q3": "Text",
-            "indigenous_q1": "Text",
-            "indigenous_q2": "Text",
-            "indigenous_q3": "Text",
-            "indigenous_q4": "Text",
-            "indigenous_q5": "Text",
-            "labour_child_q2": "Text",
-            "labour_forced_q1": "Text",
-            "shr_work_q1": "Text",
-            "shr_work_q2": "Text",
-            "shr_work_q3": "Text",
-            "shr_work_q4": "Text",
-            "shr_work_q5": "Text",
-            "shr_work_q6": "Text",
-            "tailings_management_q1": "Text",
-            "tailings_management_q2": "Text",
-            "tailings_management_q3": "Text",
-            "tailings_management_q4": "Text",
-            "tailings_management_q5": "Text",
-            "water_stewardship_q1": "Text",
-            "water_stewardship_q2": "Text",
-            "water_stewardship_q3": "Text",
-            "water_stewardship_q4": "Text",
-            "safety_q1": "Text",
-            "safety_q2": "Text",
-            "safety_q3": "Text",
-            "safety_q4": "Text",
-            "safety_q5": "Text"
+        "company_name": "Text",
+        "facility_name": "Text",
+        "country_operation": "Text",
+        "operation_type": "Text",
+        "products_name": "Text",
+        "verification_activities_summary": "Text",
+        "biodiversity_conservation_q1": "Text",
+        "biodiversity_conservation_q2": "Text",
+        "biodiversity_conservation_q3": "Text",
+        "corp_climate_q1": "Text",
+        "site_climate_q1": "Text",
+        "site_climate_q2": "Text",
+        "corp_crisis_preparedness": "Text",
+        "corp_crisis_review": "Text",
+        "corp_crisis_training": "Text",
+        "site_crisis_and_communication_preparedness": "Text",
+        "site_crisis_and_communication_review": "Text",
+        "site_crisis_and_communication_training": "Text",
+        "corp_edi_q1": "Text",
+        "edi_q2": "Text",
+        "edi_q3": "Text",
+        "indigenous_q1": "Text",
+        "indigenous_q2": "Text",
+        "indigenous_q3": "Text",
+        "indigenous_q4": "Text",
+        "indigenous_q5": "Text",
+        "labour_child_q2": "Text",
+        "labour_forced_q1": "Text",
+        "shr_work_q1": "Text",
+        "shr_work_q2": "Text",
+        "shr_work_q3": "Text",
+        "shr_work_q4": "Text",
+        "shr_work_q5": "Text",
+        "shr_work_q6": "Text",
+        "tailings_management_q1": "Text",
+        "tailings_management_q2": "Text",
+        "tailings_management_q3": "Text",
+        "tailings_management_q4": "Text",
+        "tailings_management_q5": "Text",
+        "water_stewardship_q1": "Text",
+        "water_stewardship_q2": "Text",
+        "water_stewardship_q3": "Text",
+        "water_stewardship_q4": "Text",
+        "safety_q1": "Text",
+        "safety_q2": "Text",
+        "safety_q3": "Text",
+        "safety_q4": "Text",
+        "safety_q5": "Text"
       },
       "flagged_attributes": [],
-        "type": "spec/capture_base/1.0"
+      "type": "spec/capture_base/1.0"
     },
     "overlays": [
       {
@@ -106,7 +106,7 @@
           "safety_q4": "utf-8",
           "safety_q5": "utf-8"
         },
-            "type": "spec/overlays/character_encoding/1.0"
+        "type": "spec/overlays/character_encoding/1.0"
       },
       {
         "required": [
@@ -276,15 +276,15 @@
         },
         "category_labels": {},
         "language": "en",
-            "type": "spec/overlays/label/1.0"
+        "type": "spec/overlays/label/1.0"
       },
       {
         "attribute_information": {
-                "company_name": "Legal name of the company",
-                "facility_name": "Name of the facility",
-                "country_operation": "Country of operation",
-                "operation_type": "Type of operation",
-                "products_name": "Commodities produced",
+          "company_name": "Legal name of the company",
+          "facility_name": "Name of the facility",
+          "country_operation": "Country of operation",
+          "operation_type": "Type of operation",
+          "products_name": "Commodities produced",
           "verification_activities_summary": "View the full external verification report at the link provided",
           "biodiversity_conservation_q1": "Facility performance rating on Indicator 1 of the TSM Biodiversity Conservation Management Protocol",
           "biodiversity_conservation_q2": "Facility performance rating on Indicator 2 of the TSM Biodiversity Conservation Management Protocol",
@@ -330,7 +330,7 @@
           "safety_q5": "Facility performance rating on Indicator 5 of the TSM Safety and Health Protocol"
         },
         "language": "en",
-            "type": "spec/overlays/information/1.0"
+        "type": "spec/overlays/information/1.0"
       },
       {
         "attribute_sequence_number": {
@@ -456,34 +456,27 @@
         "secondary_background_color": "#27BF84",
         "primary_attribute": "company_name",
         "secondary_attribute": "facility_name",
-            "type": "spec/overlays/branding/1.0"
+        "type": "spec/overlays/branding/1.0"
+      },
+      {
+        "type": "spec/overlays/card/1.0",
+        "language": "en",
+        "title": "Towards Sustainable Mining <b>2024</b>",
+        "subtitle": "Verifiable Credential",
+        "layout": {
+          "front": {
+            "fields": ["company_name", "facility_name"]
+          },
+          "back": {
+            "fields": ["country_operation", "operation_type", "products_name"]
+          }
         },
-        {
-            "type": "spec/overlays/card/1.0",
-            "language": "en",
-            "title": "Towards Sustainable Mining <b>2024</b>",
-            "subtitle": "Verifiable Credential",
-            "layout": {
-                "front": {
-                    "fields": [
-                        "company_name",
-                        "facility_name"
-                    ]
-                },
-                "back": {
-                    "fields": [
-                        "country_operation",
-                        "operation_type",
-                        "products_name"
-                    ]
-                }
-            },
-            "style": {
-                "primary_color": "#2174B7",
-                "secondary_color": "#27BF84",
-                "accent_color": "#FFFFFF"
+        "style": {
+          "primary_color": "#2174B7",
+          "secondary_color": "#27BF84",
+          "accent_color": "#FFFFFF"
+        }
       }
-    }
     ]
   }
 ]
