@@ -449,15 +449,15 @@
                 "digest": "vp1u5w6mxRhY46Qc_0XGCQIoksK8aVsdgbLoN5z5n7Q"
             },
             {
-                "logo": "https://raw.githubusercontent.com/Northern-Block/credential-governance-docs/main/mining-association-of-canada/OCABundles/The%20Copper%20Mark/the_copper_mark.png",
+                "logo": "https://raw.githubusercontent.com/Northern-Block/credential-governance-docs/main/mining-association-of-canada/OCABundles/The_Copper_Mark/the_copper_mark.png",
                 "background_image_slice": "https://coppermark.org/wp-content/uploads/2019/05/copper-mark-pageheader.jpg",
                 "background_image": "",
-                "primary_background_color": "#2174B7",
-                "secondary_background_color": "#27BF84",
+                "primary_background_color": "#2c0852",
+                "secondary_background_color": "#5862ed",
                 "capture_base": "msDltH_UK4VeCMO_vYYnxq_s9gCHD_PZFjcOM743X2o",
                 "expiry_date_attribute": "",
-                "primary_attribute": "",
-                "secondary_attribute": "",
+                "primary_attribute": "Standard Version",
+                "secondary_attribute": "Commencement Date",
                 "type": "aries/overlays/branding/1.0",
                 "digest": "gyEsOkxFUxFzpo25IBxtjJPLghTkehD5aebCRE8GGqc"
             }
