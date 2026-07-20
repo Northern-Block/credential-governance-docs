@@ -438,7 +438,7 @@
             {
                 "capture_base": "msDltH_UK4VeCMO_vYYnxq_s9gCHD_PZFjcOM743X2o",
                 "credential_support_url": "https://northernblock.io/",
-                "description": "A verifiable credential schema for reporting on mining and metallurgical facilities’ performance on the Towards Sustainable Mining protocols",
+                "description": "A verifiable credential schema for reporting on facilities' performance on the Copper Mark assurance framework of responsible practices across the copper, molybdenum, nickel and zinc value chains.",
                 "issuer": "THE COPPER MARK",
                 "issuer_description": "",
                 "issuer_url": "https://coppermark.org/",
@@ -449,7 +449,7 @@
                 "digest": "vp1u5w6mxRhY46Qc_0XGCQIoksK8aVsdgbLoN5z5n7Q"
             },
             {
-                "logo": "https://raw.githubusercontent.com/Northern-Block/credential-governance-docs/main/mining-association-of-canada/OCABundles/Towards_Sustainable_Mining_2021_copy/the_copper_mark.png",
+                "logo": "https://raw.githubusercontent.com/Northern-Block/credential-governance-docs/main/mining-association-of-canada/OCABundles/The%20Copper%20Mark/the_copper_mark.png",
                 "background_image_slice": "https://coppermark.org/wp-content/uploads/2019/05/copper-mark-pageheader.jpg",
                 "background_image": "",
                 "primary_background_color": "#2174B7",
