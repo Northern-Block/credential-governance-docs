@@ -1,9 +1,9 @@
 {
   "logo": "https://raw.githubusercontent.com/Northern-Block/credential-governance-docs/main/mining-association-of-canada/OCABundles/The_Molybdenum_Mark/molybdenum_mark.png",
-  "background_image_slice": "https://coppermark.org/wp-content/uploads/2019/05/copper-mark-pageheader.jpg",
+  "background_image_slice": "https://coppermark.org/wp-content/uploads/2019/05/coppermark-requirements-header.jpg",
   "background_image": "",
-  "primary_background_color": "#264D62",
-  "secondary_background_color": "#5862ed",
+  "primary_background_color": "#0e2d6b",
+  "secondary_background_color": "#0a1b3d",
   "capture_base": "msDltH_UK4VeCMO_vYYnxq_s9gCHD_PZFjcOM743X2o",
   "expiry_date_attribute": "",
   "primary_attribute": "Management Systems",

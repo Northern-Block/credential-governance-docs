@@ -1,13 +1,13 @@
 {
-  "logo": "https://raw.githubusercontent.com/Northern-Block/credential-governance-docs/main/mining-association-of-canada/OCABundles/Towards_Sustainable_Mining_2024/tsm-logo.png",
-  "background_image_slice": "https://raw.githubusercontent.com/Northern-Block/credential-governance-docs/main/mining-association-of-canada/OCABundles/Towards_Sustainable_Mining_2024/TSM-background-slice.png",
-  "background_image": "https://raw.githubusercontent.com/Northern-Block/credential-governance-docs/main/mining-association-of-canada/OCABundles/Towards_Sustainable_Mining_2024/TSM-background-image.png",
-  "primary_background_color": "#2174B7",
-  "secondary_background_color": "#27BF84",
+  "logo": "https://raw.githubusercontent.com/Northern-Block/credential-governance-docs/main/mining-association-of-canada/OCABundles/The_Zinc_Mark/the_zinc_mark.png",
+  "background_image_slice": "https://coppermark.org/wp-content/uploads/2019/05/coppermark-requirements-header.jpg",
+  "background_image": "",
+  "primary_background_color": "#240108",
+  "secondary_background_color": "#3d030f",
   "capture_base": "msDltH_UK4VeCMO_vYYnxq_s9gCHD_PZFjcOM743X2o",
   "expiry_date_attribute": "",
-  "primary_attribute": "company_name",
-  "secondary_attribute": "facility_name",
+  "primary_attribute": "Management Systems",
+  "secondary_attribute": "Risk Assessment",
   "type": "aries/overlays/branding/1.0",
   "digest": "gyEsOkxFUxFzpo25IBxtjJPLghTkehD5aebCRE8GGqc"
 }
