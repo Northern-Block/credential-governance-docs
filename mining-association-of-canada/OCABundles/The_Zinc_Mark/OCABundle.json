@@ -449,15 +449,15 @@
                 "digest": "vp1u5w6mxRhY46Qc_0XGCQIoksK8aVsdgbLoN5z5n7Q"
             },
             {
-                "logo": "https://raw.githubusercontent.com/Northern-Block/credential-governance-docs/main/mining-association-of-canada/OCABundles/The_Zinc_Mark/the_zinc_mark.png",
-                "background_image_slice": "https://coppermark.org/wp-content/uploads/2019/05/coppermark-requirements-header.jpg",
+                "logo": "https://raw.githubusercontent.com/Northern-Block/credential-governance-docs/main/mining-association-of-canada/OCABundles/The_Copper_Mark/Logo.jpg",
+                "background_image_slice": "https://raw.githubusercontent.com/Northern-Block/credential-governance-docs/main/mining-association-of-canada/OCABundles/The_Copper_Mark/bgSlice.jpg",
                 "background_image": "",
-                "primary_background_color": "#240108",
-                "secondary_background_color": "#3d030f",
+                "primary_background_color": "#1A405C",
+                "secondary_background_color": "#4F7880",
                 "capture_base": "msDltH_UK4VeCMO_vYYnxq_s9gCHD_PZFjcOM743X2o",
                 "expiry_date_attribute": "",
-                "primary_attribute": "Management Systems",
-                "secondary_attribute": "Risk Assessment",
+                "primary_attribute": "Facility Type",
+                "secondary_attribute": "Expiry Date",
                 "type": "aries/overlays/branding/1.0",
                 "digest": "gyEsOkxFUxFzpo25IBxtjJPLghTkehD5aebCRE8GGqc"
             }
