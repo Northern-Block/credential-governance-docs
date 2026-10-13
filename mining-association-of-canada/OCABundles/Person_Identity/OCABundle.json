@@ -1,0 +1,300 @@
+[
+    {
+        "capture_base": {
+            "attributes": {
+                "givenName": "Text",
+                "familyName": "Text",
+                "gender": "Text",
+                "birthDate": "DateTime",
+                "address.streetAddress": "Text",
+                "address.locality": "Text",
+                "address.region": "Text",
+                "address.postalCode": "Text",
+                "address.country": "Text",
+                "address.postalAddress": "Text"
+            },
+            "classification": "",
+            "flagged_attributes": [
+                "givenName",
+                "familyName",
+                "birthDate"
+            ],
+            "type": "spec/capture_base/1.0",
+            "digest": "msDltH_UK4VeCMO_vYYnxq_s9gCHD_PZFjcOM743X2o"
+        },
+        "overlays": [
+            {
+                "attribute_character_encoding": {
+                    "givenName": "utf-8",
+                    "familyName": "utf-8",
+                    "birthDate": "utf-8",
+                    "gender": "utf-8",
+                    "address.streetAddress": "utf-8",
+                    "address.locality": "utf-8",
+                    "address.region": "utf-8",
+                    "address.postalCode": "utf-8",
+                    "address.country": "utf-8",
+                    "address.postalAddress": "utf-8"
+                },
+                "capture_base": "msDltH_UK4VeCMO_vYYnxq_s9gCHD_PZFjcOM743X2o",
+                "default_character_encoding": "utf-8",
+                "type": "spec/overlays/character_encoding/1.0",
+                "digest": "1dgk9uYTAGCbzBcr_mAEbFNLapYTLg31UpEsNoK5KH0"
+            },
+            {
+                "required": [
+                    "givenName",
+                    "familyName",
+                    "birthDate"
+                ],
+                "capture_base": "msDltH_UK4VeCMO_vYYnxq_s9gCHD_PZFjcOM743X2o",
+                "default_character_encoding": "utf-8",
+                "type": "spec/overlays/character_encoding/1.0",
+                "digest": "1dgk9uYTAGCbzBcr_mAEbFNLapYTLg31UpEsNoK5KH0"
+            },
+            {
+                "category_labels": {
+                    "personal": "Personal Information",
+                    "address": "Address"
+                }
+            },
+            {
+                "attribute_categories": {
+                    "givenName": "personal",
+                    "familyName": "personal",
+                    "birthDate": "personal",
+                    "gender": "personal",
+                    "address.streetAddress": "address",
+                    "address.locality": "address",
+                    "address.region": "address",
+                    "address.postalCode": "address",
+                    "address.country": "address",
+                    "address.postalAddress": "address"
+                },
+                "attribute_labels": {
+                    "givenName": "Given Name",
+                    "familyName": "Family Name",
+                    "birthDate": "Date of Birth",
+                    "gender": "Gender",
+                    "address.streetAddress": "Street Address",
+                    "address.locality": "City",
+                    "address.region": "State / Region",
+                    "address.postalCode": "Postal Code",
+                    "address.country": "Country",
+                    "address.postalAddress": "Postal Address"
+                },
+                "capture_base": "msDltH_UK4VeCMO_vYYnxq_s9gCHD_PZFjcOM743X2o",
+                "category_labels": {
+                    "personal": "Personal Information",
+                    "address": "Address"
+                },
+                "language": "en",
+                "type": "spec/overlays/label/1.0",
+                "digest": "H-RacDDbBH-wogzaXdu4-GmawJ2hjsB6E2cLIYigm04"
+            },
+            {
+                "attribute_categories": {
+                    "givenName": "personal",
+                    "familyName": "personal",
+                    "birthDate": "personal",
+                    "gender": "personal",
+                    "address.streetAddress": "address",
+                    "address.locality": "address",
+                    "address.region": "address",
+                    "address.postalCode": "address",
+                    "address.country": "address",
+                    "address.postalAddress": "address"
+                },
+                "attribute_labels": {
+                    "givenName": "Prénom",
+                    "familyName": "Nom de famille",
+                    "birthDate": "Date de naissance",
+                    "gender": "gender",
+                    "address.streetAddress": "Adresse",
+                    "address.locality": "Ville",
+                    "address.region": "Région",
+                    "address.postalCode": "Code postal",
+                    "address.country": "Pays",
+                    "address.postalAddress": "Postal Address"
+                },
+                "capture_base": "msDltH_UK4VeCMO_vYYnxq_s9gCHD_PZFjcOM743X2o",
+                "category_labels": {
+                    "personal": "Personal Information",
+                    "address": "Address"
+                },
+                "language": "fr",
+                "type": "spec/overlays/label/1.0",
+                "digest": "H-RacDDbBH-wogzaXdu4-GmawJ2hjsB6E2cLIYigm04"
+            },
+            {
+                "attribute_information": {
+                    "givenName": "The person’s given name as it appears on official identity documents.",
+                    "familyName": "The person’s family name as recorded in government registries.",
+                    "birthDate": "The individual’s date of birth.",
+                    "gender": "The person's gender",
+                    "address.streetAddress": "Street name and number of residence.",
+                    "address.locality": "City or locality of residence.",
+                    "address.region": "Administrative region or state.",
+                    "address.postalCode": "Postal or ZIP code.",
+                    "address.country": "Country of residence.",
+                    "address.postalAddress": "Postal Address"
+                },
+                "capture_base": "msDltH_UK4VeCMO_vYYnxq_s9gCHD_PZFjcOM743X2o",
+                "language": "en",
+                "type": "spec/overlays/information/1.0",
+                "digest": "5tpeAx_QLfLceK8Y0FKRwbsKMvMiadpf-Z45xckeYb8"
+            },
+            {
+                "attribute_information": {
+                    "givenName": "Prénom figurant sur les documents officiels.",
+                    "familyName": "Nom de famille enregistré.",
+                    "birthDate": "Date de naissance officielle.",
+                    "gender": "Gender",
+                    "address.streetAddress": "Nom et numéro de la rue.",
+                    "address.locality": "Ville de résidence.",
+                    "address.region": "Région administrative.",
+                    "address.postalCode": "Code postal.",
+                    "address.country": "Pays de résidence.",
+                    "address.postalAddress": "Postal Address"
+                },
+                "capture_base": "msDltH_UK4VeCMO_vYYnxq_s9gCHD_PZFjcOM743X2o",
+                "language": "fr",
+                "type": "spec/overlays/information/1.0",
+                "digest": "5tpeAx_QLfLceK8Y0FKRwbsKMvMiadpf-Z45xckeYb8"
+            },
+            {
+                "attribute_sequence_number": {
+                    "givenName": "1",
+                    "familyName": "2",
+                    "birthDate": "3",
+                    "gender": "4",
+                    "address.streetAddress": "5",
+                    "address.locality": "6",
+                    "address.region": "7",
+                    "address.postalCode": "8",
+                    "address.country": "9",
+                    "address.postalAddress": "10"
+                },
+                "order": [
+                    "givenName",
+                    "familyName",
+                    "birthDate",
+                    "gender",
+                    "address.streetAddress",
+                    "address.locality",
+                    "address.region",
+                    "address.postalCode",
+                    "address.country",
+                    "address.postalAddress"
+                ],
+                "capture_base": "msDltH_UK4VeCMO_vYYnxq_s9gCHD_PZFjcOM743X2o",
+                "type": "spec/overlays/entry/1.0",
+                "digest": "RsEXTITWOzuvAYpqcj4JFqgaUd7ZqCyozKq6yzzEdok"
+            },
+            {
+                "attribute_visibility_claims": {
+                    "givenName": true,
+                    "familyName": true,
+                    "birthDate": true,
+                    "gender": true,
+                    "address.streetAddress": true,
+                    "address.locality": true,
+                    "address.region": true,
+                    "address.postalCode": true,
+                    "address.country": true,
+                    "address.postalAddress": true
+                },
+                "summary": [
+                    "givenName",
+                    "familyName",
+                    "birthDate",
+                    "gender"
+                ],
+                "details": [
+                    "address.streetAddress",
+                    "address.locality",
+                    "address.region",
+                    "address.postalCode",
+                    "address.country",
+                    "address.postalAddress"
+                ],
+                "capture_base": "msDltH_UK4VeCMO_vYYnxq_s9gCHD_PZFjcOM743X2o",
+                "type": "spec/overlays/presentation/1.0",
+                "digest": "gbCqzrt-rHIKuz242iRUmpxAWdar777mygXwJbtvjhU"
+            },
+            {
+                "attribute_formats": {
+                    "birthDate": "YYYY-MM-DD",
+                    "address.postalCode": "^[A-Za-z][0-9][A-Za-z][0-9][A-Za-z][0-9]$"
+                },
+                "capture_base": "msDltH_UK4VeCMO_vYYnxq_s9gCHD_PZFjcOM743X2o",
+                "type": "spec/overlays/format/1.0"
+            },
+            {
+                "attribute_standards": {
+                    "birthDate": "urn:iso:std:iso:8601",
+                    "address.country": "urn:iso:std:iso:3166"
+                },
+                "capture_base": "msDltH_UK4VeCMO_vYYnxq_s9gCHD_PZFjcOM743X2o",
+                "type": "spec/overlays/standard/1.0"
+            },
+            {
+                "capture_base": "msDltH_UK4VeCMO_vYYnxq_s9gCHD_PZFjcOM743X2o",
+                "credential_support_url": "https://example.org/support",
+                "description": "A verifiable credential representing a person’s core legal identity attributes.",
+                "issuer": "Example Identity Authority",
+                "issuer_description": "",
+                "issuer_url": "https://example.org",
+                "language": "en",
+                "name": "Person Identity Credential",
+                "type": "spec/overlays/meta/1.0",
+                "watermark": "DEMO",
+                "digest": "vp1u5w6mxRhY46Qc_0XGCQIoksK8aVsdgbLoN5z5n7Q"
+            },
+            {
+                "logo": "https://raw.githubusercontent.com/Northern-Block/credential-governance-docs/main/mining-association-of-canada/OCABundles/Person_Identity/person-identity.png",
+                "background_image_slice": "https://raw.githubusercontent.com/Northern-Block/credential-governance-docs/main/mining-association-of-canada/OCABundles/Person_Identity/background-slice.jpg",
+                "background_image": "https://raw.githubusercontent.com/Northern-Block/credential-governance-docs/main/mining-association-of-canada/OCABundles/Person_Identity/background-image.jpg",
+                "primary_background_color": "#003366",
+                "secondary_background_color": "#E6F0FA",
+                "capture_base": "msDltH_UK4VeCMO_vYYnxq_s9gCHD_PZFjcOM743X2o",
+                "expiry_date_attribute": "",
+                "primary_attribute": "givenName",
+                "secondary_attribute": "familyName",
+                "type": "aries/overlays/branding/1.0",
+                "digest": "gyEsOkxFUxFzpo25IBxtjJPLghTkehD5aebCRE8GGqc"
+            },
+            {
+                "type": "spec/overlays/card/1.0",
+                "language": "en",
+                "title": "Person Identity",
+                "subtitle": "Verifiable Credential",
+                "layout": {
+                    "front": {
+                        "fields": [
+                            "givenName",
+                            "familyName",
+                            "birthDate",
+                            "gender"
+                        ]
+                    },
+                    "back": {
+                        "fields": [
+                            "address.streetAddress",
+                            "address.locality",
+                            "address.region",
+                            "address.postalCode",
+                            "address.country",
+                            "address.postalAddress"
+                        ]
+                    }
+                },
+                "style": {
+                    "primary_color": "#003366",
+                    "secondary_color": "#E6F0FA",
+                    "accent_color": "#0066CC"
+                }
+            }
+        ]
+    }
+]

@@ -1,0 +1,147 @@
+[
+    {
+        "capture_base": {
+            "name": "Person Identity Credential",
+            "attributes": {
+                "givenName": "Text",
+                "familyName": "Text",
+                "gender": "Text",
+                "birthDate": "DateTime",
+                "address.streetAddress": "Text",
+                "address.locality": "Text",
+                "address.region": "Text",
+                "address.postalCode": "Text",
+                "address.country": "Text",
+                "address.postalAddress": "Text"
+            },
+            "classification": "",
+            "flagged_attributes": [
+                "givenName",
+                "familyName",
+                "birthDate"
+            ],
+            "type": "spec/capture_base/1.0",
+            "digest": "msDltH_UK4VeCMO_vYYnxq_s9gCHD_PZFjcOM743X2o"
+        },
+        "overlays": [
+            {
+                "properties": {
+                    "givenName": {
+                        "type": "string",
+                        "title": "Given Name",
+                        "description": "The person’s given name as it appears on official identity documents.",
+                        "minLength": 0,
+                        "maxLength": 50,
+                        "values": []
+                    },
+                    "familyName": {
+                        "type": "string",
+                        "title": "Family Name",
+                        "description": "The person’s family name as recorded in government registries.",
+                        "minLength": 0,
+                        "maxLength": 50,
+                        "values": []
+                    },
+                    "birthDate": {
+                        "type": "DateTime",
+                        "title": "Date of Birth",
+                        "description": "The individual’s date of birth.",
+                        "format": "YYYY-MM-DD",
+                        "standard": "urn:iso:std:iso:8601",
+                        "minLength": 0,
+                        "maxLength": 50,
+                        "values": []
+                    },
+                    "gender": {
+                        "type": "string",
+                        "title": "Gender",
+                        "description": "The person's gender",
+                        "minLength": 0,
+                        "maxLength": 50,
+                        "values": []
+                    },
+                    "address.streetAddress": {
+                        "type": "string",
+                        "title": "Street Address",
+                        "description": "Street name and number of residence.",
+                        "minLength": 0,
+                        "maxLength": 100,
+                        "values": []
+                    },
+                    "address.locality": {
+                        "type": "string",
+                        "title": "City",
+                        "description": "City or locality of residence.",
+                        "minLength": 0,
+                        "maxLength": 50,
+                        "values": []
+                    },
+                    "address.region": {
+                        "type": "string",
+                        "title": "State / Region",
+                        "description": "Administrative region or state.",
+                        "minLength": 0,
+                        "maxLength": 50,
+                        "values": []
+                    },
+                    "address.postalCode": {
+                        "type": "string",
+                        "title": "Postal Code",
+                        "description": "Postal or ZIP code.",
+                        "pattern": "^[A-Za-z][0-9][A-Za-z][0-9][A-Za-z][0-9]$",
+                        "minLength": 0,
+                        "maxLength": 50,
+                        "values": []
+                    },
+                    "address.country": {
+                        "type": "string",
+                        "title": "Country",
+                        "description": "Country of residence.",
+                        "standard": "urn:iso:std:iso:3166",
+                        "minLength": 0,
+                        "maxLength": 50,
+                        "values": []
+                    },
+                    "address.postalAddress": {
+                        "type": "string",
+                        "title": "Postal Address",
+                        "description": "Postal Address",
+                        "minLength": 0,
+                        "maxLength": 100,
+                        "values": []
+                    }
+                },
+                "capture_base": "msDltH_UK4VeCMO_vYYnxq_s9gCHD_PZFjcOM743X2o",
+                "default_character_encoding": "utf-8",
+                "type": "spec/overlays/character_encoding/1.0",
+                "digest": "1dgk9uYTAGCbzBcr_mAEbFNLapYTLg31UpEsNoK5KH0"
+            },
+            {
+                "capture_base": "msDltH_UK4VeCMO_vYYnxq_s9gCHD_PZFjcOM743X2o",
+                "credential_support_url": "https://example.org/support",
+                "description": "A verifiable credential representing a person’s core legal identity attributes.",
+                "issuer": "Example Identity Authority",
+                "issuer_description": "",
+                "issuer_url": "https://example.org",
+                "language": "en",
+                "name": "Person Identity Credential",
+                "type": "spec/overlays/meta/1.0",
+                "watermark": "DEMO",
+                "digest": "vp1u5w6mxRhY46Qc_0XGCQIoksK8aVsdgbLoN5z5n7Q"
+            },
+            {
+                "logo": "https://raw.githubusercontent.com/Northern-Block/credential-governance-docs/main/mining-association-of-canada/OCABundles/Person_Identity/person-identity.png",
+                "background_image_slice": "https://raw.githubusercontent.com/Northern-Block/credential-governance-docs/main/mining-association-of-canada/OCABundles/Person_Identity/background-slice.png",
+                "background_image": "https://raw.githubusercontent.com/Northern-Block/credential-governance-docs/main/mining-association-of-canada/OCABundles/Person_Identity/background-image.png",
+                "primary_background_color": "#003366",
+                "secondary_background_color": "#E6F0FA",
+                "capture_base": "msDltH_UK4VeCMO_vYYnxq_s9gCHD_PZFjcOM743X2o",
+                "expiry_date_attribute": "",
+                "primary_attribute": "givenName",
+                "secondary_attribute": "familyName",
+                "type": "aries/overlays/branding/1.0",
+                "digest": "gyEsOkxFUxFzpo25IBxtjJPLghTkehD5aebCRE8GGqc"
+            }
+        ]
+    }
+]

@@ -1,0 +1,13 @@
+{
+  "logo": "https://raw.githubusercontent.com/Northern-Block/credential-governance-docs/main/mining-association-of-canada/OCABundles/Person_Identity/person-identity.png",
+  "background_image_slice": "https://raw.githubusercontent.com/Northern-Block/credential-governance-docs/main/mining-association-of-canada/OCABundles/Person_Identity/background-slice.png",
+  "background_image": "https://raw.githubusercontent.com/Northern-Block/credential-governance-docs/main/mining-association-of-canada/OCABundles/Person_Identity/background-image.png",
+  "primary_background_color": "#003366",
+  "secondary_background_color": "#E6F0FA",
+  "capture_base": "msDltH_UK4VeCMO_vYYnxq_s9gCHD_PZFjcOM743X2o",
+  "expiry_date_attribute": "",
+  "primary_attribute": "givenName",
+  "secondary_attribute": "familyName",
+  "type": "aries/overlays/branding/1.0",
+  "digest": "gyEsOkxFUxFzpo25IBxtjJPLghTkehD5aebCRE8GGqc"
+}
