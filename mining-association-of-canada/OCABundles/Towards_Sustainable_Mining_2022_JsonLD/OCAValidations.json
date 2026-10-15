@@ -1,0 +1,729 @@
+{
+    "id": "https://artifacts.trustinfrastructure.com/stg/mactest/mining-association-of-canada/oca/TSM_2022_OCA.json",
+    "capture_base": {
+        "type": "spec/capture_base/1.0",
+        "name": "Towards Sustainable Mining <b>2022</b>",
+        "attributes": {
+            "company_name": "Text",
+            "facility_name": "Text",
+            "country_operation": "Text",
+            "operation_type": "Text",
+            "products_name": "Text",
+            "verification_activities_summary": "Text",
+            "biodiversity_conservation_q1": "Text",
+            "biodiversity_conservation_q2": "Text",
+            "biodiversity_conservation_q3": "Text",
+            "corp_climate_q1": "Text",
+            "site_climate_q1": "Text",
+            "site_climate_q2": "Text",
+            "corp_crisis_preparedness": "Text",
+            "corp_crisis_review": "Text",
+            "corp_crisis_training": "Text",
+            "site_crisis_and_communication_preparedness": "Text",
+            "site_crisis_and_communication_review": "Text",
+            "site_crisis_and_communication_training": "Text",
+            "indigenous_q1": "Text",
+            "indigenous_q2": "Text",
+            "indigenous_q3": "Text",
+            "indigenous_q4": "Text",
+            "indigenous_q5": "Text",
+            "labour_child_q2": "Text",
+            "labour_forced_q1": "Text",
+            "tailings_management_q1": "Text",
+            "tailings_management_q2": "Text",
+            "tailings_management_q3": "Text",
+            "tailings_management_q4": "Text",
+            "tailings_management_q5": "Text",
+            "water_stewardship_q1": "Text",
+            "water_stewardship_q2": "Text",
+            "water_stewardship_q3": "Text",
+            "water_stewardship_q4": "Text",
+            "safety_q1": "Text",
+            "safety_q2": "Text",
+            "safety_q3": "Text",
+            "safety_q4": "Text",
+            "safety_q5": "Text",
+            "energy_q1": "Text",
+            "energy_q2": "Text",
+            "energy_q3": "Text"
+        },
+        "flagged_attributes": []
+    },
+    "overlays": [
+        {
+            "type": "spec/overlays/character_encoding/1.0",
+            "default_character_encoding": "utf-8",
+            "properties": {
+                "company_name": {
+                    "type": "string",
+                    "title": "Company Name",
+                    "description": "Legal name of the company",
+                    "iri": "https://artifacts.trustinfrastructure.com/core/vocab.jsonld#company_name",
+                    "required": true,
+                    "minLength": 0,
+                    "maxLength": 100,
+                    "values": []
+                },
+                "facility_name": {
+                    "type": "string",
+                    "title": "Facility Name",
+                    "description": "Name of the facility",
+                    "iri": "https://artifacts.trustinfrastructure.com/core/vocab.jsonld#facility_name",
+                    "required": true,
+                    "minLength": 0,
+                    "maxLength": 100,
+                    "values": []
+                },
+                "country_operation": {
+                    "type": "string",
+                    "title": "Country of Operation",
+                    "description": "Country of operation",
+                    "iri": "https://artifacts.trustinfrastructure.com/core/vocab.jsonld#country_operation",
+                    "required": false,
+                    "minLength": 0,
+                    "maxLength": 100,
+                    "values": []
+                },
+                "operation_type": {
+                    "type": "string",
+                    "title": "Type of Operation",
+                    "description": "Type of operation",
+                    "iri": "https://artifacts.trustinfrastructure.com/core/vocab.jsonld#operation_type",
+                    "required": false,
+                    "minLength": 0,
+                    "maxLength": 100,
+                    "values": []
+                },
+                "products_name": {
+                    "type": "string",
+                    "title": "Commodities Produced",
+                    "description": "Commodities produced",
+                    "iri": "https://artifacts.trustinfrastructure.com/core/vocab.jsonld#products_name",
+                    "required": false,
+                    "minLength": 0,
+                    "maxLength": 100,
+                    "values": []
+                },
+                "verification_activities_summary": {
+                    "type": "URL",
+                    "title": "Link to Verification Report",
+                    "description": "View the full external verification report at the link provided",
+                    "iri": "https://artifacts.trustinfrastructure.com/core/vocab.jsonld#verification_activities_summary",
+                    "required": false,
+                    "minLength": 0,
+                    "maxLength": 1000,
+                    "values": []
+                },
+                "biodiversity_conservation_q1": {
+                    "type": "string",
+                    "title": "Biodiversity Conservation Management - Indicator 1",
+                    "description": "Facility performance rating on Indicator 1 of the TSM Biodiversity Conservation Management Protocol",
+                    "iri": "https://artifacts.trustinfrastructure.com/core/vocab.jsonld#biodiversity_conservation_q1",
+                    "required": false,
+                    "minLength": 0,
+                    "maxLength": 50,
+                    "values": [
+                        "AAA",
+                        "AA",
+                        "A",
+                        "B",
+                        "C",
+                        ""
+                    ]
+                },
+                "biodiversity_conservation_q2": {
+                    "type": "string",
+                    "title": "Biodiversity Conservation Management - Indicator 2",
+                    "description": "Facility performance rating on Indicator 2 of the TSM Biodiversity Conservation Management Protocol",
+                    "iri": "https://artifacts.trustinfrastructure.com/core/vocab.jsonld#biodiversity_conservation_q2",
+                    "required": false,
+                    "minLength": 0,
+                    "maxLength": 50,
+                    "values": [
+                        "AAA",
+                        "AA",
+                        "A",
+                        "B",
+                        "C",
+                        ""
+                    ]
+                },
+                "biodiversity_conservation_q3": {
+                    "type": "string",
+                    "title": "Biodiversity Conservation Management - Indicator 3",
+                    "description": "Facility performance rating on Indicator 3 of the TSM Biodiversity Conservation Management Protocol",
+                    "iri": "https://artifacts.trustinfrastructure.com/core/vocab.jsonld#biodiversity_conservation_q3",
+                    "required": false,
+                    "minLength": 0,
+                    "maxLength": 50,
+                    "values": [
+                        "AAA",
+                        "AA",
+                        "A",
+                        "B",
+                        "C",
+                        ""
+                    ]
+                },
+                "corp_climate_q1": {
+                    "type": "string",
+                    "title": "Climate Change - Indicator 1",
+                    "description": "Corporate performance rating on Indicator 1 of the TSM Climate Change Protocol",
+                    "iri": "https://artifacts.trustinfrastructure.com/core/vocab.jsonld#corp_climate_q1",
+                    "required": false,
+                    "minLength": 0,
+                    "maxLength": 50,
+                    "values": [
+                        "AAA",
+                        "AA",
+                        "A",
+                        "B",
+                        "C",
+                        ""
+                    ]
+                },
+                "site_climate_q1": {
+                    "type": "string",
+                    "title": "Climate Change - Indicator 2",
+                    "description": "Facility performance rating on Indicator 1 of the TSM Climate Change Protocol",
+                    "iri": "https://artifacts.trustinfrastructure.com/core/vocab.jsonld#site_climate_q1",
+                    "required": false,
+                    "minLength": 0,
+                    "maxLength": 50,
+                    "values": [
+                        "AAA",
+                        "AA",
+                        "A",
+                        "B",
+                        "C",
+                        ""
+                    ]
+                },
+                "site_climate_q2": {
+                    "type": "string",
+                    "title": "Climate Change - Indicator 3",
+                    "description": "Facility performance rating on Indicator 2 of the TSM Climate Change Protocol",
+                    "iri": "https://artifacts.trustinfrastructure.com/core/vocab.jsonld#site_climate_q2",
+                    "required": false,
+                    "minLength": 0,
+                    "maxLength": 50,
+                    "values": [
+                        "AAA",
+                        "AA",
+                        "A",
+                        "B",
+                        "C",
+                        ""
+                    ]
+                },
+                "corp_crisis_preparedness": {
+                    "type": "string",
+                    "title": "Corporate Crisis Management - Indicator 1",
+                    "description": "Corporate performance rating on Indicator 1 of the TSM Crisis Management and Communications Planning Protocol",
+                    "iri": "https://artifacts.trustinfrastructure.com/core/vocab.jsonld#corp_crisis_preparedness",
+                    "required": false,
+                    "minLength": 0,
+                    "maxLength": 50,
+                    "values": [
+                        "YES",
+                        "NO",
+                        ""
+                    ]
+                },
+                "corp_crisis_review": {
+                    "type": "string",
+                    "title": "Corporate Crisis Management - Indicator 2",
+                    "description": "Corporate performance rating on Indicator 2 of the TSM Crisis Management and Communications Planning Protocol",
+                    "iri": "https://artifacts.trustinfrastructure.com/core/vocab.jsonld#corp_crisis_review",
+                    "required": false,
+                    "minLength": 0,
+                    "maxLength": 50,
+                    "values": [
+                        "YES",
+                        "NO",
+                        ""
+                    ]
+                },
+                "corp_crisis_training": {
+                    "type": "string",
+                    "title": "Corporate Crisis Management - Indicator 3",
+                    "description": "Corporate performance rating on Indicator 3 of the TSM Crisis Management and Communications Planning Protocol",
+                    "iri": "https://artifacts.trustinfrastructure.com/core/vocab.jsonld#corp_crisis_training",
+                    "required": false,
+                    "minLength": 0,
+                    "maxLength": 50,
+                    "values": [
+                        "YES",
+                        "NO",
+                        ""
+                    ]
+                },
+                "site_crisis_and_communication_preparedness": {
+                    "type": "string",
+                    "title": "Facility Crisis Management - Indicator 1",
+                    "description": "Facility performance rating on Indicator 1 of the TSM Crisis Management and Communications Planning Protocol",
+                    "iri": "https://artifacts.trustinfrastructure.com/core/vocab.jsonld#site_crisis_and_communication_preparedness",
+                    "required": false,
+                    "minLength": 0,
+                    "maxLength": 50,
+                    "values": [
+                        "YES",
+                        "NO",
+                        ""
+                    ]
+                },
+                "site_crisis_and_communication_review": {
+                    "type": "string",
+                    "title": "Facility Crisis Management - Indicator 2",
+                    "description": "Facility performance rating on Indicator 2 of the TSM Crisis Management and Communications Planning Protocol",
+                    "iri": "https://artifacts.trustinfrastructure.com/core/vocab.jsonld#site_crisis_and_communication_review",
+                    "required": false,
+                    "minLength": 0,
+                    "maxLength": 50,
+                    "values": [
+                        "YES",
+                        "NO",
+                        ""
+                    ]
+                },
+                "site_crisis_and_communication_training": {
+                    "type": "string",
+                    "title": "Facility Crisis Management - Indicator 3",
+                    "description": "Facility performance rating on Indicator 3 of the TSM Crisis Management and Communications Planning Protocol",
+                    "iri": "https://artifacts.trustinfrastructure.com/core/vocab.jsonld#site_crisis_and_communication_training",
+                    "required": false,
+                    "minLength": 0,
+                    "maxLength": 50,
+                    "values": [
+                        "YES",
+                        "NO",
+                        ""
+                    ]
+                },
+                "indigenous_q1": {
+                    "type": "string",
+                    "title": "Indigenous & Community Relationships - Indicator 1",
+                    "description": "Facility performance rating on Indicator 1 of the TSM Indigenous and Community Relationships Protocol",
+                    "iri": "https://artifacts.trustinfrastructure.com/core/vocab.jsonld#indigenous_q1",
+                    "required": false,
+                    "minLength": 0,
+                    "maxLength": 50,
+                    "values": [
+                        "AAA",
+                        "AA",
+                        "A",
+                        "B",
+                        "C",
+                        ""
+                    ]
+                },
+                "indigenous_q2": {
+                    "type": "string",
+                    "title": "Indigenous & Community Relationships - Indicator 2",
+                    "description": "Facility performance rating on Indicator 2 of the TSM Indigenous and Community Relationships Protocol",
+                    "iri": "https://artifacts.trustinfrastructure.com/core/vocab.jsonld#indigenous_q2",
+                    "required": false,
+                    "minLength": 0,
+                    "maxLength": 50,
+                    "values": [
+                        "AAA",
+                        "AA",
+                        "A",
+                        "B",
+                        "C",
+                        ""
+                    ]
+                },
+                "indigenous_q3": {
+                    "type": "string",
+                    "title": "Indigenous & Community Relationships - Indicator 3",
+                    "description": "Facility performance rating on Indicator 3 of the TSM Indigenous and Community Relationships Protocol",
+                    "iri": "https://artifacts.trustinfrastructure.com/core/vocab.jsonld#indigenous_q3",
+                    "required": false,
+                    "minLength": 0,
+                    "maxLength": 50,
+                    "values": [
+                        "AAA",
+                        "AA",
+                        "A",
+                        "B",
+                        "C",
+                        ""
+                    ]
+                },
+                "indigenous_q4": {
+                    "type": "string",
+                    "title": "Indigenous & Community Relationships - Indicator 4",
+                    "description": "Facility performance rating on Indicator 4 of the TSM Indigenous and Community Relationships Protocol",
+                    "iri": "https://artifacts.trustinfrastructure.com/core/vocab.jsonld#indigenous_q4",
+                    "required": false,
+                    "minLength": 0,
+                    "maxLength": 50,
+                    "values": [
+                        "AAA",
+                        "AA",
+                        "A",
+                        "B",
+                        "C",
+                        ""
+                    ]
+                },
+                "indigenous_q5": {
+                    "type": "string",
+                    "title": "Indigenous & Community Relationships - Indicator 5",
+                    "description": "Facility performance rating on Indicator 5 of the TSM Indigenous and Community Relationships Protocol",
+                    "iri": "https://artifacts.trustinfrastructure.com/core/vocab.jsonld#indigenous_q5",
+                    "required": false,
+                    "minLength": 0,
+                    "maxLength": 50,
+                    "values": [
+                        "AAA",
+                        "AA",
+                        "A",
+                        "B",
+                        "C",
+                        ""
+                    ]
+                },
+                "labour_child_q2": {
+                    "type": "string",
+                    "title": "Child and Forced Labour - Indicator 1",
+                    "description": "Facility performance rating on Indicator 1 of the TSM Preventing Child and Forced Labour Protocol",
+                    "iri": "https://artifacts.trustinfrastructure.com/core/vocab.jsonld#labour_child_q2",
+                    "required": false,
+                    "minLength": 0,
+                    "maxLength": 50,
+                    "values": [
+                        "YES",
+                        "NO",
+                        ""
+                    ]
+                },
+                "labour_forced_q1": {
+                    "type": "string",
+                    "title": "Child and Forced Labour - Indicator 2",
+                    "description": "Facility performance rating on Indicator 2 of the TSM Preventing Child and Forced Labour Protocol",
+                    "iri": "https://artifacts.trustinfrastructure.com/core/vocab.jsonld#labour_forced_q1",
+                    "required": false,
+                    "minLength": 0,
+                    "maxLength": 50,
+                    "values": [
+                        "YES",
+                        "NO",
+                        ""
+                    ]
+                },
+                "tailings_management_q1": {
+                    "type": "string",
+                    "title": "Tailings Management - Indicator 1",
+                    "description": "Facility performance rating on Indicator 1 of the TSM Tailings Management Protocol",
+                    "iri": "https://artifacts.trustinfrastructure.com/core/vocab.jsonld#tailings_management_q1",
+                    "required": false,
+                    "minLength": 0,
+                    "maxLength": 50,
+                    "values": [
+                        "AAA",
+                        "AA",
+                        "A",
+                        "B",
+                        "C",
+                        ""
+                    ]
+                },
+                "tailings_management_q2": {
+                    "type": "string",
+                    "title": "Tailings Management - Indicator 2",
+                    "description": "Facility performance rating on Indicator 2 of the TSM Tailings Management Protocol",
+                    "iri": "https://artifacts.trustinfrastructure.com/core/vocab.jsonld#tailings_management_q2",
+                    "required": false,
+                    "minLength": 0,
+                    "maxLength": 50,
+                    "values": [
+                        "AAA",
+                        "AA",
+                        "A",
+                        "B",
+                        "C",
+                        ""
+                    ]
+                },
+                "tailings_management_q3": {
+                    "type": "string",
+                    "title": "Tailings Management - Indicator 3",
+                    "description": "Facility performance rating on Indicator 3 of the TSM Tailings Management Protocol",
+                    "iri": "https://artifacts.trustinfrastructure.com/core/vocab.jsonld#tailings_management_q3",
+                    "required": false,
+                    "minLength": 0,
+                    "maxLength": 50,
+                    "values": [
+                        "AAA",
+                        "AA",
+                        "A",
+                        "B",
+                        "C",
+                        ""
+                    ]
+                },
+                "tailings_management_q4": {
+                    "type": "string",
+                    "title": "Tailings Management - Indicator 4",
+                    "description": "Facility performance rating on Indicator 4 of the TSM Tailings Management Protocol",
+                    "iri": "https://artifacts.trustinfrastructure.com/core/vocab.jsonld#tailings_management_q4",
+                    "required": false,
+                    "minLength": 0,
+                    "maxLength": 50,
+                    "values": [
+                        "AAA",
+                        "AA",
+                        "A",
+                        "B",
+                        "C",
+                        ""
+                    ]
+                },
+                "tailings_management_q5": {
+                    "type": "string",
+                    "title": "Tailings Management - Indicator 5",
+                    "description": "Facility performance rating on Indicator 5 of the TSM Tailings Management Protocol",
+                    "iri": "https://artifacts.trustinfrastructure.com/core/vocab.jsonld#tailings_management_q5",
+                    "required": false,
+                    "minLength": 0,
+                    "maxLength": 50,
+                    "values": [
+                        "AAA",
+                        "AA",
+                        "A",
+                        "B",
+                        "C",
+                        ""
+                    ]
+                },
+                "water_stewardship_q1": {
+                    "type": "string",
+                    "title": "Water Stewardship - Indicator 1",
+                    "description": "Facility performance rating on Indicator 1 of the TSM Water Stewardship Protocol",
+                    "iri": "https://artifacts.trustinfrastructure.com/core/vocab.jsonld#water_stewardship_q1",
+                    "required": false,
+                    "minLength": 0,
+                    "maxLength": 50,
+                    "values": [
+                        "AAA",
+                        "AA",
+                        "A",
+                        "B",
+                        "C",
+                        ""
+                    ]
+                },
+                "water_stewardship_q2": {
+                    "type": "string",
+                    "title": "Water Stewardship - Indicator 2",
+                    "description": "Facility performance rating on Indicator 2 of the TSM Water Stewardship Protocol",
+                    "iri": "https://artifacts.trustinfrastructure.com/core/vocab.jsonld#water_stewardship_q2",
+                    "required": false,
+                    "minLength": 0,
+                    "maxLength": 50,
+                    "values": [
+                        "AAA",
+                        "AA",
+                        "A",
+                        "B",
+                        "C",
+                        ""
+                    ]
+                },
+                "water_stewardship_q3": {
+                    "type": "string",
+                    "title": "Water Stewardship - Indicator 3",
+                    "description": "Facility performance rating on Indicator 3 of the TSM Water Stewardship Protocol",
+                    "iri": "https://artifacts.trustinfrastructure.com/core/vocab.jsonld#water_stewardship_q3",
+                    "required": false,
+                    "minLength": 0,
+                    "maxLength": 50,
+                    "values": [
+                        "AAA",
+                        "AA",
+                        "A",
+                        "B",
+                        "C",
+                        ""
+                    ]
+                },
+                "water_stewardship_q4": {
+                    "type": "string",
+                    "title": "Water Stewardship - Indicator 4",
+                    "description": "Facility performance rating on Indicator 4 of the TSM Water Stewardship Protocol",
+                    "iri": "https://artifacts.trustinfrastructure.com/core/vocab.jsonld#water_stewardship_q4",
+                    "required": false,
+                    "minLength": 0,
+                    "maxLength": 50,
+                    "values": [
+                        "AAA",
+                        "AA",
+                        "A",
+                        "B",
+                        "C",
+                        ""
+                    ]
+                },
+                "safety_q1": {
+                    "type": "string",
+                    "title": "Safety and Health - Indicator 1",
+                    "description": "Facility performance rating on Indicator 1 of the TSM Safety and Health Protocol",
+                    "iri": "https://artifacts.trustinfrastructure.com/core/vocab.jsonld#safety_q1",
+                    "required": false,
+                    "minLength": 0,
+                    "maxLength": 50,
+                    "values": [
+                        "AAA",
+                        "AA",
+                        "A",
+                        "B",
+                        "C",
+                        ""
+                    ]
+                },
+                "safety_q2": {
+                    "type": "string",
+                    "title": "Safety and Health - Indicator 2",
+                    "description": "Facility performance rating on Indicator 2 of the TSM Safety and Health Protocol",
+                    "iri": "https://artifacts.trustinfrastructure.com/core/vocab.jsonld#safety_q2",
+                    "required": false,
+                    "minLength": 0,
+                    "maxLength": 50,
+                    "values": [
+                        "AAA",
+                        "AA",
+                        "A",
+                        "B",
+                        "C",
+                        ""
+                    ]
+                },
+                "safety_q3": {
+                    "type": "string",
+                    "title": "Safety and Health - Indicator 3",
+                    "description": "Facility performance rating on Indicator 3 of the TSM Safety and Health Protocol",
+                    "iri": "https://artifacts.trustinfrastructure.com/core/vocab.jsonld#safety_q3",
+                    "required": false,
+                    "minLength": 0,
+                    "maxLength": 50,
+                    "values": [
+                        "AAA",
+                        "AA",
+                        "A",
+                        "B",
+                        "C",
+                        ""
+                    ]
+                },
+                "safety_q4": {
+                    "type": "string",
+                    "title": "Safety and Health - Indicator 4",
+                    "description": "Facility performance rating on Indicator 4 of the TSM Safety and Health Protocol",
+                    "iri": "https://artifacts.trustinfrastructure.com/core/vocab.jsonld#safety_q4",
+                    "required": false,
+                    "minLength": 0,
+                    "maxLength": 50,
+                    "values": [
+                        "AAA",
+                        "AA",
+                        "A",
+                        "B",
+                        "C",
+                        ""
+                    ]
+                },
+                "safety_q5": {
+                    "type": "string",
+                    "title": "Safety and Health - Indicator 5",
+                    "description": "Facility performance rating on Indicator 5 of the TSM Safety and Health Protocol",
+                    "iri": "https://artifacts.trustinfrastructure.com/core/vocab.jsonld#safety_q5",
+                    "required": false,
+                    "minLength": 0,
+                    "maxLength": 50,
+                    "values": [
+                        "AAA",
+                        "AA",
+                        "A",
+                        "B",
+                        "C",
+                        ""
+                    ]
+                },
+                "energy_q1": {
+                    "type": "string",
+                    "title": "Energy Use and GHG Emissions - Indicator 1",
+                    "description": "Facility performance rating on Indicator 1 of the TSM Energy Use and GHG Protocol",
+                    "iri": "https://artifacts.trustinfrastructure.com/core/vocab.jsonld#energy_q1",
+                    "required": false,
+                    "minLength": 0,
+                    "maxLength": 50,
+                    "values": [
+                        "AAA",
+                        "AA",
+                        "A",
+                        "B",
+                        "C",
+                        ""
+                    ]
+                },
+                "energy_q2": {
+                    "type": "string",
+                    "title": "Energy Use and GHG Emissions - Indicator 2",
+                    "description": "Facility performance rating on Indicator 2 of the TSM Energy Use and GHG Protocol",
+                    "iri": "https://artifacts.trustinfrastructure.com/core/vocab.jsonld#energy_q2",
+                    "required": false,
+                    "minLength": 0,
+                    "maxLength": 50,
+                    "values": [
+                        "AAA",
+                        "AA",
+                        "A",
+                        "B",
+                        "C",
+                        ""
+                    ]
+                },
+                "energy_q3": {
+                    "type": "string",
+                    "title": "Energy Use and GHG Emissions - Indicator 3",
+                    "description": "Facility performance rating on Indicator 3 of the TSM Energy Use and GHG Protocol",
+                    "iri": "https://artifacts.trustinfrastructure.com/core/vocab.jsonld#energy_q3",
+                    "required": false,
+                    "minLength": 0,
+                    "maxLength": 50,
+                    "values": [
+                        "AAA",
+                        "AA",
+                        "A",
+                        "B",
+                        "C",
+                        ""
+                    ]
+                }
+            }
+        },
+        {
+            "credential_support_url": "https://northernblock.io/",
+            "description": "A verifiable credential schema for reporting on mining and metallurgical facilities’ performance on the Towards Sustainable Mining protocols",
+            "issuer": "Mining Association of Canada",
+            "issuer_description": "",
+            "issuer_url": "https://northernblock.io/",
+            "language": "en",
+            "name": "Towards Sustainable Mining <b>2022</b>",
+            "type": "spec/overlays/meta/1.0",
+            "watermark": "DEMO"
+        },
+        {
+            "type": "spec/overlays/branding/1.0",
+            "primary_background_color": "#2174B7",
+            "secondary_background_color": "#27BF84",
+            "logo": "https://raw.githubusercontent.com/Northern-Block/credential-governance-docs/main/mining-association-of-canada/OCABundles/Towards_Sustainable_Mining_2022/tsm-logo.png",
+            "background_image": "https://raw.githubusercontent.com/Northern-Block/credential-governance-docs/main/mining-association-of-canada/OCABundles/Towards_Sustainable_Mining_2022/TSM-background-image.png",
+            "background_image_slice": "https://raw.githubusercontent.com/Northern-Block/credential-governance-docs/main/mining-association-of-canada/OCABundles/Towards_Sustainable_Mining_2022/TSM-background-slice.png",
+            "primary_attribute": "company_name",
+            "secondary_attribute": "facility_name"
+        }
+    ]
+}
